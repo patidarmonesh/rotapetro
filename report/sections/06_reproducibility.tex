@@ -1,0 +1,142 @@
+\clearpage
+\section{Implementation map and output-file dictionary}
+\subsection{Which code performs each stage?}
+\begin{longtable}{@{}p{0.12\linewidth}p{0.40\linewidth}p{0.41\linewidth}@{}}
+\toprule Phase & Entry point / main module & Responsibility\\\midrule\endhead
+0 & \code{scripts/00_clean.py} & Inventory, deduplication, completeness, metadata and calibration.\\
+1 & \code{scripts/01_align.py}; \code{src/rotapetro/align.py} & Registration, shared support, folding and alignment QC.\\
+2 & \code{scripts/02_maps.py}; \code{src/rotapetro/maps.py} & Per-pixel optical descriptors from aligned stacks.\\
+3 & \code{scripts/03_segment.py}; \code{src/rotapetro/segment.py} & Superpixels, graph merging and stable region IDs.\\
+4 & \code{scripts/04_features.py}; \code{src/rotapetro/features.py} & Region properties and measurement status.\\
+5 & \code{src/rotapetro/knowledge.py}; \code{knowledge/} & Load and validate the knowledge tables.\\
+6 & \code{scripts/06_autolabel.py}; \code{src/rotapetro/rules.py} & Fold-specific teacher targets and provenance.\\
+6 gate & \code{scripts/v1_label_feasibility.py} & Stop if labels or support fail the V1 criteria.\\
+7 & \code{scripts/07_build_dataset.py}; \code{src/rotapetro/dataset.py} & Join region geometry, freeze splits and prepare sampling.\\
+8 & \code{scripts/08_embed.py}; \code{src/rotapetro/embed.py} & Crop images and cache frozen DINO descriptors.\\
+9 & \code{scripts/v1_train.py}; \code{src/rotapetro/model.py}; \code{train.py} & Train the three V1 arms and save predictions.\\
+10 & \code{scripts/10_evaluate.py}; \code{src/rotapetro/evaluate.py} & Aggregate test results, uncertainty and diagnostic strata.\\\bottomrule
+\end{longtable}
+Legacy entry points also exist. The presence of \code{09_train.py}, an inference script or an unused model option is not evidence that it was part of the reported V1 experiment. Use the V1 run path when reproducing the described comparison.
+
+\subsection{Files before neural training}
+\small
+\begin{longtable}{@{}p{0.40\linewidth}p{0.54\linewidth}@{}}
+\toprule File or directory & How to read it\\\midrule\endhead
+\code{configs/default.yaml} & Declared paths and settings. Some architecture settings are fixed in code; an exact run also needs the source revision.\\
+\code{data/interim/sites.csv} & Site identity, source and usability inventory. One row is not one grain.\\
+\code{specimens_clean.csv} in interim & Cleaned specimen metadata and mineral-list context.\\
+\code{calibration.json} in interim & Approximate spatial-scale estimates and calibration provenance.\\
+\code{qc/phase0_report.md} in interim & Human-readable completeness, duplicate and warning summary.\\
+\code{qc/align_summary.csv} & Per-site registration diagnostics and pass flag. Inspect angle error, fallback count, opposite-frame difference and residual shift.\\
+\code{aligned/<site>.npz} & Aligned/folded PPL and XPL arrays, retained angles and valid support. An NPZ is a collection of named numerical arrays.\\
+\code{maps/<site>.npz} & Optical maps such as extinction position, modulation, fit quality and colour-change descriptors.\\
+\code{segments/<site>.png} & Integer-valued region-ID raster. The pixel value is an ID, not an RGB mineral label.\\
+\code{segments/<site>.json} & Region geometry, flags and ID metadata accompanying the mask.\\
+\code{qc/segment_summary.csv} & Site-level segmentation counts and summary flags, not measured boundary accuracy.\\
+\code{data/processed/v1/regions.parquet} & One feature/property record per region, including measurement status and V1 eligibility. Parquet preserves typed columns.\\
+\code{samples.parquet} in processed V1 & Dataset assembly table joining region properties and geometry. It indexes observations; it is not the embedding cache.\\
+\code{classes.yaml}; \code{groups.yaml} & Class names, output order and hierarchy in the relevant pipeline version. Legacy and V1 vocabularies must not be mixed.\\
+\code{teachers/fold_*/targets.parquet} & Authoritative fold-specific teacher states, allowed sets and provenance. These are the V1 supervised targets.\\
+\code{labels.parquet}; \code{labelling_report.md} & Label table and summary used in legacy/global labelling paths. Their existence does not replace V1 fold-specific targets.\\
+\code{splits/folds.json} & Specimen assignments to train, validation and test for each fold.\\
+\code{splits/class_counts.json} & Support summaries where generated. Class counts must be interpreted with the matching target and split version.\\
+\code{label_feasibility_report.md} & Human-readable V1 gate and support assessment.\\
+\code{provenance_feasibility.json} & Machine-readable gate results and provenance. A passed gate does not establish ground truth.\\
+\code{knowledge/minerals.csv} & Mineral property expectations used by rules.\\
+\code{knowledge/aliases.csv} & Mapping of variant names to canonical names.\\
+\code{knowledge/hierarchy.yaml} & Species-to-family/group structure.\\
+\code{knowledge/likelihoods.yaml} & Heuristic evidence compatibilities and weights.\\\bottomrule
+\end{longtable}
+\normalsize
+
+\subsection{QC images and their limits}
+\code{qc/maps/} visualises the optical measurements; \code{qc/segment/} overlays region boundaries; \code{qc/labels/} contains contact sheets for reviewing teacher outputs. Feature-distribution plots show the range and concentration of descriptors and can reveal clipping, missingness or unexpected modes. None of these images automatically supplies a correct mineral label. They are quality-control evidence that supports targeted review.
+
+An alignment edge overlay answers a geometry question. A map contact sheet answers a measurement question. A label contact sheet answers what the rules assigned. A neural prediction overlay answers what a trained classifier predicted on those masks. Keeping those questions separate avoids calling every coloured image a neural result.
+
+\subsection{Neural artefacts}
+\begin{longtable}{@{}p{0.40\linewidth}p{0.54\linewidth}@{}}
+\toprule Artefact & Meaning\\\midrule\endhead
+Embedding arrays and index & Numerical descriptions of crops, associated with region IDs, angles and modes; not predictions.\\
+\code{train_log.csv} & Epoch-level training/validation loss and optimisation history.\\
+\code{train_summary.json} & Fit summary including chosen checkpoint and counts.\\
+\code{provenance_train.json} & Recorded training metadata; useful but not a substitute for a complete environment lock.\\
+Checkpoint \code{*.pt} & Learned model parameters. Not bundled in the compact evidence repository.\\
+\code{predictions.parquet} & Per-region held-out probabilities and associated identity/target information. These support independent metric recomputation.\\
+\code{experiment_index.json} & Inventory of experiment arms, folds and seeds.\\
+\code{evaluation_summary.json} & Machine-readable metrics, paired comparisons and diagnostics.\\
+\code{evaluation_report.md} & Readable rendering of the evaluation summary.\\
+Console logs & Warnings and execution failures that may not appear in final tables. A successful test suite is not proof that runtime inputs are complete.\\\bottomrule
+\end{longtable}
+
+\subsection{Selected feature columns}
+The companion \code{evidence/regions_schema.csv} and \code{samples_schema.csv} list the current local fields and dtypes. Important examples are \code{region_id}/\code{site_id}/\code{code} for identity; \code{area_px}/\code{interior_px} for usable support; \code{partial}/\code{small} for geometry flags; \code{aniso_med}/\code{r2_4_med} for modulation and fit; \code{pleo_dE_med} for colour variation; \code{ext_R}/\code{ext_std_deg} for orientation concentration; \code{twin_status} and related status columns for measurement interpretation; and \code{eligible_v1}/\code{reject_reason_v1} for the geometric/quality gate. Stored \code{gamma_med_nm}, \code{biref_cls} or \code{ext_type} fields can remain present even when disabled as deciding evidence.
+
+\section{Reproducibility package and practical execution}
+\subsection{What the companion repository contains}
+The companion repository packages the current application source, scripts, tests, configuration and knowledge files; this report's editable LaTeX sources and figures; the compact historical prediction/evaluation evidence; and a small independent metric-recomputation utility. It deliberately excludes raw data, large aligned stacks, embeddings, checkpoints, environments, credentials and personal application documents.
+
+\code{evidence/source_manifest.json} records SHA-256 hashes for copied source/evidence files. \code{evidence/snapshot.json} records the local source commit and the historical-provenance limitation. \code{results/baseline/} and \code{results/regularized/} keep the two historical settings separate. A result-audit command recomputes primary point estimates from included predictions without a GPU or the raw photographs.
+
+\subsection{Three distinct levels of reproducibility}
+\begin{enumerate}
+\item \textbf{Document rebuild:} compile the LaTeX using the included figures. No microscopy data or GPU is required.
+\item \textbf{Result verification:} recompute metrics from archived predictions using NumPy, pandas and PyArrow. This verifies arithmetic and joins, not the origin of every image.
+\item \textbf{Full training rerun:} additionally restore the correct raw/preprocessed arrays, region tables, frozen splits, teacher targets and encoder weights. Matching all historical numerical results also requires the exact historical environment and source, which are not fully preserved.
+\end{enumerate}
+
+V1 pipeline mode skips Phases 0--3 to preserve existing segmentation and IDs. Running it in a new directory containing only raw data will not reconstruct those prerequisites. Conversely, rebuilding segmentation into an existing V1 experiment can invalidate region IDs and frozen target/split associations. A fresh full preprocessing experiment should use separate output paths and a new manifest rather than silently replacing historical evidence.
+
+The tested GPU reported CUDA availability and an NVIDIA RTX PRO 4000 Blackwell. This shows that the neural stages executed on a GPU; it does not imply that all preprocessing stages require one. The reported framework version was PyTorch 2.14.0 with CUDA 13.0 in the supplied console output. Requirements in the repository are lower bounds, not a complete historical lockfile.
+
+\subsection{Development difficulties that affected interpretation}
+The main practical issues were duplicate downloads, incomplete sites, rotation registration under changing appearance, differences between optical domains and true grains, sparse trustworthy labels, metadata dependence, preserving stable region IDs, preventing specimen leakage, and early overfitting. One execution failure arose from a whitespace-padded \code{site_id} CSV header; this was an input-schema problem rather than a GPU fault. Such cases motivate explicit schema validation before expensive stages.
+
+The project also revised several originally plausible assumptions: brightness ratios cannot be treated as calibrated optical quantities without exposure information; twinkling is not unique to carbonate; frame 0 has a different resampling history; and using a specimen list is materially different from independently knowing a grain's mineral. These revisions improve the defensibility of the experiment, even when they reduce label counts.
+
+\section{Concise answers for technical discussion}
+\textbf{What is the research question?} Whether known rotational observations improve mineral-family classification beyond a single PPL/XPL pair, under controlled specimen-separated evaluation.
+
+\textbf{What was done?} Built and checked a processing/weak-labelling workflow, extracted frozen DINOv2 descriptors, and trained static, unordered and angle-aware classifiers across five folds and multiple seeds. Two settings produced 45 and 75 full fits.
+
+\textbf{What was obtained?} A functioning region-wise visual demonstrator and reproducible predictions, but no convincing primary advantage from angle-aware input: approximately 0.531 versus 0.531 initially, and 0.489 versus 0.494 after regularisation.
+
+\textbf{Why not name every visible region?} Because size and clear visibility do not uniquely determine mineral identity. The teacher abstains when evidence is weak, ambiguous, mixed or outside scope.
+
+\textbf{Did the model use all 144 raw photographs together?} No. The completed experiment folded 72 positions into 36 and jointly used 12 PPL/XPL pairs per multi-view decision. The full unaveraged experiment remains future work.
+
+\textbf{Is the angle-aware model really angle-aware?} Yes: it adds learned encodings of second and fourth angular harmonics. The uncertainty is whether those observations improve this task, not whether angles were supplied at all.
+
+\textbf{What is the strongest remaining uncertainty?} The lack of independent mineral ground truth, combined with imperfect regions and small specimen-level class support. No amount of model confidence resolves that uncertainty by itself.
+
+\textbf{What should the committee take away?} The project has established an inspectable experimental platform and identified the conditions that a stronger validation must address. The current evidence supports continued controlled investigation, not a claim of demonstrated rotational superiority.
+\FloatBarrier
+
+\appendix
+\section{Notation reference}
+\begin{tabularx}{\linewidth}{@{}lX@{}}\toprule Symbol & Meaning\\\midrule
+$\theta_k$ & Stage angle of retained observation $k$; trigonometric calculations use radians.\\
+$I^P,I^X$ & PPL/XPL RGB images; superscripts denote lighting mode, not powers.\\
+$Y,W$ & Encoded-RGB luminance proxy and estimated white reference.\\
+$\theta_e,a,R_4^2$ & Fitted extinction orientation, normalised modulation and harmonic fit score.\\
+$\mathbf f(x)$ & Pixel feature vector used for segmentation.\\
+$\mathbf e,\mathbf z$ & Frozen image descriptor and learned fused position token.\\
+$S_i$ & Allowed family set supplied by the weak teacher for region $i$.\\
+$p_{ic}$ & Neural output probability for region $i$, class $c$.\\
+$w_i$ & Inverse within-specimen test-region count for metric weighting.\\
+$\Delta$ & Mean-seed angle-aware minus static macro-F1 difference.\\\bottomrule
+\end{tabularx}
+
+\clearpage
+\section{Evidence and external references}
+Quantitative claims in this report are grounded primarily in the included result files, especially \code{evaluation_summary.json}, \code{predictions.parquet}, training logs, archived feasibility reports and independent metric tables. Algorithm descriptions are grounded in the included current source snapshot. External references below explain the underlying methods; they are not evidence that this mineral classifier is validated.
+
+\begin{thebibliography}{9}
+\bibitem{ukvm} The Open University and collection contributors. \emph{Virtual Microscope for Earth Sciences}. \url{https://www.virtualmicroscope.org/}. Granite specimen source: \url{https://virtualmicroscope.org/node/35}. Images in the running example derive from this collection; transformations, contours, crops and result overlays were produced by the project. Retained specimen metadata identifies a CC BY-NC-SA 2.0 notice unless marked third-party; original rights and attribution continue to apply.
+\bibitem{orb} E. Rublee, V. Rabaud, K. Konolige and G. Bradski. \emph{ORB: An efficient alternative to SIFT or SURF}. ICCV, 2011. \url{https://doi.org/10.1109/ICCV.2011.6126544}.
+\bibitem{ransac} M. A. Fischler and R. C. Bolles. \emph{Random Sample Consensus: A Paradigm for Model Fitting with Applications to Image Analysis and Automated Cartography}. Communications of the ACM, 1981. \url{https://doi.org/10.1145/358669.358692}.
+\bibitem{ecc} G. D. Evangelidis and E. Z. Psarakis. \emph{Parametric Image Alignment Using Enhanced Correlation Coefficient Maximization}. IEEE TPAMI, 2008. \url{https://doi.org/10.1109/TPAMI.2008.113}. Implementation API: \url{https://docs.opencv.org/4.x/dc/d6b/group__video__track.html}.
+\bibitem{slic} R. Achanta et al. \emph{SLIC Superpixels Compared to State-of-the-Art Superpixel Methods}. IEEE TPAMI, 2012. \url{https://doi.org/10.1109/TPAMI.2012.120}.
+\bibitem{dinov2} M. Oquab et al. \emph{DINOv2: Learning Robust Visual Features without Supervision}. 2023. \url{https://arxiv.org/abs/2304.07193}. Official implementation: \url{https://github.com/facebookresearch/dinov2}.
+\bibitem{attention} A. Vaswani et al. \emph{Attention Is All You Need}. 2017. \url{https://arxiv.org/abs/1706.03762}.
+\end{thebibliography}

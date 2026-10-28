@@ -1,0 +1,9 @@
+{
+  "best_val_loss": 1.1780921088324652,
+  "best_val_metrics": {
+    "val_loss": 1.1780921088324652,
+    "eval_k": 12
+  },
+  "total_epochs": 35,
+  "arm": "unordered_k12"
+}

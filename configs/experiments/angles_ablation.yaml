@@ -1,0 +1,6 @@
+variant: E2_ablation
+angles_ablation: true
+ablation_angles: [0, 45, 90]
+epochs: 50
+learning_rate: 0.001
+batch_size: 16

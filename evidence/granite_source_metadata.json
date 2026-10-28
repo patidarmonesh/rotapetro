@@ -1,0 +1,176 @@
+{
+  "node": "35",
+  "page_url": "https://virtualmicroscope.org/node/35",
+  "title": "Two mica granite - Aberdeen",
+  "collection": "UK Virtual Microscope",
+  "description": "The sample comes from a suite of granites in NE Scotland that were intruded around 470 million years ago at depths of around 20 km. They were formed during the peak of metamorphism in the Grampian orogeny, which reached temperatures of 700 °C. There is strong evidence that the granites were formed by the melting of Dalradian metasediments, and they are surrounded by a high temperature, partially melted country-rock envelope. Many of the civic buildings in the local city of Aberdeen were built from this granite, which comes from the Rubislaw quarry. The building stones commonly exhibit biotite-rich patches that represent the remains of a dominantly pelitic metasedimentary source. In thin section the rock exhibits large plates of quartz, intergrown with altered plagioclase and microcline feldspar. The microcline exhibits characteristic cross-hatched twinning. The rock contains many small fox-brown biotite grains with zircon inclusions, each surrounded by a pleochroic halo. Muscovite is present both as small grains intergrown with biotite and as larger plates.",
+  "type": [
+    "igneous"
+  ],
+  "category": [
+    "granite"
+  ],
+  "rock_forming_mineral": [
+    "biotite",
+    "muscovite",
+    "mica",
+    "microcline",
+    "plagioclase",
+    "feldspar",
+    "quartz"
+  ],
+  "lat": 57.139413,
+  "lon": -2.148688,
+  "locality": "Rubislaw quarry, Aberdeen, Grampian Region, Scotland",
+  "owner": "The Open University",
+  "owner_url": "http://www.open.ac.uk",
+  "code": "granite",
+  "licence": "CC BY-NC-SA 2.0 (Open University Virtual Microscope), unless marked third-party",
+  "listed_in_collections": [
+    "uk-virtual-microscope"
+  ],
+  "viewer_url": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/index2.html?specimen=/node/35",
+  "downloaded": "2026-09-28 11:48",
+  "viewer_config_found": true,
+  "rotation_fields": [
+    {
+      "field_id": "granite_r1",
+      "point": "r1",
+      "n_ppl": 72,
+      "n_xpl": 72,
+      "width_px": 490,
+      "height_px": 490,
+      "angle_step_deg": 5.0,
+      "fov_mm_approx": 1.966,
+      "um_per_px_approx": 4.01,
+      "ppl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r1_ppl/granite_r1_ppl001.jpg",
+      "xpl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r1_xpl/granite_r1_xpl001.jpg",
+      "complete": true
+    },
+    {
+      "field_id": "granite_r2",
+      "point": "r2",
+      "n_ppl": 72,
+      "n_xpl": 72,
+      "width_px": 490,
+      "height_px": 490,
+      "angle_step_deg": 5.0,
+      "fov_mm_approx": 1.966,
+      "um_per_px_approx": 4.01,
+      "ppl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r2_ppl/granite_r2_ppl001.jpg",
+      "xpl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r2_xpl/granite_r2_xpl001.jpg",
+      "complete": true
+    },
+    {
+      "field_id": "granite_r3",
+      "point": "r3",
+      "n_ppl": 72,
+      "n_xpl": 72,
+      "width_px": 490,
+      "height_px": 490,
+      "angle_step_deg": 5.0,
+      "fov_mm_approx": 1.966,
+      "um_per_px_approx": 4.01,
+      "ppl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r3_ppl/granite_r3_ppl001.jpg",
+      "xpl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r3_xpl/granite_r3_xpl001.jpg",
+      "complete": true
+    },
+    {
+      "field_id": "granite_r4",
+      "point": "r4",
+      "n_ppl": 72,
+      "n_xpl": 72,
+      "width_px": 490,
+      "height_px": 490,
+      "angle_step_deg": 5.0,
+      "fov_mm_approx": 1.966,
+      "um_per_px_approx": 4.01,
+      "ppl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r4_ppl/granite_r4_ppl001.jpg",
+      "xpl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r4_xpl/granite_r4_xpl001.jpg",
+      "complete": true
+    },
+    {
+      "field_id": "granite_r5",
+      "point": "r5",
+      "n_ppl": 72,
+      "n_xpl": 72,
+      "width_px": 490,
+      "height_px": 490,
+      "angle_step_deg": 5.0,
+      "fov_mm_approx": 1.966,
+      "um_per_px_approx": 4.01,
+      "ppl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r1_ppl/granite_r1_ppl001.jpg",
+      "xpl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r1_xpl/granite_r1_xpl001.jpg",
+      "complete": true
+    },
+    {
+      "field_id": "granite_r6",
+      "point": "r6",
+      "n_ppl": 72,
+      "n_xpl": 72,
+      "width_px": 490,
+      "height_px": 490,
+      "angle_step_deg": 5.0,
+      "fov_mm_approx": 1.966,
+      "um_per_px_approx": 4.01,
+      "ppl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r2_ppl/granite_r2_ppl001.jpg",
+      "xpl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r2_xpl/granite_r2_xpl001.jpg",
+      "complete": true
+    },
+    {
+      "field_id": "granite_r7",
+      "point": "r7",
+      "n_ppl": 72,
+      "n_xpl": 72,
+      "width_px": 490,
+      "height_px": 490,
+      "angle_step_deg": 5.0,
+      "fov_mm_approx": 1.966,
+      "um_per_px_approx": 4.01,
+      "ppl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r3_ppl/granite_r3_ppl001.jpg",
+      "xpl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r3_xpl/granite_r3_xpl001.jpg",
+      "complete": true
+    },
+    {
+      "field_id": "granite_r8",
+      "point": "r8",
+      "n_ppl": 72,
+      "n_xpl": 72,
+      "width_px": 490,
+      "height_px": 490,
+      "angle_step_deg": 5.0,
+      "fov_mm_approx": 1.966,
+      "um_per_px_approx": 4.01,
+      "ppl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r4_ppl/granite_r4_ppl001.jpg",
+      "xpl_source": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_r4_xpl/granite_r4_xpl001.jpg",
+      "complete": true
+    }
+  ],
+  "whole_slide": {
+    "PPL": {
+      "label": "PPL",
+      "source_folder": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_PPL_img/",
+      "level": 6,
+      "n_levels": 7,
+      "saved_width": 11140,
+      "saved_height": 7420,
+      "tiles": "1276/1276",
+      "full_width": 11140,
+      "full_height": 7420,
+      "downscale_from_full": 1.0
+    },
+    "XPL": {
+      "label": "XPL",
+      "source_folder": "https://virtualmicroscope.org/sites/default/files/html5Assets/granite/data/granite_XPL_img/",
+      "level": 6,
+      "n_levels": 7,
+      "saved_width": 11140,
+      "saved_height": 7420,
+      "tiles": "1276/1276",
+      "full_width": 11140,
+      "full_height": 7420,
+      "downscale_from_full": 1.0
+    }
+  },
+  "problems": []
+}

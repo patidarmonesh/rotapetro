@@ -1,0 +1,7 @@
+base: configs/default.yaml
+experiment: b2_static
+variant: B2
+angles: 1
+train:
+  angle_dropout:
+    p: 0.0

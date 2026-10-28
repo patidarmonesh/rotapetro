@@ -1,0 +1,4 @@
+base: configs/default.yaml
+experiment: m1_main
+variant: M1
+angles: 36

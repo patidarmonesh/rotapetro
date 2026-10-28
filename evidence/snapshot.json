@@ -1,0 +1,10 @@
+{
+  "local_source_commit": "9e72957aa8a824632f376c33ac3e56c8f996cc12",
+  "snapshot_date": "2026-10-28",
+  "historical_gpu_source_identity": "not established; local snapshot is explanatory, not a certified historical checkout",
+  "reported_experiments": [
+    "45 initial fits",
+    "75 regularized fits"
+  ],
+  "source_file_count": 469
+}

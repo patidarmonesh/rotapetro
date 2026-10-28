@@ -1,0 +1,22 @@
+assemblages:
+  granite:
+    minerals: [quartz, orthoclase, plagioclase, biotite, muscovite]
+    probability: 0.9
+  basalt:
+    minerals: [plagioclase, augite, olivine, opaque]
+    probability: 0.9
+  gabbro:
+    minerals: [plagioclase, augite, olivine, opaque]
+    probability: 0.9
+  peridotite:
+    minerals: [olivine, orthopyroxene, clinopyroxene]
+    probability: 0.8
+  schist:
+    minerals: [muscovite, biotite, quartz, garnet]
+    probability: 0.8
+  marble:
+    minerals: [calcite, dolomite]
+    probability: 0.9
+  quartzite:
+    minerals: [quartz]
+    probability: 0.9

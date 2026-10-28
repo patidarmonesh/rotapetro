@@ -1,0 +1,1390 @@
+{
+  "arms": [
+    "static_k1",
+    "unordered_k12",
+    "angle_aware_k12"
+  ],
+  "folds": [
+    "fold_0",
+    "fold_1",
+    "fold_2",
+    "fold_3",
+    "fold_4"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "point_estimates": {
+    "static_k1": {
+      "macro_f1_mean": 0.4935,
+      "macro_f1_std": 0.0131,
+      "accuracy_mean": 0.5368,
+      "n_regions": 581,
+      "n_specimens": 77,
+      "per_class": {
+        "quartz": {
+          "precision": 0.3104,
+          "recall": 0.3475,
+          "f1": 0.3266,
+          "support_weighted": 10.9167,
+          "support_unweighted": 99
+        },
+        "feldspar": {
+          "precision": 0.5641,
+          "recall": 0.6811,
+          "f1": 0.6168,
+          "support_weighted": 26.1865,
+          "support_unweighted": 160
+        },
+        "mica": {
+          "precision": 0.5459,
+          "recall": 0.6732,
+          "f1": 0.6012,
+          "support_weighted": 10.1712,
+          "support_unweighted": 142
+        },
+        "pyroxene": {
+          "precision": 0.5863,
+          "recall": 0.5388,
+          "f1": 0.5594,
+          "support_weighted": 19.6318,
+          "support_unweighted": 136
+        },
+        "opaque_material": {
+          "precision": 0.9879,
+          "recall": 0.2261,
+          "f1": 0.3636,
+          "support_weighted": 10.0938,
+          "support_unweighted": 44
+        }
+      },
+      "per_seed_macro_f1": [
+        0.4841,
+        0.4944,
+        0.4795,
+        0.4921,
+        0.5174
+      ]
+    },
+    "unordered_k12": {
+      "macro_f1_mean": 0.4724,
+      "macro_f1_std": 0.0106,
+      "accuracy_mean": 0.5182,
+      "n_regions": 581,
+      "n_specimens": 77,
+      "per_class": {
+        "quartz": {
+          "precision": 0.2883,
+          "recall": 0.3121,
+          "f1": 0.2985,
+          "support_weighted": 10.9167,
+          "support_unweighted": 99
+        },
+        "feldspar": {
+          "precision": 0.5539,
+          "recall": 0.6617,
+          "f1": 0.6006,
+          "support_weighted": 26.1865,
+          "support_unweighted": 160
+        },
+        "mica": {
+          "precision": 0.5583,
+          "recall": 0.6825,
+          "f1": 0.6124,
+          "support_weighted": 10.1712,
+          "support_unweighted": 142
+        },
+        "pyroxene": {
+          "precision": 0.5466,
+          "recall": 0.5249,
+          "f1": 0.5329,
+          "support_weighted": 19.6318,
+          "support_unweighted": 136
+        },
+        "opaque_material": {
+          "precision": 0.9825,
+          "recall": 0.1902,
+          "f1": 0.3176,
+          "support_weighted": 10.0938,
+          "support_unweighted": 44
+        }
+      },
+      "per_seed_macro_f1": [
+        0.4855,
+        0.4842,
+        0.4696,
+        0.4613,
+        0.4614
+      ]
+    },
+    "angle_aware_k12": {
+      "macro_f1_mean": 0.4886,
+      "macro_f1_std": 0.0426,
+      "accuracy_mean": 0.5347,
+      "n_regions": 581,
+      "n_specimens": 77,
+      "per_class": {
+        "quartz": {
+          "precision": 0.3218,
+          "recall": 0.3452,
+          "f1": 0.3323,
+          "support_weighted": 10.9167,
+          "support_unweighted": 99
+        },
+        "feldspar": {
+          "precision": 0.5858,
+          "recall": 0.6795,
+          "f1": 0.6281,
+          "support_weighted": 26.1865,
+          "support_unweighted": 160
+        },
+        "mica": {
+          "precision": 0.5493,
+          "recall": 0.6843,
+          "f1": 0.6081,
+          "support_weighted": 10.1712,
+          "support_unweighted": 142
+        },
+        "pyroxene": {
+          "precision": 0.5363,
+          "recall": 0.532,
+          "f1": 0.5324,
+          "support_weighted": 19.6318,
+          "support_unweighted": 136
+        },
+        "opaque_material": {
+          "precision": 0.9167,
+          "recall": 0.2185,
+          "f1": 0.3419,
+          "support_weighted": 10.0938,
+          "support_unweighted": 44
+        }
+      },
+      "per_seed_macro_f1": [
+        0.5134,
+        0.5131,
+        0.449,
+        0.5397,
+        0.4279
+      ]
+    }
+  },
+  "pairwise_comparisons": {
+    "primary_comparison": {
+      "point_estimate_diff": -0.00493,
+      "bootstrap_mean_diff": -0.00481,
+      "mean_diff": -0.00493,
+      "ci_lower": -0.02185,
+      "ci_upper": 0.01207,
+      "p_value_approx": 0.7118,
+      "class_disappearance_rate": {
+        "quartz": 0.0,
+        "feldspar": 0.0,
+        "mica": 0.0,
+        "pyroxene": 0.0,
+        "opaque_material": 0.0
+      },
+      "n_bootstrap": 5000,
+      "f1_a_base": 0.48859,
+      "f1_b_base": 0.49352
+    },
+    "unordered_vs_static": {
+      "point_estimate_diff": -0.02112,
+      "bootstrap_mean_diff": -0.02124,
+      "mean_diff": -0.02112,
+      "ci_lower": -0.03929,
+      "ci_upper": -0.00313,
+      "p_value_approx": 0.9896,
+      "class_disappearance_rate": {
+        "quartz": 0.0,
+        "feldspar": 0.0,
+        "mica": 0.0,
+        "pyroxene": 0.0,
+        "opaque_material": 0.0
+      },
+      "n_bootstrap": 5000,
+      "f1_a_base": 0.47241,
+      "f1_b_base": 0.49352
+    },
+    "angle_aware_vs_unordered": {
+      "point_estimate_diff": 0.01618,
+      "bootstrap_mean_diff": 0.01643,
+      "mean_diff": 0.01618,
+      "ci_lower": 0.00028,
+      "ci_upper": 0.03443,
+      "p_value_approx": 0.0224,
+      "class_disappearance_rate": {
+        "quartz": 0.0,
+        "feldspar": 0.0,
+        "mica": 0.0,
+        "pyroxene": 0.0,
+        "opaque_material": 0.0
+      },
+      "n_bootstrap": 5000,
+      "f1_a_base": 0.48859,
+      "f1_b_base": 0.47241
+    }
+  },
+  "partial_set_compatibility": {
+    "static_k1": {
+      "top1_compatibility": 0.7814,
+      "probability_mass": 0.69442,
+      "n_regions": 323.0,
+      "n_specimens": 29.0,
+      "stratified": {
+        "['feldspar', 'pyroxene']": {
+          "n_regions": 216,
+          "n_specimens": 22,
+          "top1_compatibility": 0.9017,
+          "probability_mass": 0.7295
+        },
+        "['feldspar', 'quartz']": {
+          "n_regions": 8,
+          "n_specimens": 1,
+          "top1_compatibility": 1.0,
+          "probability_mass": 0.9184
+        },
+        "['mica', 'pyroxene']": {
+          "n_regions": 2,
+          "n_specimens": 2,
+          "top1_compatibility": 1.0,
+          "probability_mass": 0.8053
+        },
+        "['mica', 'quartz']": {
+          "n_regions": 86,
+          "n_specimens": 5,
+          "top1_compatibility": 0.1996,
+          "probability_mass": 0.3367
+        },
+        "['pyroxene', 'quartz']": {
+          "n_regions": 11,
+          "n_specimens": 1,
+          "top1_compatibility": 1.0,
+          "probability_mass": 0.8454
+        }
+      }
+    },
+    "unordered_k12": {
+      "top1_compatibility": 0.7807799999999999,
+      "probability_mass": 0.68328,
+      "n_regions": 323.0,
+      "n_specimens": 29.0,
+      "stratified": {
+        "['feldspar', 'pyroxene']": {
+          "n_regions": 216,
+          "n_specimens": 22,
+          "top1_compatibility": 0.9211,
+          "probability_mass": 0.7611
+        },
+        "['feldspar', 'quartz']": {
+          "n_regions": 8,
+          "n_specimens": 1,
+          "top1_compatibility": 1.0,
+          "probability_mass": 0.8541
+        },
+        "['mica', 'pyroxene']": {
+          "n_regions": 2,
+          "n_specimens": 2,
+          "top1_compatibility": 1.0,
+          "probability_mass": 0.7548
+        },
+        "['mica', 'quartz']": {
+          "n_regions": 86,
+          "n_specimens": 5,
+          "top1_compatibility": 0.2005,
+          "probability_mass": 0.3178
+        },
+        "['pyroxene', 'quartz']": {
+          "n_regions": 11,
+          "n_specimens": 1,
+          "top1_compatibility": 1.0,
+          "probability_mass": 0.7194
+        }
+      }
+    },
+    "angle_aware_k12": {
+      "top1_compatibility": 0.7753,
+      "probability_mass": 0.69202,
+      "n_regions": 323.0,
+      "n_specimens": 29.0,
+      "stratified": {
+        "['feldspar', 'pyroxene']": {
+          "n_regions": 216,
+          "n_specimens": 22,
+          "top1_compatibility": 0.9389,
+          "probability_mass": 0.779
+        },
+        "['feldspar', 'quartz']": {
+          "n_regions": 8,
+          "n_specimens": 1,
+          "top1_compatibility": 1.0,
+          "probability_mass": 0.8628
+        },
+        "['mica', 'pyroxene']": {
+          "n_regions": 2,
+          "n_specimens": 2,
+          "top1_compatibility": 1.0,
+          "probability_mass": 0.782
+        },
+        "['mica', 'quartz']": {
+          "n_regions": 86,
+          "n_specimens": 5,
+          "top1_compatibility": 0.1555,
+          "probability_mass": 0.2891
+        },
+        "['pyroxene', 'quartz']": {
+          "n_regions": 11,
+          "n_specimens": 1,
+          "top1_compatibility": 1.0,
+          "probability_mass": 0.7019
+        }
+      }
+    }
+  },
+  "static_sensitivity": {
+    "by_angle_index": {
+      "0": 0.4883,
+      "1": 0.4935,
+      "4": 0.4831,
+      "7": 0.4733,
+      "10": 0.4684,
+      "13": 0.4641,
+      "16": 0.4828,
+      "19": 0.4907,
+      "22": 0.4853,
+      "25": 0.4762,
+      "28": 0.4762,
+      "31": 0.4697,
+      "34": 0.4872
+    },
+    "mean_macro_f1": 0.4799,
+    "std_macro_f1": 0.0089,
+    "min_macro_f1": 0.4641,
+    "max_macro_f1": 0.4935,
+    "primary_angle_index_1": 0.4935
+  },
+  "metadata_split": {
+    "static_k1": {
+      "metadata_dependent": {
+        "macro_f1": 0.4519010697519953,
+        "accuracy": 0.5872253776478478,
+        "per_class": {
+          "quartz": {
+            "precision": 0.35751999999999995,
+            "recall": 0.39394,
+            "f1": 0.37338,
+            "support_weighted": 12.0,
+            "support_unweighted": 99
+          },
+          "feldspar": {
+            "precision": 0.6450400000000001,
+            "recall": 0.6812400000000001,
+            "f1": 0.66256,
+            "support_weighted": 27.853699999999996,
+            "support_unweighted": 160
+          },
+          "mica": {
+            "precision": 0.6163000000000001,
+            "recall": 0.6567999999999999,
+            "f1": 0.63418,
+            "support_weighted": 10.5955,
+            "support_unweighted": 142
+          },
+          "pyroxene": {
+            "precision": 0.6576000000000001,
+            "recall": 0.5368199999999999,
+            "f1": 0.58938,
+            "support_weighted": 20.5509,
+            "support_unweighted": 136
+          },
+          "opaque_material": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          }
+        },
+        "confusion_matrix": [
+          [
+            4.72709677419355,
+            5.3161674347158225,
+            0.30666666666666664,
+            1.650069124423963,
+            0.0
+          ],
+          [
+            5.544343891402715,
+            18.974956100658897,
+            1.506807440925088,
+            1.8040301659125184,
+            0.023529411764705882
+          ],
+          [
+            0.14458333333333334,
+            1.086851360112196,
+            6.959038071233887,
+            2.405005523801963,
+            0.0
+          ],
+          [
+            2.933333333333333,
+            4.042362637362638,
+            2.5432478632478643,
+            11.031910866910865,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "n_regions": 537,
+        "n_specimens": 71
+      },
+      "optics_only_reproducible": {
+        "macro_f1": 0.09682835860792725,
+        "accuracy": 0.32222727272727286,
+        "per_class": {
+          "quartz": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "feldspar": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "mica": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "pyroxene": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "opaque_material": {
+            "precision": 1.0,
+            "recall": 0.32226,
+            "f1": 0.48414,
+            "support_weighted": 20.0,
+            "support_unweighted": 44
+          }
+        },
+        "confusion_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.64,
+            6.473030303030304,
+            2.6333333333333333,
+            3.8090909090909095,
+            6.444545454545455
+          ]
+        ],
+        "n_regions": 44,
+        "n_specimens": 20
+      }
+    },
+    "unordered_k12": {
+      "metadata_dependent": {
+        "macro_f1": 0.43776348962137607,
+        "accuracy": 0.5707432839977894,
+        "per_class": {
+          "quartz": {
+            "precision": 0.32492,
+            "recall": 0.34365999999999997,
+            "f1": 0.33266,
+            "support_weighted": 12.0,
+            "support_unweighted": 99
+          },
+          "feldspar": {
+            "precision": 0.63464,
+            "recall": 0.6662800000000001,
+            "f1": 0.64864,
+            "support_weighted": 27.853699999999996,
+            "support_unweighted": 160
+          },
+          "mica": {
+            "precision": 0.6166600000000001,
+            "recall": 0.66618,
+            "f1": 0.63874,
+            "support_weighted": 10.5955,
+            "support_unweighted": 142
+          },
+          "pyroxene": {
+            "precision": 0.6253200000000001,
+            "recall": 0.5246600000000001,
+            "f1": 0.5687200000000001,
+            "support_weighted": 20.5509,
+            "support_unweighted": 136
+          },
+          "opaque_material": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          }
+        },
+        "confusion_matrix": [
+          [
+            4.1238709677419365,
+            5.732511520737328,
+            0.1733333333333333,
+            1.9702841781874034,
+            0.0
+          ],
+          [
+            5.200887049826678,
+            18.558258282395283,
+            1.6591808367071526,
+            2.424229730623692,
+            0.01111111111111111
+          ],
+          [
+            0.29625,
+            1.0492242200523934,
+            7.058360641422557,
+            2.16664342700643,
+            0.025
+          ],
+          [
+            3.0933333333333337,
+            4.0527960927960915,
+            2.622442002442003,
+            10.78228327228327,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "n_regions": 537,
+        "n_specimens": 71
+      },
+      "optics_only_reproducible": {
+        "macro_f1": 0.08482110450329886,
+        "accuracy": 0.2702727272727273,
+        "per_class": {
+          "quartz": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "feldspar": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "mica": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "pyroxene": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "opaque_material": {
+            "precision": 1.0,
+            "recall": 0.27027999999999996,
+            "f1": 0.4241,
+            "support_weighted": 20.0,
+            "support_unweighted": 44
+          }
+        },
+        "confusion_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.15454545454545454,
+            7.094545454545454,
+            2.2499999999999996,
+            5.095454545454546,
+            5.405454545454545
+          ]
+        ],
+        "n_regions": 44,
+        "n_specimens": 20
+      }
+    },
+    "angle_aware_k12": {
+      "metadata_dependent": {
+        "macro_f1": 0.45120696195845333,
+        "accuracy": 0.5872389094339872,
+        "per_class": {
+          "quartz": {
+            "precision": 0.36602,
+            "recall": 0.389,
+            "f1": 0.37644,
+            "support_weighted": 12.0,
+            "support_unweighted": 99
+          },
+          "feldspar": {
+            "precision": 0.6649800000000001,
+            "recall": 0.6843600000000001,
+            "f1": 0.67366,
+            "support_weighted": 27.853699999999996,
+            "support_unweighted": 160
+          },
+          "mica": {
+            "precision": 0.6173400000000001,
+            "recall": 0.66188,
+            "f1": 0.63676,
+            "support_weighted": 10.5955,
+            "support_unweighted": 142
+          },
+          "pyroxene": {
+            "precision": 0.61568,
+            "recall": 0.53288,
+            "f1": 0.5691799999999999,
+            "support_weighted": 20.5509,
+            "support_unweighted": 136
+          },
+          "opaque_material": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          }
+        },
+        "confusion_matrix": [
+          [
+            4.668279569892475,
+            5.268625192012291,
+            0.15,
+            1.913095238095238,
+            0.0
+          ],
+          [
+            5.374857638061973,
+            19.06206485671192,
+            1.0327485380116959,
+            2.3375907491201606,
+            0.046405228758169936
+          ],
+          [
+            0.27666666666666667,
+            0.6613171390013495,
+            7.01272070731126,
+            2.619773775502103,
+            0.025
+          ],
+          [
+            2.443333333333334,
+            3.73993894993895,
+            3.216684981684982,
+            10.950897435897431,
+            0.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "n_regions": 537,
+        "n_specimens": 71
+      },
+      "optics_only_reproducible": {
+        "macro_f1": 0.09096123595343196,
+        "accuracy": 0.29950000000000004,
+        "per_class": {
+          "quartz": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "feldspar": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "mica": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "pyroxene": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support_weighted": 0.0,
+            "support_unweighted": 0
+          },
+          "opaque_material": {
+            "precision": 1.0,
+            "recall": 0.29954000000000003,
+            "f1": 0.4548,
+            "support_weighted": 20.0,
+            "support_unweighted": 44
+          }
+        },
+        "confusion_matrix": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2,
+            5.493030303030303,
+            3.004848484848485,
+            5.312121212121212,
+            5.99
+          ]
+        ],
+        "n_regions": 44,
+        "n_specimens": 20
+      }
+    }
+  },
+  "static_strata": {
+    "reproduced": {
+      "arm_metrics": {
+        "static_k1": {
+          "macro_f1": 0.3568933750228772,
+          "accuracy": 0.4007151515151516,
+          "per_class": {
+            "quartz": {
+              "precision": 0.79742,
+              "recall": 0.6977800000000001,
+              "f1": 0.73426,
+              "support_weighted": 3.0,
+              "support_unweighted": 21
+            },
+            "feldspar": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_weighted": 0.0,
+              "support_unweighted": 0
+            },
+            "mica": {
+              "precision": 0.23712,
+              "recall": 1.0,
+              "f1": 0.3811,
+              "support_weighted": 1.0,
+              "support_unweighted": 7
+            },
+            "pyroxene": {
+              "precision": 0.11512,
+              "recall": 0.4800000000000001,
+              "f1": 0.18494000000000002,
+              "support_weighted": 1.0,
+              "support_unweighted": 5
+            },
+            "opaque_material": {
+              "precision": 1.0,
+              "recall": 0.32226,
+              "f1": 0.48414,
+              "support_weighted": 20.0,
+              "support_unweighted": 44
+            }
+          },
+          "confusion_matrix": [
+            [
+              2.0933333333333333,
+              0.6566666666666667,
+              0.2,
+              0.05,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9999999999999998,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5200000000000001,
+              0.4800000000000001,
+              0.0
+            ],
+            [
+              0.64,
+              6.473030303030304,
+              2.6333333333333333,
+              3.8090909090909095,
+              6.444545454545455
+            ]
+          ],
+          "n_regions": 77,
+          "n_specimens": 25
+        },
+        "unordered_k12": {
+          "macro_f1": 0.3428722066312676,
+          "accuracy": 0.34766580086580084,
+          "per_class": {
+            "quartz": {
+              "precision": 0.9381,
+              "recall": 0.60778,
+              "f1": 0.72956,
+              "support_weighted": 3.0,
+              "support_unweighted": 21
+            },
+            "feldspar": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_weighted": 0.0,
+              "support_unweighted": 0
+            },
+            "mica": {
+              "precision": 0.27468000000000004,
+              "recall": 0.9428599999999999,
+              "f1": 0.40908,
+              "support_weighted": 1.0,
+              "support_unweighted": 7
+            },
+            "pyroxene": {
+              "precision": 0.08926,
+              "recall": 0.52,
+              "f1": 0.1516,
+              "support_weighted": 1.0,
+              "support_unweighted": 5
+            },
+            "opaque_material": {
+              "precision": 1.0,
+              "recall": 0.27027999999999996,
+              "f1": 0.4241,
+              "support_weighted": 20.0,
+              "support_unweighted": 44
+            }
+          },
+          "confusion_matrix": [
+            [
+              1.823333333333333,
+              0.8266666666666665,
+              0.18333333333333332,
+              0.16666666666666669,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9428571428571427,
+              0.05714285714285714,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.48,
+              0.52,
+              0.0
+            ],
+            [
+              0.15454545454545454,
+              7.094545454545454,
+              2.2499999999999996,
+              5.095454545454546,
+              5.405454545454545
+            ]
+          ],
+          "n_regions": 77,
+          "n_specimens": 25
+        },
+        "angle_aware_k12": {
+          "macro_f1": 0.3581533625096562,
+          "accuracy": 0.38605714285714293,
+          "per_class": {
+            "quartz": {
+              "precision": 0.92706,
+              "recall": 0.7366599999999999,
+              "f1": 0.81458,
+              "support_weighted": 3.0,
+              "support_unweighted": 21
+            },
+            "feldspar": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_weighted": 0.0,
+              "support_unweighted": 0
+            },
+            "mica": {
+              "precision": 0.22956,
+              "recall": 0.97142,
+              "f1": 0.36478,
+              "support_weighted": 1.0,
+              "support_unweighted": 7
+            },
+            "pyroxene": {
+              "precision": 0.09736,
+              "recall": 0.48,
+              "f1": 0.15660000000000002,
+              "support_weighted": 1.0,
+              "support_unweighted": 5
+            },
+            "opaque_material": {
+              "precision": 1.0,
+              "recall": 0.29954000000000003,
+              "f1": 0.4548,
+              "support_weighted": 20.0,
+              "support_unweighted": 44
+            }
+          },
+          "confusion_matrix": [
+            [
+              2.21,
+              0.5733333333333335,
+              0.16666666666666666,
+              0.05,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9714285714285712,
+              0.02857142857142857,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.52,
+              0.48,
+              0.0
+            ],
+            [
+              0.2,
+              5.493030303030303,
+              3.004848484848485,
+              5.312121212121212,
+              5.99
+            ]
+          ],
+          "n_regions": 77,
+          "n_specimens": 25
+        }
+      },
+      "paired_bootstrap": {
+        "point_estimate_diff": 0.00126,
+        "bootstrap_mean_diff": 0.00194,
+        "mean_diff": 0.00126,
+        "ci_lower": -0.03109,
+        "ci_upper": 0.03202,
+        "p_value_approx": 0.4316,
+        "class_disappearance_rate": {
+          "quartz": 0.0286,
+          "feldspar": 1.0,
+          "mica": 0.3228,
+          "pyroxene": 0.3338,
+          "opaque_material": 0.0
+        },
+        "n_bootstrap": 5000,
+        "f1_a_base": 0.35815,
+        "f1_b_base": 0.35689
+      },
+      "status": "available",
+      "n_regions": 77,
+      "n_specimens": 25
+    },
+    "rotation_dependent": {
+      "arm_metrics": {
+        "static_k1": {
+          "macro_f1": 0.4323383441099161,
+          "accuracy": 0.5783032950502351,
+          "per_class": {
+            "quartz": {
+              "precision": 0.26092,
+              "recall": 0.30338000000000004,
+              "f1": 0.27890000000000004,
+              "support_weighted": 10.0,
+              "support_unweighted": 78
+            },
+            "feldspar": {
+              "precision": 0.65396,
+              "recall": 0.6813600000000001,
+              "f1": 0.66726,
+              "support_weighted": 27.8988,
+              "support_unweighted": 160
+            },
+            "mica": {
+              "precision": 0.6142199999999999,
+              "recall": 0.6521000000000001,
+              "f1": 0.6306799999999999,
+              "support_weighted": 10.5503,
+              "support_unweighted": 132
+            },
+            "pyroxene": {
+              "precision": 0.6504,
+              "recall": 0.5343199999999999,
+              "f1": 0.58482,
+              "support_weighted": 20.5509,
+              "support_unweighted": 131
+            },
+            "opaque_material": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_weighted": 0.0,
+              "support_unweighted": 0
+            }
+          },
+          "confusion_matrix": [
+            [
+              3.033763440860215,
+              4.9095007680491545,
+              0.24,
+              1.8167357910906297,
+              0.0
+            ],
+            [
+              5.549360613810741,
+              19.00906981303347,
+              1.5108208188515093,
+              1.8060368548757293,
+              0.023529411764705882
+            ],
+            [
+              0.15625,
+              1.113490156098818,
+              6.87996895194738,
+              2.400618678762944,
+              0.0
+            ],
+            [
+              2.933333333333333,
+              4.0483150183150185,
+              2.589081196581197,
+              10.980125152625153,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "n_regions": 501,
+          "n_specimens": 69
+        },
+        "unordered_k12": {
+          "macro_f1": 0.4197330174022751,
+          "accuracy": 0.5634178690776721,
+          "per_class": {
+            "quartz": {
+              "precision": 0.22927999999999998,
+              "recall": 0.25506,
+              "f1": 0.24061999999999997,
+              "support_weighted": 10.0,
+              "support_unweighted": 78
+            },
+            "feldspar": {
+              "precision": 0.64258,
+              "recall": 0.66652,
+              "f1": 0.65304,
+              "support_weighted": 27.8988,
+              "support_unweighted": 160
+            },
+            "mica": {
+              "precision": 0.61974,
+              "recall": 0.66376,
+              "f1": 0.6391600000000001,
+              "support_weighted": 10.5503,
+              "support_unweighted": 132
+            },
+            "pyroxene": {
+              "precision": 0.62276,
+              "recall": 0.5219600000000001,
+              "f1": 0.56582,
+              "support_weighted": 20.5509,
+              "support_unweighted": 131
+            },
+            "opaque_material": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_weighted": 0.0,
+              "support_unweighted": 0
+            }
+          },
+          "confusion_matrix": [
+            [
+              2.550537634408602,
+              5.355844854070661,
+              0.04,
+              2.053617511520737,
+              0.0
+            ],
+            [
+              5.204900427753099,
+              18.59538202821468,
+              1.6601841811887579,
+              2.427239764068508,
+              0.01111111111111111
+            ],
+            [
+              0.33125,
+              1.0628975756822707,
+              7.002987174309963,
+              2.128193036816909,
+              0.025
+            ],
+            [
+              3.0933333333333337,
+              4.058748473748473,
+              2.671846764346765,
+              10.726926129426127,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "n_regions": 501,
+          "n_specimens": 69
+        },
+        "angle_aware_k12": {
+          "macro_f1": 0.4312714255458716,
+          "accuracy": 0.577931236109914,
+          "per_class": {
+            "quartz": {
+              "precision": 0.2677,
+              "recall": 0.29581999999999997,
+              "f1": 0.28052,
+              "support_weighted": 10.0,
+              "support_unweighted": 78
+            },
+            "feldspar": {
+              "precision": 0.67072,
+              "recall": 0.6845600000000001,
+              "f1": 0.6768,
+              "support_weighted": 27.8988,
+              "support_unweighted": 160
+            },
+            "mica": {
+              "precision": 0.6141,
+              "recall": 0.6563399999999999,
+              "f1": 0.63228,
+              "support_weighted": 10.5503,
+              "support_unweighted": 132
+            },
+            "pyroxene": {
+              "precision": 0.6132799999999999,
+              "recall": 0.5302,
+              "f1": 0.5667800000000001,
+              "support_weighted": 20.5509,
+              "support_unweighted": 131
+            },
+            "opaque_material": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_weighted": 0.0,
+              "support_unweighted": 0
+            }
+          },
+          "confusion_matrix": [
+            [
+              2.958279569892473,
+              4.995291858678955,
+              0.1,
+              1.9464285714285716,
+              0.0
+            ],
+            [
+              5.378871015988393,
+              19.098185258049703,
+              1.0327485380116959,
+              2.3426074715281873,
+              0.046405228758169936
+            ],
+            [
+              0.3,
+              0.6973204834829548,
+              6.9246549325063596,
+              2.6033523708198287,
+              0.025
+            ],
+            [
+              2.443333333333334,
+              3.73993894993895,
+              3.271446886446886,
+              10.896135531135528,
+              0.2
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "n_regions": 501,
+          "n_specimens": 69
+        }
+      },
+      "paired_bootstrap": {
+        "point_estimate_diff": -0.00107,
+        "bootstrap_mean_diff": -0.00099,
+        "mean_diff": -0.00107,
+        "ci_lower": -0.01731,
+        "ci_upper": 0.01554,
+        "p_value_approx": 0.5468,
+        "class_disappearance_rate": {
+          "quartz": 0.0,
+          "feldspar": 0.0,
+          "mica": 0.0,
+          "pyroxene": 0.0,
+          "opaque_material": 1.0
+        },
+        "n_bootstrap": 5000,
+        "f1_a_base": 0.43127,
+        "f1_b_base": 0.43234
+      },
+      "status": "available",
+      "n_regions": 501,
+      "n_specimens": 69
+    }
+  }
+}

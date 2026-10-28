@@ -1,0 +1,205 @@
+{
+  "baseline": {
+    "n_runs": 45,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "all_predictions_per_seed": 4956,
+    "all_specimens": 112,
+    "state_counts": {
+      "abstain": 4052,
+      "singleton": 581,
+      "partial_set": 323
+    },
+    "comparisons": {
+      "angle_aware_k12 minus static_k1": {
+        "point": -4.141685131742179e-05,
+        "specimen_ci": [
+          -0.04253428482433191,
+          0.04512895655350385
+        ],
+        "exploratory_seed_and_specimen_ci": [
+          -0.0916605966878468,
+          0.09374827054566663
+        ],
+        "seed_diffs": [
+          -0.041909418950120236,
+          -0.0529470786531413,
+          0.09473224704930927
+        ]
+      },
+      "unordered_k12 minus static_k1": {
+        "point": -0.02353096933187221,
+        "specimen_ci": [
+          -0.06681498100934177,
+          0.019989681050260773
+        ],
+        "exploratory_seed_and_specimen_ci": [
+          -0.08838841142339063,
+          0.035691021698453416
+        ],
+        "seed_diffs": [
+          -0.015861794159286347,
+          -0.06453529115730833,
+          0.009804177320978047
+        ]
+      },
+      "angle_aware_k12 minus unordered_k12": {
+        "point": 0.023489552480554787,
+        "specimen_ci": [
+          -0.0270055379074671,
+          0.07686109878778373
+        ],
+        "exploratory_seed_and_specimen_ci": [
+          -0.056260516972073474,
+          0.10889987316654615
+        ],
+        "seed_diffs": [
+          -0.02604762479083389,
+          0.011588212504167028,
+          0.08492806972833122
+        ]
+      }
+    },
+    "recorded_training_config": {
+      "mode": "angle_aware_k12",
+      "min_train_specimens_per_class": 5,
+      "primary_test_angle_index": 1,
+      "k12_angle_indices": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n_bootstrap": 5000,
+      "epochs": 80,
+      "patience": 15,
+      "lr": 0.0005,
+      "weight_decay": 0.05,
+      "batch_size": 32,
+      "grad_clip": 1.0
+    }
+  },
+  "regularized": {
+    "n_runs": 75,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "all_predictions_per_seed": 4956,
+    "all_specimens": 112,
+    "state_counts": {
+      "abstain": 4052,
+      "singleton": 581,
+      "partial_set": 323
+    },
+    "comparisons": {
+      "angle_aware_k12 minus static_k1": {
+        "point": -0.004933137628616158,
+        "specimen_ci": [
+          -0.021620746347184933,
+          0.011754602184226188
+        ],
+        "exploratory_seed_and_specimen_ci": [
+          -0.05932304033335771,
+          0.04514191308163801
+        ],
+        "seed_diffs": [
+          0.029241600873030793,
+          0.018633250329259332,
+          -0.030558757297050043,
+          0.047582807618417045,
+          -0.08956458966673791
+        ]
+      },
+      "unordered_k12 minus static_k1": {
+        "point": -0.02111683335315101,
+        "specimen_ci": [
+          -0.038804833427638324,
+          -0.003410655594871819
+        ],
+        "exploratory_seed_and_specimen_ci": [
+          -0.05486797820514963,
+          0.012933470163545352
+        ],
+        "seed_diffs": [
+          0.0013745836609920792,
+          -0.010231411893819597,
+          -0.00987104390560678,
+          -0.030782143599297485,
+          -0.05607415102802327
+        ]
+      },
+      "angle_aware_k12 minus unordered_k12": {
+        "point": 0.016183695724534854,
+        "specimen_ci": [
+          0.0010510672828621804,
+          0.03309069584981205
+        ],
+        "exploratory_seed_and_specimen_ci": [
+          -0.023686029264777246,
+          0.06397025464408268
+        ],
+        "seed_diffs": [
+          0.027867017212038714,
+          0.02886466222307893,
+          -0.020687713391443263,
+          0.07836495121771453,
+          -0.03349043863871465
+        ]
+      }
+    },
+    "recorded_training_config": {
+      "mode": "angle_aware_k12",
+      "min_train_specimens_per_class": 5,
+      "primary_test_angle_index": 1,
+      "k12_angle_indices": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_bootstrap": 5000,
+      "epochs": 150,
+      "patience": 30,
+      "lr": 0.0001,
+      "weight_decay": 0.2,
+      "batch_size": 32,
+      "grad_clip": 1.0
+    }
+  },
+  "same_targets_between_experiments": true
+}

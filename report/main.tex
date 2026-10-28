@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype}
+\usepackage[margin=23mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,longtable,tabularx}
+\usepackage{graphicx,float,placeins,caption,xcolor,enumitem,fancyhdr}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{xurl}
+\definecolor{teal}{HTML}{147E78}
+\definecolor{ink}{HTML}{203A43}
+\hypersetup{pdftitle={RotaPetro: Technical Report},pdfsubject={Rotation-aware mineral-family classification: methods, evidence, and limitations}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\textcolor{ink}{ROTAPETRO / TECHNICAL REPORT}}
+\fancyhead[R]{\small Research prototype}
+\fancyfoot[C]{\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\setcounter{tocdepth}{1}
+\renewcommand{\arraystretch}{1.1}
+\setlist{nosep,leftmargin=1.5em}
+\captionsetup{font=small,labelfont=bf}
+\newcommand{\code}[1]{\nolinkurl{#1}}
+\newcommand{\fig}[4]{\begin{figure}[htbp]\centering\includegraphics[width=#2\linewidth]{images/#1}\caption{#3}\label{#4}\end{figure}}
+\newcommand{\fixedfig}[4]{\begin{figure}[H]\centering\includegraphics[width=#2\linewidth]{images/#1}\caption{#3}\label{#4}\end{figure}}
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{14pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+\newcommand{\takeaway}[1]{\par\smallskip\noindent\textcolor{teal}{\textbf{Interpretation.}} #1\par\smallskip}
+\begin{document}
+\pagenumbering{gobble}
+\begin{titlepage}
+\vspace*{1.2cm}
+{\Large\textcolor{teal}{RESEARCH METHODS AND RESULTS}}\par
+\vspace{1cm}
+{\Huge\bfseries\textcolor{ink}{RotaPetro}}\par
+\vspace{0.5cm}
+{\LARGE Rotation-aware artificial intelligence\\[3pt]for mineral identification in rock thin sections}\par
+\vspace{1cm}
+{\large Technical report\quad |\quad Evidence reviewed 28 October 2026}\par
+\vspace{0.8cm}
+\includegraphics[width=\linewidth]{images/views_flow.png}
+\vspace{0.6cm}
+\textbf{Research question}\par
+Does a classifier improve when it can inspect a region at multiple known microscope-stage angles instead of a single PPL/XPL pair?
+\par\medskip
+\textbf{What was done}\par
+A processing and weak-labelling pipeline was built, followed by frozen DINOv2 image descriptors and three neural classification arms. Two training settings produced 120 full model fits across specimen-separated folds.
+\par\medskip
+\textbf{What was found}\par
+The initial angle-aware and static models both achieved approximately 0.531 specimen-weighted macro-F1 against automatic singleton labels. The primary difference was indistinguishable from zero. Stronger regularisation did not establish a rotation advantage.
+\vfill
+\small These are results for classification given shared, automatically proposed regions and weak targets. They are not independently verified mineral-identification accuracy. Raw observations, reconstructed illustrations, historical GPU results, and proposed improvements are distinguished throughout.
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\input{sections/01_scope_data}
+\input{sections/02_geometry_maps}
+\input{sections/03_regions_labels}
+\input{sections/04_neural_methods}
+\input{sections/05_results}
+\input{sections/06_reproducibility}
+\end{document}

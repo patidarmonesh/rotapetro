@@ -1,0 +1,111 @@
+\section{Phase 8: frozen DINOv2 image descriptions}
+\subsection{What DINOv2 contributes}
+DINOv2 is a vision transformer pretrained through self-supervised learning on a large image collection \cite{dinov2}. During its original pretraining, related views of images provide learning signals without requiring mineral labels. RotaPetro uses the pretrained encoder as a fixed feature extractor. It does not train DINOv2 from scratch on thin sections, and the reviewed V1 run does not fine-tune its weights.
+
+The selected encoder is ViT-S/14. A $224\times224$ crop is divided into $14\times14$ patches, giving a $16\times16$ grid of 256 patch tokens. Each patch token and the global classification (CLS) token have dimension 384. A patch token describes local visual content; the CLS token summarises the image in the pretrained representation.
+
+Input channels are scaled from integer RGB to $[0,1]$, then normalised using fixed ImageNet means $(0.485,0.456,0.406)$ and standard deviations $(0.229,0.224,0.225)$. This differs from normalising each site using its full angle sequence. The latter would give the static model information from unseen angles; it is not the intended crop normalisation here.
+
+\subsection{Mask-weighted pooling}
+Let $\mathbf t_j\in\mathbb R^{384}$ be the DINO patch token and $q_j\in[0,1]$ the fraction of patch $j$ covered by the resized region mask. The local region description is
+\begin{equation}
+\mathbf e_{\rm region}=\frac{\sum_{j=1}^{256}q_j\mathbf t_j}{\sum_{j=1}^{256}q_j+\epsilon},\qquad
+\mathbf e=[\mathbf e_{\rm CLS};\mathbf e_{\rm region}]\in\mathbb R^{768}.
+\end{equation}
+The mask makes the pooled descriptor focus more strongly on the selected region. The CLS half still contains crop context. This pair of global and local summaries is stored for each PPL and XPL crop.
+
+The archived cache represents 5,065 regions, one stored version, 36 retained positions, two modes and 768 features per image:
+\begin{equation}
+E\in\mathbb R^{5065\times1\times36\times2\times768}.
+\end{equation}
+It is stored in half precision. All 36 positions are encoded once to make comparisons efficient; this does not mean the classifier jointly sees all 36 on each decision. No additional geometric augmentation versions are present in that cache.
+
+\subsection{Why DINO could help or hinder}
+Generic visual features can recognise texture, colour, edges and shape with few project-specific targets. Freezing them makes training fast and reduces the number of parameters fitted from a small label set. On the other hand, subtle extinction or colour trajectories may not survive its pretrained invariances or region pooling. The current results contain no encoder ablation or fine-tuning comparison. They cannot identify DINO as the bottleneck. That hypothesis needs a controlled comparison against optical descriptors, other frozen representations and carefully supervised fine-tuning.
+
+\section{Phase 9: compare three neural decision rules}
+\subsection{What each arm receives}
+\begin{table}[htbp]\centering
+\begin{tabularx}{\linewidth}{@{}lXX@{}}\toprule Arm & Training decision & Main test decision\\\midrule
+Static & Each of the same 12 chosen positions is processed independently; average the 12 losses. & One PPL/XPL pair at $5^\circ$.\\
+Unordered multi-view & Jointly process 12 paired positions without angle encoding. & Positions $5^\circ,20^\circ,\ldots,170^\circ$, no angle encoding.\\
+Angle-aware multi-view & Jointly process those 12 paired positions with explicit angular features. & The same 12 positions with angular features.\\\bottomrule
+\end{tabularx}
+\caption{Controlled view comparison. All arms use the same frozen encoder, targets, specimen splits and selected training views.}
+\end{table}
+During training, indices are $k_j=(o+3j)\bmod36$, for $j=0,\ldots,11$. The offset $o$ changes deterministically with seed, epoch and region so different retained angles can contribute across epochs. At validation and test, the multi-view indices are $1,4,7,\ldots,34$ and the static index is 1. Static validation therefore also uses the designated single position; it is not a 12-position ensemble.
+
+Equal exposure to selected training pictures addresses a simple unfairness: the multi-view model should not win merely because it alone was trained on varied angles. The models still solve different decision tasks: one image pair at a time versus joint evidence from twelve. Parameter counts and validation-loss behaviour are similar but not identical.
+
+\subsection{Mode fusion and tensor shapes}
+For position $k$, let $\mathbf e_k^P,\mathbf e_k^X\in\mathbb R^{768}$ be PPL/XPL descriptors. Learned linear projections fuse the pair:
+\begin{equation}
+\mathbf z_k=\operatorname{LayerNorm}\big(W_P\mathbf e_k^P+W_X\mathbf e_k^X+\text{bias terms}\big)
+\in\mathbb R^{256}.
+\end{equation}
+There is \emph{one fused token per position}. Twelve positions supply 24 image descriptions but 12 fused tokens. With the learned sequence CLS token, the transformer receives 13 tokens, not 24 or 144. The static model receives one fused token plus CLS.
+
+\subsection{Angle encoding is already implemented}
+The angle-aware model adds
+\begin{equation}
+\mathbf a(\theta)=\operatorname{MLP}\left[
+\sin2\theta,\cos2\theta,\sin4\theta,\cos4\theta\right],
+\qquad \mathbf z'_k=\mathbf z_k+\mathbf a(\theta_k),
+\end{equation}
+where the MLP maps $4\to64\to256$ dimensions with GELU nonlinearity. Harmonics encode periodic relationships without a discontinuity at the cycle boundary. They are physics-motivated coordinates, not a hard constraint enforcing the optical intensity law.
+
+This is angular sequence modelling, not elapsed-time forecasting. The current project already tests explicit angle awareness. Adding the phrase ``temporal model'' without changing the data or architecture is not a new experiment. Also, the selected harmonics repeat after $180^\circ$: a future full-turn model should examine whether it needs $\sin\theta,\cos\theta$ or other encodings to distinguish opposite positions while retaining physical periodicity features.
+
+\subsection{How attention combines observations}
+For a sequence matrix $Z$, self-attention forms queries, keys and values,
+\begin{equation}
+Q=ZW_Q,\quad K=ZW_K,\quad V=ZW_V,\qquad
+\operatorname{Attention}(Q,K,V)=\operatorname{softmax}\left(\frac{QK^{\mathsf T}}{\sqrt{d_h}}\right)V.
+\end{equation}
+The dot products measure learned compatibility between observations. The weighted sum allows the representation of one position to use evidence from another. Multiple heads use different learned projections \cite{attention}. The reviewed classifier uses two pre-layer-normalised transformer layers, four heads, 256-dimensional tokens and a 512-dimensional feed-forward sublayer with GELU. Each head has 64 features. Residual connections preserve the incoming representation while adding attention and feed-forward updates.
+
+The final representation concatenates sequence CLS with the mean of the position tokens. The resulting 512 values pass through a $512\to256\to5$ classification head. Softmax produces five probabilities,
+\begin{equation}
+p_c=\frac{e^{u_c}}{\sum_{j=1}^{5}e^{u_j}}.
+\end{equation}
+These are model scores over five available outputs. Without confidence calibration and an unknown-class policy, a high maximum does not guarantee correctness or exclude an unmodelled mineral.
+
+The unordered arm has no positional/angle embedding. Its attention operations are permutation equivariant and its pooled prediction is permutation invariant in evaluation. This does not require the data loader to explicitly shuffle the tokens. The angle-aware arm attaches angular content to each observation rather than relying on an arbitrary file order.
+
+\subsection{Learning with singleton and partial-set targets}
+For allowed class set $S_i$, the supervised loss is
+\begin{equation}\label{eq:setloss}
+\mathcal L_i=-\log\sum_{c\in S_i}p_{ic}.
+\end{equation}
+For a singleton this becomes ordinary cross-entropy, $-\log p_{iy_i}$. For $S_i=\{\text{quartz},\text{feldspar}\}$, the loss rewards total mass on either family without pretending to know which is correct. It does not impose a 50/50 target. Empty sets and unsuitable states do not provide this supervised signal.
+
+For the static arm, the region's training loss averages independent decisions,
+\begin{equation}
+\mathcal L_i^{\rm static}=\frac1{12}\sum_{k\in\mathcal K_i}
+-\log\sum_{c\in S_i}p(c\mid\mathbf e_{ik}^P,\mathbf e_{ik}^X).
+\end{equation}
+For multi-view arms, one set loss is calculated after the joint sequence decision. There is no auxiliary mineral-physics loss, segmentation loss, multiple-instance learning head or self-training loop active in this reviewed V1 comparison. The final prediction head is the five-family head.
+
+\subsection{Optimisation and two completed settings}
+\begin{table}[htbp]\centering
+\begin{tabular}{@{}lrr@{}}\toprule Setting & Initial & Regularised\\\midrule
+Maximum learning rate & $5\times10^{-4}$ & $10^{-4}$\\
+AdamW weight decay & 0.05 & 0.20\\
+Maximum epochs & 80 & 150\\
+Early-stop patience & 15 & 30\\
+Seeds & 0, 1, 2 & 0, 1, 2, 3, 4\\
+Folds / arms & 5 / 3 & 5 / 3\\
+Full fits & 45 & 75\\\bottomrule
+\end{tabular}
+\caption{Two completed training settings. The regularised values are supported by the supplied run settings and run evidence; a complete historical resolved YAML is not available.}
+\end{table}
+Both use batch size 32, AdamW, mixed precision and gradient clipping near norm 1. Three warm-up epochs increase the learning rate before cosine decay toward approximately 1\% of the maximum. Schematically, after warm-up,
+\begin{equation}
+\eta(e)=\eta_{\min}+\tfrac12(\eta_{\max}-\eta_{\min})[1+\cos(\pi t_e)],
+\end{equation}
+where $t_e$ is normalised progress through the remaining schedule. The checkpoint with the best validation set loss is restored. Early stopping means most fits do not run to the maximum epoch count.
+
+The reviewed implementation fixes transformer width/depth/dropout in code: attention-stack dropout is 0.1 and head dropout 0.2. Changing similarly named YAML entries does not necessarily alter this architecture. The regularised experiment therefore should not be described as a verified model-width or dropout ablation. Approximate trainable counts are 1.58 million for static/unordered and 1.60 million for angle-aware, in addition to the frozen encoder.
+
+Training averages losses over regions, whereas the main test metric equalises specimen contribution. A specimen with many training regions can therefore influence optimisation more strongly than it influences the main reported metric. This is a real remaining design choice, not a test-set leakage claim.
+\FloatBarrier

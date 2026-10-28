@@ -1,0 +1,602 @@
+[
+  {
+    "arm": "static_k1",
+    "fold": "fold_0",
+    "seed": 0,
+    "best_val_loss": 0.762680364979638,
+    "total_epochs": 34,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_0",
+    "seed": 1,
+    "best_val_loss": 0.8359066579076979,
+    "total_epochs": 36,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_0",
+    "seed": 2,
+    "best_val_loss": 0.8683602280086942,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_0",
+    "seed": 3,
+    "best_val_loss": 0.7726990448104011,
+    "total_epochs": 34,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_0",
+    "seed": 4,
+    "best_val_loss": 0.7427420152558221,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_1",
+    "seed": 0,
+    "best_val_loss": 0.8893539682370887,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_1",
+    "seed": 1,
+    "best_val_loss": 0.9925357947066494,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_1",
+    "seed": 2,
+    "best_val_loss": 1.0146831225042474,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_1",
+    "seed": 3,
+    "best_val_loss": 0.965546331993521,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_1",
+    "seed": 4,
+    "best_val_loss": 0.9953526304737074,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_2",
+    "seed": 0,
+    "best_val_loss": 1.074435908286298,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_2",
+    "seed": 1,
+    "best_val_loss": 1.0164515503117295,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_2",
+    "seed": 2,
+    "best_val_loss": 1.1262493856617661,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_2",
+    "seed": 3,
+    "best_val_loss": 1.0986916520556465,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_2",
+    "seed": 4,
+    "best_val_loss": 1.1712241270503059,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_3",
+    "seed": 0,
+    "best_val_loss": 1.219865874007896,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_3",
+    "seed": 1,
+    "best_val_loss": 1.240265130996704,
+    "total_epochs": 34,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_3",
+    "seed": 2,
+    "best_val_loss": 1.1341723424417,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_3",
+    "seed": 3,
+    "best_val_loss": 1.265954158924244,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_3",
+    "seed": 4,
+    "best_val_loss": 1.305679272722315,
+    "total_epochs": 38,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_4",
+    "seed": 0,
+    "best_val_loss": 0.6305561537742614,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_4",
+    "seed": 1,
+    "best_val_loss": 0.6187484340667725,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_4",
+    "seed": 2,
+    "best_val_loss": 0.6143292479515076,
+    "total_epochs": 36,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_4",
+    "seed": 3,
+    "best_val_loss": 0.5583602747917176,
+    "total_epochs": 36,
+    "status": "completed"
+  },
+  {
+    "arm": "static_k1",
+    "fold": "fold_4",
+    "seed": 4,
+    "best_val_loss": 0.5364240984916687,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_0",
+    "seed": 0,
+    "best_val_loss": 0.7699206272761027,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_0",
+    "seed": 1,
+    "best_val_loss": 0.8355736600028144,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_0",
+    "seed": 2,
+    "best_val_loss": 0.8373507791095309,
+    "total_epochs": 34,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_0",
+    "seed": 3,
+    "best_val_loss": 0.7802745434972975,
+    "total_epochs": 34,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_0",
+    "seed": 4,
+    "best_val_loss": 0.7552977270550199,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_1",
+    "seed": 0,
+    "best_val_loss": 0.908280207414061,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_1",
+    "seed": 1,
+    "best_val_loss": 0.9631087456119659,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_1",
+    "seed": 2,
+    "best_val_loss": 0.9974011193671727,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_1",
+    "seed": 3,
+    "best_val_loss": 0.9675152162982993,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_1",
+    "seed": 4,
+    "best_val_loss": 1.0066901464440507,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_2",
+    "seed": 0,
+    "best_val_loss": 1.070022964086689,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_2",
+    "seed": 1,
+    "best_val_loss": 1.023223443109481,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_2",
+    "seed": 2,
+    "best_val_loss": 1.148325722725665,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_2",
+    "seed": 3,
+    "best_val_loss": 1.137974747868835,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_2",
+    "seed": 4,
+    "best_val_loss": 1.184326644803657,
+    "total_epochs": 31,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_3",
+    "seed": 0,
+    "best_val_loss": 1.1244685561568648,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_3",
+    "seed": 1,
+    "best_val_loss": 1.1780921088324652,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_3",
+    "seed": 2,
+    "best_val_loss": 1.1256988048553467,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_3",
+    "seed": 3,
+    "best_val_loss": 1.278988661589446,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_3",
+    "seed": 4,
+    "best_val_loss": 1.3074617120954726,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_4",
+    "seed": 0,
+    "best_val_loss": 0.5683043768405914,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_4",
+    "seed": 1,
+    "best_val_loss": 0.5967274014949798,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_4",
+    "seed": 2,
+    "best_val_loss": 0.5259784424304962,
+    "total_epochs": 36,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_4",
+    "seed": 3,
+    "best_val_loss": 0.5909166831970215,
+    "total_epochs": 36,
+    "status": "completed"
+  },
+  {
+    "arm": "unordered_k12",
+    "fold": "fold_4",
+    "seed": 4,
+    "best_val_loss": 0.5076772356033326,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_0",
+    "seed": 0,
+    "best_val_loss": 0.8073665367232429,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_0",
+    "seed": 1,
+    "best_val_loss": 0.8094270163112216,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_0",
+    "seed": 2,
+    "best_val_loss": 0.7654625773429871,
+    "total_epochs": 34,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_0",
+    "seed": 3,
+    "best_val_loss": 0.775718073050181,
+    "total_epochs": 34,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_0",
+    "seed": 4,
+    "best_val_loss": 0.8022401266627841,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_1",
+    "seed": 0,
+    "best_val_loss": 0.9632826071895965,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_1",
+    "seed": 1,
+    "best_val_loss": 0.9775159674692372,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_1",
+    "seed": 2,
+    "best_val_loss": 1.0169471567624235,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_1",
+    "seed": 3,
+    "best_val_loss": 1.018043193098617,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_1",
+    "seed": 4,
+    "best_val_loss": 0.981636563664702,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_2",
+    "seed": 0,
+    "best_val_loss": 1.0931236890495801,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_2",
+    "seed": 1,
+    "best_val_loss": 1.076023358790601,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_2",
+    "seed": 2,
+    "best_val_loss": 1.1432664169639837,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_2",
+    "seed": 3,
+    "best_val_loss": 1.1976575480132807,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_2",
+    "seed": 4,
+    "best_val_loss": 1.1588618833510602,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_3",
+    "seed": 0,
+    "best_val_loss": 1.3153149640118633,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_3",
+    "seed": 1,
+    "best_val_loss": 1.1221618122524686,
+    "total_epochs": 34,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_3",
+    "seed": 2,
+    "best_val_loss": 1.2087766682660137,
+    "total_epochs": 33,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_3",
+    "seed": 3,
+    "best_val_loss": 1.2158169967156869,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_3",
+    "seed": 4,
+    "best_val_loss": 1.3630589379204645,
+    "total_epochs": 32,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_4",
+    "seed": 0,
+    "best_val_loss": 0.576796683549881,
+    "total_epochs": 34,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_4",
+    "seed": 1,
+    "best_val_loss": 0.5459524388313294,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_4",
+    "seed": 2,
+    "best_val_loss": 0.5281505596637726,
+    "total_epochs": 36,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_4",
+    "seed": 3,
+    "best_val_loss": 0.5795380258560181,
+    "total_epochs": 35,
+    "status": "completed"
+  },
+  {
+    "arm": "angle_aware_k12",
+    "fold": "fold_4",
+    "seed": 4,
+    "best_val_loss": 0.5280359287261963,
+    "total_epochs": 33,
+    "status": "completed"
+  }
+]

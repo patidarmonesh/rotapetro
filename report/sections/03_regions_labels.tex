@@ -1,0 +1,151 @@
+\section{Phase 3: propose regions rather than assume known grains}
+\subsection{Feature space and initial superpixels}
+Segmentation groups pixels into candidate regions. It uses appearance and optical behaviour together. The eight-dimensional pixel feature vector is approximately
+\begin{equation}
+\mathbf f(x)=\left[\operatorname{Lab}(I_{\rm XPL,max}),\;
+0.7\operatorname{Lab}(I_{\rm PPL,mean}),\;
+40a\cos4\theta_e,\;40a\sin4\theta_e\right].
+\end{equation}
+There are three XPL colour values, three PPL colour values, and two angular values. A median filter suppresses small isolated fluctuations. Encoding angles with sine and cosine avoids an artificial discontinuity between extinction positions near $0^\circ$ and $90^\circ$; multiplying by $a$ reduces the influence of an uncertain angle at a weakly varying pixel.
+
+SLIC (simple linear iterative clustering) makes compact initial superpixels \cite{slic}. Conceptually, its distance balances feature similarity and spatial proximity,
+\begin{equation}
+D^2=d_f^2+\left(\frac{m}{S}\right)^2d_{xy}^2,
+\end{equation}
+where $S$ is an approximate superpixel spacing and $m$ controls compactness. The implementation targets approximately 60 pixels per initial superpixel with compactness 5. These are algorithmic seeds, not final mineral grains.
+
+\subsection{Neighbour merging and postprocessing}
+A region adjacency graph connects touching superpixels. Neighbours with similar mean feature vectors are merged hierarchically; the configured distance threshold is 18. If regions $A$ and $B$ merge, their mean feature updates as
+\begin{equation}
+\overline{\mathbf f}_{A\cup B}=\frac{|A|\overline{\mathbf f}_{A}+|B|\overline{\mathbf f}_{B}}{|A|+|B|}.
+\end{equation}
+This accumulates local evidence, but can merge two similar minerals or split one heterogeneous grain. A further twin-domain merging heuristic considers PPL colour similarity, an approximate birefringence-class difference, boundary evidence and shared boundary length. The configured checks include PPL $\Delta E<6$, class difference at most 1, boundary ratio below 0.5 and at least 15 shared boundary pixels. Very small components around 150 pixels are merged; regions below approximately 400 pixels can be marked small.
+
+An important distinction is that unreliable birefringence was disabled in V1 \emph{labelling}, while the pre-existing frozen segmentation can still reflect its earlier merging heuristic. Removing a term from the teacher does not retrospectively remove every influence of that term from preprocessing.
+
+\subsection{Why boundaries can look wrong}
+Several effects explain the suspicious contours noticed during visual review:
+\begin{itemize}
+\item Twins, alteration, cracks and extinction domains can divide one physical crystal into several appearance regions.
+\item Similar adjacent grains can merge when colour and optical summaries are insufficiently different.
+\item Residual registration mixes pixels near an edge, changing both maps and later boundaries.
+\item The common valid circle is an acquisition mask. Its edge is not the edge of a mineral, and need not follow the full bright circular field in an individual image.
+\item SLIC and graph thresholds impose resolution choices; small fragments can be algorithmic rather than geological.
+\end{itemize}
+V1 freezes these regions to keep identities and splits stable while comparing classifiers. This provides a controlled comparison on shared regions, not a claim of perfect segmentation. No expert-mask intersection-over-union benchmark is available in the reviewed results.
+
+\fig{segment.png}{1}{Yellow outlines from the same segmentation mask over PPL and XPL context. The long central structures contain internal optical and textural changes; an outline following those changes is not automatically a true grain boundary. The outer yellow contour also reflects valid support.}{fig:segment}
+\FloatBarrier
+
+\section{Phase 4: write a property record for each region}
+\subsection{Geometry, erosion and eligibility}
+For each region the feature table stores its area, centroid, bounding box, aspect ratio and edge/partial status. The interior is eroded by two pixels before many optical summaries are measured. Erosion removes a narrow boundary band where alignment errors and mixed pixels are most likely. It trades some data for more stable measurements.
+
+The V1 geometric gate requires at least 1,000 region pixels and at least 400 interior pixels. A partial region is not automatically excluded if usable interior evidence remains. Habit and long-axis-related descriptors can be unresolved for partial or nearly equant regions. Large size alone does not guarantee that a region contains only one mineral.
+
+\subsection{Robust and circular summaries}
+Region medians reduce sensitivity to isolated pixels. The optical-class decision uses the proportion of opaque and anisotropic pixels: a region is opaque when its opaque fraction exceeds 0.8; otherwise an anisotropic fraction below 0.2 produces an isotropic-like category, and the remaining case is anisotropic. These are measured categories under the image model, not definitive mineral identities. An anisotropic region also needs a median fit score around $R_4^2\geq0.4$ to pass the relevant V1 quality check; opaque/isotropic cases cannot be judged by the same oscillation requirement.
+
+Angles require circular statistics. Ordinary averaging of $1^\circ$ and $89^\circ$ would incorrectly suggest $45^\circ$ even though they are nearby modulo $90^\circ$. With modulation weights $a_j$,
+\begin{equation}
+z=\frac{\sum_j a_j e^{i4\theta_{e,j}}}{\sum_j a_j},\qquad
+\overline\theta_e=\frac{\arg z}{4}\pmod{\pi/2},\qquad R=|z|.
+\end{equation}
+A concentration-derived spread is $\sigma_e=\sqrt{-2\log R}/4$, in radians, with suitable protection at numerical extremes. Low $R$ indicates inconsistent orientations or domains. PPL absorption directions use the second harmonic because they repeat modulo $180^\circ$.
+
+The median PPL colour-change descriptor is categorised with thresholds near 4, 10 and 20: none, weak, moderate and strong. Such thresholds are practical heuristics, not universal boundaries between minerals.
+
+\subsection{Twins, undulose response and measurement status}
+Twin detection seeks coherent extinction domains among sufficiently reliable pixels. It checks domain size, separation and internal spread, together with PPL boundary behaviour. Example settings include pixel fit quality at least 0.5, domain fraction at least 0.1, angular separation around $8^\circ$ and within-domain spread around $7^\circ$. These checks try to distinguish optical domains from arbitrary texture. They have not been independently validated against a labelled twin dataset.
+
+An undulose descriptor measures spatial variation in the circular extinction field through derivatives of $\cos4\theta_e$ and $\sin4\theta_e$. An ideal differential identity is
+\begin{equation}
+\|\nabla\theta_e\|=\frac14\sqrt{\|\nabla\cos4\theta_e\|^2+\|\nabla\sin4\theta_e\|^2}.
+\end{equation}
+The implementation uses Sobel derivatives and an empirical scale factor. Because the discrete Sobel response is not fully normalised into a physical spatial derivative, the saved number should be treated as an empirical descriptor, even where an older name suggests degrees per ten pixels. It is not a direct crystallographic strain measurement.
+
+Each measurement can carry a status: \emph{observed}, \emph{not detected with a bound}, \emph{unresolved}, \emph{invalid}, or \emph{not applicable}. This prevents a missing or unmeasurable cue from being silently interpreted as a valid zero. For example, ``twins not measurable'' is different from ``a reliable search found no twins.''
+
+\section{Phases 5 and 6: convert evidence into weak targets}
+\subsection{Knowledge representation}
+The knowledge directory supplies four complementary resources. \code{minerals.csv} describes expected properties; \code{aliases.csv} normalises alternative names; \code{hierarchy.yaml} connects species and families; \code{likelihoods.yaml} assigns heuristic evidence weights and compatibility values. Phase 5 checks that these resources load consistently. It does not fit a neural network.
+
+The V1 output vocabulary contains five families:
+\begin{table}[htbp]\centering
+\begin{tabularx}{\linewidth}{@{}lX@{}}\toprule Output & Intended grouping and caveat\\\midrule
+quartz & Quartz family; weak optical support and limited specimen support.\\
+feldspar & Plagioclase, orthoclase, microcline and sanidine grouped together.\\
+mica & Biotite and muscovite in the ontology; observed positive support is effectively biotite-heavy.\\
+pyroxene & Augite and orthopyroxene grouped together.\\
+opaque\_material & A dark-material category, not a single mineral species.\\\bottomrule
+\end{tabularx}
+\caption{The five predicted categories. Other plausible minerals remain relevant to rejection, even though they are not output classes.}
+\end{table}
+Amphibole, carbonate, tourmaline, olivine and garnet are among alternatives considered by the wider candidate registry. A classifier with five output categories cannot correctly name every possible mineral in a rock.
+
+\subsection{Heuristic evidence scoring}
+For candidate mineral $m$, features $f_j$ contribute weighted compatibility scores:
+\begin{equation}
+\ell_m=\sum_{j\in\mathcal O}w_j\log L_j(f_j\mid m),\qquad
+p_m=\frac{\exp\ell_m}{\sum_{m'}\exp\ell_{m'}}.
+\end{equation}
+Here $\mathcal O$ is the set of usable deciding terms, and $L_j$ is a table-based or rule-based compatibility value. Family mass sums the probabilities of member minerals. An unlisted alternative receives a background compatibility (configured around 0.25 per active weighted term), and out-of-scope mass can trigger abstention.
+
+This resembles a likelihood model but is not a calibrated probability of geological truth. The features are correlated, likelihood values are hand specified, and priors and metadata restrictions affect the normalisation. A score of 0.8 should not be presented as experimentally demonstrated 80\% mineral correctness.
+
+\subsection{What a target is allowed to say}
+The target policy uses both quality checks and informative positive evidence. An output family must have a positive cue that helps distinguish it from a relevant alternative; mere absence of contradiction is insufficient. The configured decisions are approximately:
+\begin{enumerate}
+\item Exclude inadequate measurements; flag fine aggregates as mixed rather than singleton grains.
+\item Abstain if out-of-scope mass is at least 0.2 or hard optical contradictions remain.
+\item Assign a singleton if the winning in-scope family mass reaches 0.8 and the positive-evidence requirements pass.
+\item Otherwise allow a set of at most two families if its cumulative mass reaches 0.9 and the checks pass.
+\item Abstain when evidence remains diffuse or unsupported.
+\end{enumerate}
+These states have different meanings:
+\begin{quote}
+\textbf{Singleton:} ``the teacher accepts mica.''\quad
+\textbf{Partial set:} ``the teacher accepts quartz or feldspar.''\quad
+\textbf{Abstain:} ``the teacher cannot provide a usable target.''\quad
+\textbf{Mixed/excluded:} unsuitable for the supervised region task under this policy.
+\end{quote}
+An abstaining region may still receive a neural prediction for inspection. That prediction does not acquire a ground-truth label merely because the network produces a confident softmax output.
+
+\subsection{Metadata dependence and circular evaluation}
+The teacher is evaluated with optical evidence alone and with specimen mineral lists restricting alternatives. A target receives \code{metadata_dependent} when its state or allowed set changes between these conditions. Metadata can remove alternatives and thereby sharpen a target. It is not supplied as an input token to the neural classifier, but it affects what the classifier learns and what it is scored against.
+
+In the archived out-of-fold singleton set, all 537 non-opaque singleton targets are metadata-dependent. The remaining 44 targets are opaque material. This means the experiment primarily measures recovery of a teacher that combines optical heuristics and specimen context. It does not establish independent mineral truth. A check counting predictions outside a specimen's list is useful for consistency, but provides weak independent validation when that same list helped create the targets.
+
+The V1 deciding-term exclusions include birefringence, extinction type, relief, cleavage and absorption axis. Disabling these unreliable or insufficiently validated terms reduces unsupported certainty, but also removes information the earlier teacher used. A separately named twinkling term is present in the rules and should not be confused with the disabled relief term; it remains an empirical cue requiring validation. Rock-title or monomineralic assignment alone is not accepted as evidence for every region.
+
+\subsection{Fold-local thresholds and feasibility checks}
+Data-derived cutoffs, including undulose and twinkling quantiles, are fitted using training specimens for each fold and then frozen. Nominal quantiles are the 80th and 90th percentiles respectively. This prevents test specimens from determining those thresholds. Hand-written choices made during project development and full-sequence preprocessing still impose other limitations; fold-local fitting is not a blanket guarantee against every source of bias.
+
+Before neural training, a feasibility gate checks target files, required status columns, prohibited deciding terms, aggregate handling and class support. Each class must have at least five singleton training specimens in every fold. Passing this gate means the planned experiment is operationally feasible. It does not certify label accuracy or adequate statistical power.
+
+\section{Phase 7: assemble a specimen-separated learning dataset}
+\subsection{Splits and class support}
+The split unit is the specimen. All sites and regions from one specimen stay together. Five grouped folds are stratified approximately by rock family, with very rare families pooled into an ``other'' stratum. Within each training portion, approximately 15\% of specimens are reserved for validation with a fixed random seed. Frozen split files and their hashes protect against accidental reassignment.
+
+The held-out singleton support is uneven:
+\begin{table}[htbp]\centering
+\begin{tabular}{@{}lrr@{}}\toprule Family & Regions & Specimens containing targets\\\midrule
+Quartz & 99 & 12\\
+Feldspar & 160 & 37\\
+Mica & 142 & 16\\
+Pyroxene & 136 & 23\\
+Opaque material & 44 & 20\\\bottomrule
+\end{tabular}
+\caption{Archived pooled out-of-fold singleton support. Specimen columns overlap across classes and must not be summed as unique specimens.}
+\end{table}
+Quartz's 12 specimens make its held-out estimate especially uncertain. A fold can pass the training-support gate while its validation set lacks a class; fold 4's validation set has no quartz singleton in the reviewed evidence.
+
+\subsection{Crops and fixed geometry}
+Each region has a square crop centred on its bounding box. The approximate side length is
+\begin{equation}
+L=\max\{48,\operatorname{round}[1.3\max(w,h)]\}.
+\end{equation}
+The same crop geometry is used for all retained angles and both modes. Images are resized to $224\times224$ pixels; masks use nearest-neighbour resizing. Pixels outside the selected region are dimmed to 35\% intensity, rather than erased completely, to preserve limited context. This also leaves a possible context shortcut, so good performance need not mean the model relies exclusively on the grain interior.
+
+All arms share masks and regions built using rotational information. Thus the comparison asks about \emph{classification given shared regions}. It is not a comparison between a completely single-image pipeline and a completely rotational pipeline. This qualification is central to any interpretation of a gain or a lack of gain.
+\FloatBarrier

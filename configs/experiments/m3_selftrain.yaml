@@ -1,0 +1,8 @@
+variant: M3
+self_training:
+  enabled: true
+  threshold: 0.9
+  max_iterations: 5
+epochs: 100
+learning_rate: 0.0005
+batch_size: 32

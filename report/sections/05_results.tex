@@ -1,0 +1,176 @@
+\section{Phase 10: evaluation and uncertainty}
+\subsection{Primary metric: specimen-weighted macro-F1}
+The primary evaluation uses singleton targets only. If specimen $s$ contributes $n_s$ singleton test regions, each region receives weight $w_i=1/n_s$. This makes each represented specimen contribute total weight one to the pooled confusion matrix:
+\begin{equation}
+C_{ab}=\sum_iw_i\,\mathbf1\{y_i=a,\widehat y_i=b\}.
+\end{equation}
+For class $c$, $TP_c=C_{cc}$, $FP_c=\sum_{a\ne c}C_{ac}$ and $FN_c=\sum_{b\ne c}C_{cb}$. Then
+\begin{equation}
+F1_c=\frac{2TP_c}{2TP_c+FP_c+FN_c},\qquad
+F1_{\rm macro}=\frac15\sum_{c=1}^{5}F1_c,
+\end{equation}
+with a zero-denominator convention in the implementation. Test predictions are pooled over the five held-out folds for each seed, and seed-level F1 values are averaged. This is \emph{not} the arithmetic mean of separately computed per-specimen macro-F1 scores. ``Specimen-balanced'' in the saved outputs refers to the weights in the confusion matrix.
+
+F1 balances precision (how trustworthy a predicted class is relative to the targets) and recall (how much of that target class is recovered). Macro averaging gives each of the five classes equal final importance. Here the reference is an automatic teacher, so even an F1 of 1 would establish complete agreement with that teacher, not perfect mineral identification.
+
+\subsection{Paired specimen bootstrap}
+The main effect is
+\begin{equation}
+\Delta=\frac1{S}\sum_{r=1}^{S}
+\left(F1_{\rm aware,r}-F1_{\rm static,r}\right).
+\end{equation}
+The saved evaluation uses 5,000 bootstrap replicates, resampling specimens with replacement within each held-out fold. Each replicate uses the same specimen draw for both arms and all seeds. If a specimen is drawn $m_s$ times, its region weight becomes $m_s/n_s$. The metric is recomputed and the 2.5th and 97.5th percentiles provide the reported interval.
+
+This preserves the pairing of competing predictions and respects specimen clustering better than resampling individual grains. It treats the fitted models and chosen seeds as fixed. It does not fully quantify uncertainty from collecting new training specimens, choosing another target policy or running unlimited new initialisations. The saved approximate tail-probability field is not used here as a conventional two-sided significance test.
+
+\subsection{Partial sets answer a different question}
+For a region allowed set $S_i$, top-1 compatibility is $\mathbf1\{\arg\max_cp_{ic}\in S_i\}$ and allowed probability mass is $\sum_{c\in S_i}p_{ic}$. The report averages these with equal specimen contribution, using the number of partial-set rows per specimen for the weights. A prediction in a two-class set is compatible; it is not verified to be the correct member. Partial-set compatibility must therefore sit beside, rather than replace, singleton F1.
+
+\section{Results from the completed GPU experiments}
+\subsection{The primary result does not establish a rotation gain}
+\begin{table}[htbp]\centering
+\begin{tabular}{@{}lrr@{}}\toprule Model & Initial macro-F1 & Regularised macro-F1\\\midrule
+Static, one position & 0.5309 & 0.4935\\
+Unordered, 12 positions & 0.5073 & 0.4724\\
+Angle-aware, 12 positions & 0.5308 & 0.4886\\\midrule
+Angle-aware minus static & $-0.00004$ & $-0.00493$\\
+95\% paired bootstrap interval & $[-0.0449,0.0461]$ & $[-0.0219,0.0121]$\\\bottomrule
+\end{tabular}
+\caption{Primary results from archived evaluation summaries. Each arm is evaluated on the same 581 singleton regions from 77 specimens. F1 values are fractions, not percentages of verified mineral correctness.}
+\end{table}
+The initial difference is essentially zero. The regularised setting is also compatible with no difference and has a slightly lower point estimate for the angle-aware model. Both intervals include zero. The defensible conclusion is: \textbf{these experiments did not demonstrate that 12-position angle-aware classification improves over the designated static baseline under the current targets and preprocessing.}
+
+This does not show that rotation contains no useful geological information. The benchmark may suppress or obscure that information. Conversely, an explanation involving poor labels or averaging is a hypothesis, not evidence that a hidden gain definitely exists.
+
+\subsection{Secondary comparisons and seed variation}
+Angle-aware minus unordered is about $+0.0235$ in the initial experiment, with interval $[-0.0270,0.0773]$. In the regularised experiment it is $+0.0162$, with interval $[0.0003,0.0344]$. The latter is a small positive exploratory comparison; it is not multiplicity-adjusted and does not overturn the primary null result against static.
+
+\begin{table}[htbp]\centering\small
+\begin{tabularx}{\linewidth}{@{}llX@{}}\toprule Setting & Arm & Per-seed pooled macro-F1\\\midrule
+Initial & Static & 0.5468, 0.5207, 0.5251\\
+ & Unordered & 0.5309, 0.4562, 0.5349\\
+ & Angle-aware & 0.5049, 0.4678, 0.6198\\\midrule
+Regularised & Static & 0.4841, 0.4944, 0.4795, 0.4921, 0.5174\\
+ & Unordered & 0.4855, 0.4842, 0.4696, 0.4613, 0.4614\\
+ & Angle-aware & 0.5134, 0.5131, 0.4490, 0.5397, 0.4279\\\bottomrule
+\end{tabularx}
+\caption{Initialisation and sampling variability. Selecting only the best angle-aware seed would materially misrepresent the comparison.}
+\end{table}
+The initial angle-aware range, roughly 0.468--0.620, is large relative to the mean arm difference. Regularisation reduces some training volatility but does not remove the angle-aware seed spread. The initial majority-class dummy macro-F1 is about 0.1015. Exceeding this trivial baseline shows learned discrimination with respect to the weak labels, not clinical- or geological-grade validation.
+
+\subsection{Class-level and partial-set findings}
+\fig{class_results.png}{1}{Class-specific F1, computed from the archived prediction audit and averaged over seeds. No class is uniformly improved by more views across both settings. Quartz remains weakly supported; opaque material drops markedly in the regularised experiment. Bars summarise target agreement, without confidence intervals at class level.}{fig:classresults}
+\begin{table}[htbp]\centering
+\begin{tabular}{@{}llrr@{}}\toprule Setting & Arm & Top-1 compatibility & Allowed mass\\\midrule
+Initial & Static & 0.7600 & 0.7016\\
+ & Unordered & 0.7541 & 0.6922\\
+ & Angle-aware & 0.7552 & 0.6881\\\midrule
+Regularised & Static & 0.7814 & 0.6944\\
+ & Unordered & 0.7808 & 0.6833\\
+ & Angle-aware & 0.7753 & 0.6920\\\bottomrule
+\end{tabular}
+\caption{Partial-set evaluation on 323 regions from 29 specimens. Compatibility is not exact-class accuracy.}
+\end{table}
+The partial-set results do not provide a strong rotation advantage either. This matters because ambiguous colourless minerals are precisely where an exact singleton metric covers little of the available material.
+
+\FloatBarrier
+\subsection{Which families are confused?}
+\fixedfig{confusions.png}{0.96}{Specimen-weighted confusion matrices, normalised within each weak-target class and averaged over seeds. Rows are teacher targets and columns are network predictions. Diagonal entries indicate recall against those targets; off-diagonal entries identify disagreements. Numbers are percentages rounded independently, so a displayed row need not sum exactly to 100.}{fig:confusions}
+Quartz targets are often predicted as feldspar: approximately 46\% of their weighted mass for the initial static model, and 38\% for the initial angle-aware model. This particular improvement is offset by changes elsewhere, so it does not create an overall gain. Opaque recall falls from about 42\% to 23\% for static when moving to the regularised setting, while feldspar recall rises from about 60\% to 68\%. This illustrates why an aggregate score alone is insufficient and why stronger regularisation is not a uniform improvement. The matrices describe teacher disagreement; without independent labels they cannot determine whether every off-diagonal prediction is geologically wrong.
+
+\subsection{Dependence on the chosen static angle and teacher evidence}
+The diagnostic static-angle sweep covers 13 positions, including frame 0 and the 12 test positions. Mean macro-F1 across those positions is about 0.5056 initially and 0.4799 after regularisation. The designated $5^\circ$ position happens to be the strongest among these tested static positions in both saved evaluations. It remains the primary comparison; choosing a weaker static angle after seeing results would bias the conclusion. An angle-averaged static estimand could be declared prospectively for a later experiment.
+
+The saved regularised evidence also separates targets reproducible using static evidence from rotation-dependent targets. On the reproduced stratum (77 regions, 25 specimens), the angle-aware minus static difference is about $+0.0013$, with interval $[-0.0311,0.0320]$. On the rotation-dependent stratum (501 regions, 69 specimens), the difference is about $-0.0011$, with interval $[-0.0173,0.0155]$. These strata do not account for every singleton and do not establish independent truth. They show no convincing gain even after this provenance split. The optics-only metadata-independent subset contains only 44 opaque targets, so a meaningful five-class claim cannot be based on it.
+
+\subsection{Learning curves: fitting training targets is easier than generalising}
+\fig{learning_curves.png}{1}{Saved angle-aware training and validation losses for fold 0, seed 0, in both settings. The vertical marker identifies the selected checkpoint. Lower training loss together with worsening validation loss is consistent with overfitting or train/validation mismatch. This figure is not the granite example's fold, and it is not evidence that the final epoch was used for testing.}{fig:learning}
+Across fits, the median best epoch is very early: approximately epoch indices 1, 0 and 0 for initial static, unordered and angle-aware fits, and index 2 for all three regularised arms. These are zero-based indices; index 0 means the first completed epoch. The training objective can become extremely small while validation loss grows. More epochs and weight decay alone did not solve the generalisation problem.
+
+Possible contributors include small specimen support, noisy targets, train/test rock differences, context shortcuts and a classifier with roughly 1.6 million trainable parameters. The curves do not isolate their relative causes. Best-checkpoint restoration prevents the comparison from simply using the visibly overfitted final epoch.
+\FloatBarrier
+
+\clearpage
+\section{A complete visual example: one field of view}
+\subsection{Why this example was selected}
+\code{granite_r1} has readable structures, saved alignment/maps/segmentation, and predictions from all arms. It is useful for teaching how the pipeline behaves; it is not selected as proof of superior rotation performance. The saved prediction example uses held-out fold 3, seed 0. Twenty-five regions receive predictions: nine have singleton teacher targets and sixteen are abstentions.
+
+The local region IDs and mask areas were checked against the example records. However, the historical GPU image/embedding cache is not included in the result archive, so this is not a hash-certified reconstruction of every historical input byte. The visual sequence combines local preprocessing artefacts with genuine saved prediction numbers.
+
+\fixedfig{selected.png}{1}{Two regions used to follow the pipeline. Cyan outlines \code{g001}; magenta outlines \code{g002}. Both are partial regions touching the valid field boundary. Their substantial interiors permit measurements despite that status.}{fig:selected}
+\begin{table}[H]\centering
+\begin{tabular}{@{}lrr@{}}\toprule Measured property & g001 & g002\\\midrule
+Area / interior pixels & 6,548 / 5,516 & 5,583 / 4,691\\
+PPL colour description & Brown & Colourless\\
+Median pleochroism descriptor & 26.9 & 2.9\\
+Median fourth-harmonic fit score & 0.963 & 0.955\\
+Partial region & Yes & Yes\\
+Teacher state & Singleton: mica & Abstain\\\bottomrule
+\end{tabular}
+\caption{Region property records. A high fit score in g002 establishes a regular angular response, not a definite mineral identity.}
+\end{table}
+
+\subsection{What the model sees}
+\fixedfig{crops1.png}{1}{Reconstructed crops for g001 at six of the twelve test positions: $5^\circ,35^\circ,65^\circ,95^\circ,125^\circ,155^\circ$. Top: PPL; bottom: XPL. The region stays in place while its appearance changes. Dimmed surroundings remain visible. DINO processes each crop separately before the classifier combines descriptors.}{fig:crop1}
+\fixedfig{crops2.png}{1}{The corresponding reconstructed crop sequence for g002. Colourlessness in PPL and changing XPL appearance can be shared by several minerals. A clear angular pattern is not by itself enough to justify an exact label.}{fig:crop2}
+For g001, strong brown PPL colour change is compatible with the mica-family target. For g002, the teacher has insufficient discriminating evidence and abstains. This demonstrates why ``large and visible'' does not logically imply ``safe to name.''
+\FloatBarrier
+
+\subsection{Actual neural predictions}
+\begin{table}[H]\centering\small
+\begin{tabular}{@{}lllrr@{}}\toprule Region & Setting & Arm & Top family & Probability\\\midrule
+g001 & Initial & Static & Mica & 0.902\\
+ & & Unordered & Mica & 0.864\\
+ & & Angle-aware & Mica & 0.499\\
+ & Regularised & Static & Mica & 0.494\\
+ & & Unordered & Mica & 0.869\\
+ & & Angle-aware & Mica & 0.646\\\midrule
+g002 & Initial & Static & Mica & 0.842\\
+ & & Unordered & Mica & 0.536\\
+ & & Angle-aware & Mica & 0.413\\
+ & Regularised & Static & Mica & 0.600\\
+ & & Unordered & Mica & 0.500\\
+ & & Angle-aware & Feldspar & 0.594\\\bottomrule
+\end{tabular}
+\caption{Saved predictions for fold 3, seed 0, rounded to three decimals. Probabilities are uncalibrated model outputs. Only g001 has a singleton weak target; the correctness of g002's prediction is not established.}
+\end{table}
+\fixedfig{probabilities.png}{0.96}{All five probabilities from the angle-aware models for the two regions. G001 remains mica-like in both settings. G002 changes its preferred family between settings, illustrating uncertainty and model dependence. A top probability alone conceals competing alternatives.}{fig:prob}
+
+\fixedfig{prediction_maps.png}{1}{Region-wise angle-aware predictions over the same field, initial and regularised runs. Blue: quartz; orange: feldspar; teal: mica; purple: pyroxene; grey: opaque. Contours reuse Phase 3 masks; the network did not create these boundaries. The map includes teacher-abstained regions, whose colours are predictions rather than verified labels.}{fig:predmap}
+\takeaway{The visible NN output is a family probability vector per region, which can be projected onto existing masks. Phases 0--7 produce engineering and rule outputs, not outputs of the trained classifier. Embeddings and attention are internal representations; neither automatically constitutes an explanation of mineral identity.}
+\FloatBarrier
+
+\section{Interpretation, limitations and the next controlled tests}
+\subsection{What has been achieved}
+A complete research workflow now connects public rotation images, registration, optical maps, region proposals, uncertainty-aware weak targets, frozen neural representations and specimen-separated evaluation. There are 120 full fits across two settings, actual per-region probabilities and reproducible aggregate comparisons. These are substantial implementation and experimental outcomes even though the primary hypothesis has not been confirmed.
+
+\subsection{What cannot yet be claimed}
+The results do not demonstrate validated mineral accuracy, perfect grains, an advantage from all 72 positions, a failure of rotation as a scientific idea, or proof that DINO is the limiting component. They also do not show that replacing mineral names with alphabetic cluster names would establish mineral identification. Such a change would define a different pattern-recognition task and would need a separate evaluation.
+
+The principal limitations are:
+\begin{enumerate}
+\item \textbf{Target validity:} nearly all non-opaque singleton labels depend on specimen lists; no independent expert test benchmark is available.
+\item \textbf{Region validity:} optical domains and physical grains are not identical, and segmentation has no quantitative expert-mask validation.
+\item \textbf{Small independent support:} 581 singleton regions represent only 77 specimens, with especially sparse quartz support.
+\item \textbf{Acquisition uncertainty:} unknown exposure, nonlinear encoded brightness and registration/interpolation affect physical interpretation.
+\item \textbf{Representation and capacity:} frozen generic features and a comparatively large classifier may either discard subtle cues or fit shortcuts.
+\item \textbf{Incomplete historical provenance:} full resolved configurations, immutable encoder revision and exact historical source are not all archived.
+\end{enumerate}
+
+\subsection{A decisive unaveraged ablation}
+The planned improvement is to preserve 72 aligned positions and all 144 PPL/XPL photographs through preprocessing and representation extraction. It must be implemented throughout the angle indexing, map fitting, crop cache, positional features and classifier, not just by increasing one view-count setting.
+
+A useful controlled experiment compares: (i) current folded 36-position data, (ii) one unaveraged half-turn, and (iii) the full unaveraged turn. Keep specimen splits, target policy, encoder and evaluation fixed as far as possible. Separately compare joint view counts such as 1, 12, 36 and 72. In the present fusion design, 72 PPL/XPL pairs mean 72 fused tokens plus CLS, not 144 fused tokens. A different mode-token design could use 144 image tokens, but would change the architecture as well as the observations.
+
+First hold masks and targets fixed to isolate classifier input effects. Then rebuild maps and segmentation as a second experiment to assess full-pipeline effects. Otherwise improved scores could come from changed targets rather than better use of rotation. Report opposite-frame residuals before averaging and registration quality at every angle. All-angle processing may help, have no effect, or hurt; none of these outcomes should be assumed in advance.
+
+\subsection{Other tests in order of interpretive value}
+\begin{enumerate}
+\item Establish an independent, specimen-separated evaluation subset with reviewed identities and region boundaries. Do not tune rules on that held-out subset.
+\item Compare simple optical-feature classifiers, linear frozen-DINO heads and the transformer under identical splits. This tests whether model complexity or representation choice is warranted.
+\item Evaluate mask quality, context removal and residual registration sensitivity. These locate upstream failure modes rather than attributing all errors to the network.
+\item Measure view-count and angle-encoding effects with a predeclared static reference. Include calibration and an abstention policy for unsupported predictions.
+\item Record complete configurations, split/target hashes, source commit, image transformations and encoder revision for every future run.
+\end{enumerate}
+More balanced and diverse labelled specimens would improve the conditions for learning and reliable evaluation, but no dataset size can guarantee a gain. The present evidence justifies a focused research continuation with explicit tests, rather than a promise that more angles alone will solve the problem.
+\FloatBarrier

@@ -1,0 +1,151 @@
+{
+  "schema_version": "v1.0",
+  "timestamp": "2026-10-13T11:57:25.597750",
+  "python_version": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "v1_config": {
+    "version": "v1.0",
+    "data_version": "v1",
+    "taxonomy": {
+      "primary_classes": [
+        "quartz",
+        "feldspar",
+        "mica",
+        "pyroxene",
+        "opaque_material"
+      ],
+      "candidate_registry": [
+        "quartz",
+        "feldspar",
+        "mica",
+        "pyroxene",
+        "opaque_material",
+        "amphibole",
+        "carbonate",
+        "tourmaline",
+        "olivine",
+        "garnet"
+      ],
+      "class_extensions": {
+        "amphibole": false,
+        "carbonate": false
+      }
+    },
+    "rules": {
+      "disabled_terms": [
+        "birefringence",
+        "extinction_type",
+        "relief",
+        "cleavage",
+        "absorption_axis"
+      ],
+      "status_default": "unresolved",
+      "require_status_columns": true,
+      "disable_mono": true,
+      "singleton_p": 0.8,
+      "set_cum_p": 0.9,
+      "max_set_size": 2,
+      "max_out_of_scope_p": 0.2,
+      "min_informative_terms": 1,
+      "list_conflict_policy": "abstain",
+      "hard_contradiction_terms": [
+        "optic_class",
+        "pleochroism"
+      ]
+    },
+    "families": {
+      "quartz": [
+        "quartz"
+      ],
+      "feldspar": [
+        "plagioclase",
+        "orthoclase",
+        "microcline",
+        "sanidine"
+      ],
+      "mica": [
+        "biotite",
+        "muscovite"
+      ],
+      "pyroxene": [
+        "augite",
+        "orthopyroxene"
+      ],
+      "opaque_material": [
+        "opaque"
+      ]
+    },
+    "mixed_minerals": [
+      "fine_aggregate"
+    ],
+    "paths": {
+      "processed": "data/processed/v1",
+      "embeddings": "outputs/v1/embeddings",
+      "results": "outputs/v1"
+    },
+    "region_selection": {
+      "min_area_px": 1000,
+      "min_interior_px": 400,
+      "erosion_px": 2
+    },
+    "training": {
+      "mode": "angle_aware_k12",
+      "min_train_specimens_per_class": 5,
+      "primary_test_angle_index": 1,
+      "k12_angle_indices": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n_bootstrap": 5000,
+      "epochs": 80,
+      "patience": 15,
+      "lr": 0.0005,
+      "weight_decay": 0.05,
+      "batch_size": 32,
+      "grad_clip": 1.0
+    }
+  },
+  "scale_discrepancy_note": "YAML um_per_px_rot=2.09 vs saved outputs ~4.181. V1 uses pixel-unit eligibility; physical-scale features excluded from rules.",
+  "overall_gate_pass": true,
+  "teacher_fingerprints": {
+    "fold_0": "57d117ac619b",
+    "fold_1": "57d117ac619b",
+    "fold_2": "57d117ac619b",
+    "fold_3": "57d117ac619b",
+    "fold_4": "57d117ac619b"
+  },
+  "targets_sha256": {
+    "fold_0": "37acc6d85fa180ccfdeb0c14b1d0869e7e3b2cdb753859e7a093ad62bf0c79cc",
+    "fold_1": "99ae30ffcaa67d100d0c6a5d60e69aaee3ab06d1be1231bb8df554e4e67638d4",
+    "fold_2": "e51470632c5b8cba9855c164502f33ccceb2f5e4774f952af39f052031624f12",
+    "fold_3": "81d239807108b9ac339fb73be59dea04612d18a8fe593d51e67580d1086dcd23",
+    "fold_4": "fe38b854d91dd4ddf41233904af5b37078dbd75d817ce3ed9444727949d674aa"
+  },
+  "regions_sha256": "4fb495553cbd4aeb4bdb322387d06c95d842b4019d3df126ea742fc2f8707f8c",
+  "folds_sha256": "be5a2eeb9ab9f22b04ca4ec186b8bd12730d6db70efa0bfab6a0889fb7ee2367",
+  "min_train_specimens": 5,
+  "primary_classes": [
+    "quartz",
+    "feldspar",
+    "mica",
+    "pyroxene",
+    "opaque_material"
+  ],
+  "n_folds": 5,
+  "op_ppl_med": 3.75,
+  "op_xpl_med": 37.650000000000006
+}

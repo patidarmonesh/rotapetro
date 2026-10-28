@@ -1,0 +1,2816 @@
+[
+  {
+    "source": "src/rotapetro/align.py",
+    "destination": "src/rotapetro/align.py",
+    "sha256": "144b3292d4a729fec6a475cc34b9502394cf927d97464c6a96f892ea0e0738b9",
+    "packaged_sha256": "144b3292d4a729fec6a475cc34b9502394cf927d97464c6a96f892ea0e0738b9"
+  },
+  {
+    "source": "src/rotapetro/clean.py",
+    "destination": "src/rotapetro/clean.py",
+    "sha256": "09e2a0af21fd23f7f8d46e9154e88e9734f74d76deae91afdb4c034fb9f9c3d8",
+    "packaged_sha256": "09e2a0af21fd23f7f8d46e9154e88e9734f74d76deae91afdb4c034fb9f9c3d8"
+  },
+  {
+    "source": "src/rotapetro/dataset.py",
+    "destination": "src/rotapetro/dataset.py",
+    "sha256": "eedeba91be0ad9d2af17b8cfdecd53b28970a97577eeceb28e7316e55500c6c2",
+    "packaged_sha256": "eedeba91be0ad9d2af17b8cfdecd53b28970a97577eeceb28e7316e55500c6c2"
+  },
+  {
+    "source": "src/rotapetro/embed.py",
+    "destination": "src/rotapetro/embed.py",
+    "sha256": "d3ef6c869bdeff091423176e967038c06a25fc98969b5edb3cdb2230d20909e0",
+    "packaged_sha256": "d3ef6c869bdeff091423176e967038c06a25fc98969b5edb3cdb2230d20909e0"
+  },
+  {
+    "source": "src/rotapetro/evaluate.py",
+    "destination": "src/rotapetro/evaluate.py",
+    "sha256": "74efbd521030c6a653b3fe237105de5d3c4a3b6a91bc986ce736f544b6523b7c",
+    "packaged_sha256": "74efbd521030c6a653b3fe237105de5d3c4a3b6a91bc986ce736f544b6523b7c"
+  },
+  {
+    "source": "src/rotapetro/explain.py",
+    "destination": "src/rotapetro/explain.py",
+    "sha256": "073affdadc73b17d0330f0d33d2ad8158918bca4a19058dfefeae775da774291",
+    "packaged_sha256": "073affdadc73b17d0330f0d33d2ad8158918bca4a19058dfefeae775da774291"
+  },
+  {
+    "source": "src/rotapetro/features.py",
+    "destination": "src/rotapetro/features.py",
+    "sha256": "1ad4fdcc84c17d76278b6c2ff270db7f7754cd7d8651df863cb2b5094559a25c",
+    "packaged_sha256": "1ad4fdcc84c17d76278b6c2ff270db7f7754cd7d8651df863cb2b5094559a25c"
+  },
+  {
+    "source": "src/rotapetro/infer_video.py",
+    "destination": "src/rotapetro/infer_video.py",
+    "sha256": "5ae81275c498f0057726d3efc4b95d831d6f8f0ba3ce96acdca2a1de99013067",
+    "packaged_sha256": "5ae81275c498f0057726d3efc4b95d831d6f8f0ba3ce96acdca2a1de99013067"
+  },
+  {
+    "source": "src/rotapetro/io.py",
+    "destination": "src/rotapetro/io.py",
+    "sha256": "2da916c972699e53fdfa809d5272fcb700857c462b8c7da56b3d40cab8e41633",
+    "packaged_sha256": "2da916c972699e53fdfa809d5272fcb700857c462b8c7da56b3d40cab8e41633"
+  },
+  {
+    "source": "src/rotapetro/knowledge.py",
+    "destination": "src/rotapetro/knowledge.py",
+    "sha256": "847277e2291e55ab00ecd18cc30530b293a99fd98300b0c29c90eea9b71ee276",
+    "packaged_sha256": "847277e2291e55ab00ecd18cc30530b293a99fd98300b0c29c90eea9b71ee276"
+  },
+  {
+    "source": "src/rotapetro/maps.py",
+    "destination": "src/rotapetro/maps.py",
+    "sha256": "d3ed69ce6cf56b6719ce6bd86c814784b54c1bf295d49c1d17cf581721de9a96",
+    "packaged_sha256": "d3ed69ce6cf56b6719ce6bd86c814784b54c1bf295d49c1d17cf581721de9a96"
+  },
+  {
+    "source": "src/rotapetro/measurement_status.py",
+    "destination": "src/rotapetro/measurement_status.py",
+    "sha256": "5650dab3306285eec92649fb470c654aebc29ffdb0175a70d703d8fc0dbd00bb",
+    "packaged_sha256": "5650dab3306285eec92649fb470c654aebc29ffdb0175a70d703d8fc0dbd00bb"
+  },
+  {
+    "source": "src/rotapetro/michel_levy.py",
+    "destination": "src/rotapetro/michel_levy.py",
+    "sha256": "1c18d3bbd38415afd0b5b19cabccbc811e15a449b2057d165d10738fc8e0f8cf",
+    "packaged_sha256": "1c18d3bbd38415afd0b5b19cabccbc811e15a449b2057d165d10738fc8e0f8cf"
+  },
+  {
+    "source": "src/rotapetro/model.py",
+    "destination": "src/rotapetro/model.py",
+    "sha256": "931caab4f655313673732f2a1b7e8e9101c3b6b7f93b0e9458f467a09f39c8d1",
+    "packaged_sha256": "931caab4f655313673732f2a1b7e8e9101c3b6b7f93b0e9458f467a09f39c8d1"
+  },
+  {
+    "source": "src/rotapetro/provenance.py",
+    "destination": "src/rotapetro/provenance.py",
+    "sha256": "c49fb6b9015f3fcc7aab28a2929b5f26a9bb2b981bb09182136b487a9bb305d8",
+    "packaged_sha256": "c49fb6b9015f3fcc7aab28a2929b5f26a9bb2b981bb09182136b487a9bb305d8"
+  },
+  {
+    "source": "src/rotapetro/rules.py",
+    "destination": "src/rotapetro/rules.py",
+    "sha256": "7727308506f6b22f5b93d93bab36013f85fa2a19a6e56a1fcbac0e539ed7f056",
+    "packaged_sha256": "7727308506f6b22f5b93d93bab36013f85fa2a19a6e56a1fcbac0e539ed7f056"
+  },
+  {
+    "source": "src/rotapetro/segment.py",
+    "destination": "src/rotapetro/segment.py",
+    "sha256": "07778b7e245837d9e5fcf8e7a2d7b4fcda49e5196f0c3c6db97db63e3d729501",
+    "packaged_sha256": "07778b7e245837d9e5fcf8e7a2d7b4fcda49e5196f0c3c6db97db63e3d729501"
+  },
+  {
+    "source": "src/rotapetro/train.py",
+    "destination": "src/rotapetro/train.py",
+    "sha256": "415cad589a9875b2660d28a3c730e4526eb8d91387d141c57ad37b170e0c3479",
+    "packaged_sha256": "415cad589a9875b2660d28a3c730e4526eb8d91387d141c57ad37b170e0c3479"
+  },
+  {
+    "source": "src/rotapetro/__init__.py",
+    "destination": "src/rotapetro/__init__.py",
+    "sha256": "20c8e430ededc2143396e553a3c67aac4ec483ef54efdfcb18a31cb162ca0646",
+    "packaged_sha256": "20c8e430ededc2143396e553a3c67aac4ec483ef54efdfcb18a31cb162ca0646"
+  },
+  {
+    "source": "src/rotapetro/utils/logging.py",
+    "destination": "src/rotapetro/utils/logging.py",
+    "sha256": "30b59d78795a91ce5cdef35732e763db5d744d83ba150107bd37f6bb71b1940f",
+    "packaged_sha256": "30b59d78795a91ce5cdef35732e763db5d744d83ba150107bd37f6bb71b1940f"
+  },
+  {
+    "source": "src/rotapetro/utils/meters.py",
+    "destination": "src/rotapetro/utils/meters.py",
+    "sha256": "8059a8f3731fb4fe1c72b915d0fb51bbebcedb5fff6dd677a68b4e6cf65eb3c9",
+    "packaged_sha256": "8059a8f3731fb4fe1c72b915d0fb51bbebcedb5fff6dd677a68b4e6cf65eb3c9"
+  },
+  {
+    "source": "src/rotapetro/utils/plotting.py",
+    "destination": "src/rotapetro/utils/plotting.py",
+    "sha256": "fcb2dba5760c85e69e4652fd4b04b9a1c40c20f191cbbddfd4c607068f8d12a4",
+    "packaged_sha256": "fcb2dba5760c85e69e4652fd4b04b9a1c40c20f191cbbddfd4c607068f8d12a4"
+  },
+  {
+    "source": "src/rotapetro/utils/seed.py",
+    "destination": "src/rotapetro/utils/seed.py",
+    "sha256": "fae09060d3afb8754ef56a955a9a8a904c38bfa9877a68e360e59b6b7b421ee0",
+    "packaged_sha256": "fae09060d3afb8754ef56a955a9a8a904c38bfa9877a68e360e59b6b7b421ee0"
+  },
+  {
+    "source": "src/rotapetro/utils/__init__.py",
+    "destination": "src/rotapetro/utils/__init__.py",
+    "sha256": "abbc85e82ff5cbd5dd7cc37b1b8475cf0b5f4732172b168784ad92878eead809",
+    "packaged_sha256": "abbc85e82ff5cbd5dd7cc37b1b8475cf0b5f4732172b168784ad92878eead809"
+  },
+  {
+    "source": "scripts/00_clean.py",
+    "destination": "scripts/00_clean.py",
+    "sha256": "38b057611e704918a5cf22acbd1b8555859842e9daef52359d5d9db9d616019b",
+    "packaged_sha256": "38b057611e704918a5cf22acbd1b8555859842e9daef52359d5d9db9d616019b"
+  },
+  {
+    "source": "scripts/01_align.py",
+    "destination": "scripts/01_align.py",
+    "sha256": "1210c65fdfee1fde8046c89fb6111119541075c902994c16405d0f133c25bdae",
+    "packaged_sha256": "1210c65fdfee1fde8046c89fb6111119541075c902994c16405d0f133c25bdae"
+  },
+  {
+    "source": "scripts/02_maps.py",
+    "destination": "scripts/02_maps.py",
+    "sha256": "65ac430120464787e7110cbf50cb9be31104af17959b047f4f5f118b06aae535",
+    "packaged_sha256": "65ac430120464787e7110cbf50cb9be31104af17959b047f4f5f118b06aae535"
+  },
+  {
+    "source": "scripts/03_segment.py",
+    "destination": "scripts/03_segment.py",
+    "sha256": "0e281f61919c2721c748c0ef7bb2e7b8262953013c382d66406aa7ac25874210",
+    "packaged_sha256": "0e281f61919c2721c748c0ef7bb2e7b8262953013c382d66406aa7ac25874210"
+  },
+  {
+    "source": "scripts/04_features.py",
+    "destination": "scripts/04_features.py",
+    "sha256": "a22309da984dbe981f3f84aeeff0c993569a9d3810159be41d427556ad7fce13",
+    "packaged_sha256": "a22309da984dbe981f3f84aeeff0c993569a9d3810159be41d427556ad7fce13"
+  },
+  {
+    "source": "scripts/06_autolabel.py",
+    "destination": "scripts/06_autolabel.py",
+    "sha256": "940fc8fd53e0c54fe3263e7fb2581e14e796427fd46bbe97627aa6a963461e92",
+    "packaged_sha256": "940fc8fd53e0c54fe3263e7fb2581e14e796427fd46bbe97627aa6a963461e92"
+  },
+  {
+    "source": "scripts/07_build_dataset.py",
+    "destination": "scripts/07_build_dataset.py",
+    "sha256": "caf9329aa56e916d8589551c4c5e446aaed1452453a3df5d961205f189e8ef48",
+    "packaged_sha256": "caf9329aa56e916d8589551c4c5e446aaed1452453a3df5d961205f189e8ef48"
+  },
+  {
+    "source": "scripts/08_embed.py",
+    "destination": "scripts/08_embed.py",
+    "sha256": "15bd0eea6b684acba20d5073191c2b8f189c6d982e889ecc00e48907de2b530e",
+    "packaged_sha256": "15bd0eea6b684acba20d5073191c2b8f189c6d982e889ecc00e48907de2b530e"
+  },
+  {
+    "source": "scripts/09_train.py",
+    "destination": "scripts/09_train.py",
+    "sha256": "bf7c6ca8b36ec4ddc40a3ad4adc3f833ab6c0c1aba41e29f933daf5941a5784b",
+    "packaged_sha256": "bf7c6ca8b36ec4ddc40a3ad4adc3f833ab6c0c1aba41e29f933daf5941a5784b"
+  },
+  {
+    "source": "scripts/10_evaluate.py",
+    "destination": "scripts/10_evaluate.py",
+    "sha256": "5ba27adf9e51e3d71ce5cad39576180ddc5271090ec13b988a8b833e117a0da3",
+    "packaged_sha256": "5ba27adf9e51e3d71ce5cad39576180ddc5271090ec13b988a8b833e117a0da3"
+  },
+  {
+    "source": "scripts/12_infer.py",
+    "destination": "scripts/12_infer.py",
+    "sha256": "fd4467e94cb8eb370376fd32b1b8b91f05f94c2067d03a66b254a9a9b1e4abfb",
+    "packaged_sha256": "fd4467e94cb8eb370376fd32b1b8b91f05f94c2067d03a66b254a9a9b1e4abfb"
+  },
+  {
+    "source": "scripts/run_pipeline.sh",
+    "destination": "scripts/run_pipeline.sh",
+    "sha256": "463a41b7a36ca35f4d1ac185c0845cd82ba28283803d96e9726469bf52640f67",
+    "packaged_sha256": "463a41b7a36ca35f4d1ac185c0845cd82ba28283803d96e9726469bf52640f67"
+  },
+  {
+    "source": "scripts/v1_label_feasibility.py",
+    "destination": "scripts/v1_label_feasibility.py",
+    "sha256": "59333d667af0a185449b7c2c1f40862d222419313ab078f05c09e2d80f9add30",
+    "packaged_sha256": "59333d667af0a185449b7c2c1f40862d222419313ab078f05c09e2d80f9add30"
+  },
+  {
+    "source": "scripts/v1_metric_fixtures.py",
+    "destination": "scripts/v1_metric_fixtures.py",
+    "sha256": "526a579007c861698d126ab0a1da7f6bb0ec1da21d358ebee7c1e09e804e7f10",
+    "packaged_sha256": "526a579007c861698d126ab0a1da7f6bb0ec1da21d358ebee7c1e09e804e7f10"
+  },
+  {
+    "source": "scripts/v1_train.py",
+    "destination": "scripts/v1_train.py",
+    "sha256": "b8227c180537f2f75b6e4a272f7f8718cd761714789a2b60f6cbaee0afd8513f",
+    "packaged_sha256": "b8227c180537f2f75b6e4a272f7f8718cd761714789a2b60f6cbaee0afd8513f"
+  },
+  {
+    "source": "scripts/visualize_labels.py",
+    "destination": "scripts/visualize_labels.py",
+    "sha256": "551013646647e5d637c9e4a0d648bce91dd64440592e57b4a7daa8358f735989",
+    "packaged_sha256": "551013646647e5d637c9e4a0d648bce91dd64440592e57b4a7daa8358f735989"
+  },
+  {
+    "source": "scripts/visualize_labels_clean.py",
+    "destination": "scripts/visualize_labels_clean.py",
+    "sha256": "c1b1787b7fc5ae47952f66511661a113ef38c55e46162cc0b9e85188c30f2d09",
+    "packaged_sha256": "c1b1787b7fc5ae47952f66511661a113ef38c55e46162cc0b9e85188c30f2d09"
+  },
+  {
+    "source": "scripts/visualize_labels_v1.py",
+    "destination": "scripts/visualize_labels_v1.py",
+    "sha256": "d9dc4617c2247baa7143e3ed40679f090676ae7fb4277c06218afc811244dcb6",
+    "packaged_sha256": "d9dc4617c2247baa7143e3ed40679f090676ae7fb4277c06218afc811244dcb6"
+  },
+  {
+    "source": "tests/test_autolabel_e2e_v1.py",
+    "destination": "tests/test_autolabel_e2e_v1.py",
+    "sha256": "ac087f9d34aaa6b85247204092a6ff3fa0feae592d76e7f807464ade5cb01b37",
+    "packaged_sha256": "ac087f9d34aaa6b85247204092a6ff3fa0feae592d76e7f807464ade5cb01b37"
+  },
+  {
+    "source": "tests/test_config_v1.py",
+    "destination": "tests/test_config_v1.py",
+    "sha256": "f92a2e54f9a27bc86938f7f0cb742e7b4e7920491fb204bae9b205e71b08c549",
+    "packaged_sha256": "f92a2e54f9a27bc86938f7f0cb742e7b4e7920491fb204bae9b205e71b08c549"
+  },
+  {
+    "source": "tests/test_dataset_v1.py",
+    "destination": "tests/test_dataset_v1.py",
+    "sha256": "918e28c71cb3c23e3578c76875bb544021c3a1b1196378ec91c1776b173aa78d",
+    "packaged_sha256": "918e28c71cb3c23e3578c76875bb544021c3a1b1196378ec91c1776b173aa78d"
+  },
+  {
+    "source": "tests/test_embed_v1.py",
+    "destination": "tests/test_embed_v1.py",
+    "sha256": "9efc0785b619b6cab53e8943db6be3ee4e43bfbbf9173f70719b846e07e3b236",
+    "packaged_sha256": "9efc0785b619b6cab53e8943db6be3ee4e43bfbbf9173f70719b846e07e3b236"
+  },
+  {
+    "source": "tests/test_evaluate_v1.py",
+    "destination": "tests/test_evaluate_v1.py",
+    "sha256": "2ce549ccd2baa1e943c05ed5c8c656d318947f20d86ae459ad1c57c9abcef133",
+    "packaged_sha256": "2ce549ccd2baa1e943c05ed5c8c656d318947f20d86ae459ad1c57c9abcef133"
+  },
+  {
+    "source": "tests/test_features_provenance_v1.py",
+    "destination": "tests/test_features_provenance_v1.py",
+    "sha256": "b46c9e4be50f62a0b34b668e1a74272339dcf1ab6d418b9069dd9db07a564092",
+    "packaged_sha256": "b46c9e4be50f62a0b34b668e1a74272339dcf1ab6d418b9069dd9db07a564092"
+  },
+  {
+    "source": "tests/test_features_status.py",
+    "destination": "tests/test_features_status.py",
+    "sha256": "be83083201ebfa1d69290b6f13d9e81eb7c651e41b4b46bb6a024be28451f9c1",
+    "packaged_sha256": "be83083201ebfa1d69290b6f13d9e81eb7c651e41b4b46bb6a024be28451f9c1"
+  },
+  {
+    "source": "tests/test_features_v1.py",
+    "destination": "tests/test_features_v1.py",
+    "sha256": "9be1daaa09a51c2b918908b512cc2302be64309d990da435e68f2235c1e5a27d",
+    "packaged_sha256": "9be1daaa09a51c2b918908b512cc2302be64309d990da435e68f2235c1e5a27d"
+  },
+  {
+    "source": "tests/test_gate_v1.py",
+    "destination": "tests/test_gate_v1.py",
+    "sha256": "ebbd68dd87cb089a3eb489b5798d7e1e365409944c74beaaae8410ced268b3a9",
+    "packaged_sha256": "ebbd68dd87cb089a3eb489b5798d7e1e365409944c74beaaae8410ced268b3a9"
+  },
+  {
+    "source": "tests/test_metric_fixtures_v1.py",
+    "destination": "tests/test_metric_fixtures_v1.py",
+    "sha256": "a75a7bd24c4c34c4d4691bca7fc33251ef7fb7843556b7a1046c728c0be153af",
+    "packaged_sha256": "a75a7bd24c4c34c4d4691bca7fc33251ef7fb7843556b7a1046c728c0be153af"
+  },
+  {
+    "source": "tests/test_provenance_v1.py",
+    "destination": "tests/test_provenance_v1.py",
+    "sha256": "5e13440bcb622960e5b62ee1be4eb6a35de959c2596959bfc6f7aaa02e090166",
+    "packaged_sha256": "5e13440bcb622960e5b62ee1be4eb6a35de959c2596959bfc6f7aaa02e090166"
+  },
+  {
+    "source": "tests/test_rules_v1.py",
+    "destination": "tests/test_rules_v1.py",
+    "sha256": "b800e6b6b604c48368179cd7bc35bb8e725fb79afa9f3d5f60882a2411c4d7c9",
+    "packaged_sha256": "b800e6b6b604c48368179cd7bc35bb8e725fb79afa9f3d5f60882a2411c4d7c9"
+  },
+  {
+    "source": "tests/test_static_names.py",
+    "destination": "tests/test_static_names.py",
+    "sha256": "0e3f67d321ba4063b6169943ca2807010b55450dcdb7b15e8de69c30138a10fc",
+    "packaged_sha256": "0e3f67d321ba4063b6169943ca2807010b55450dcdb7b15e8de69c30138a10fc"
+  },
+  {
+    "source": "tests/test_train_v1.py",
+    "destination": "tests/test_train_v1.py",
+    "sha256": "d63588323ed7a1f9976c44c875e5e3a80cc5724f0cfd1d628095ebca59437203",
+    "packaged_sha256": "d63588323ed7a1f9976c44c875e5e3a80cc5724f0cfd1d628095ebca59437203"
+  },
+  {
+    "source": "tests/test_visualize_v1.py",
+    "destination": "tests/test_visualize_v1.py",
+    "sha256": "cac4352cc2bc910538400e184aa2d21faefc62095bae97420cf1471e3222b33a",
+    "packaged_sha256": "cac4352cc2bc910538400e184aa2d21faefc62095bae97420cf1471e3222b33a"
+  },
+  {
+    "source": "configs/default.yaml",
+    "destination": "configs/default.yaml",
+    "sha256": "d5d01661a8fbfcfa6cb2f14000562d19814274f7c1dc17270feeececc11b4698",
+    "packaged_sha256": "d5d01661a8fbfcfa6cb2f14000562d19814274f7c1dc17270feeececc11b4698"
+  },
+  {
+    "source": "configs/experiments/angles_ablation.yaml",
+    "destination": "configs/experiments/angles_ablation.yaml",
+    "sha256": "d5046d4fbed61351f0e934a365f68a54fbf21d4c72684477bda07238dc31b1e1",
+    "packaged_sha256": "d5046d4fbed61351f0e934a365f68a54fbf21d4c72684477bda07238dc31b1e1"
+  },
+  {
+    "source": "configs/experiments/b2_static.yaml",
+    "destination": "configs/experiments/b2_static.yaml",
+    "sha256": "5d4be06502260e8f9a5ee6199d1e4f48a2fb59b651ef85c9c6788facd32d4fea",
+    "packaged_sha256": "5d4be06502260e8f9a5ee6199d1e4f48a2fb59b651ef85c9c6788facd32d4fea"
+  },
+  {
+    "source": "configs/experiments/m1_main.yaml",
+    "destination": "configs/experiments/m1_main.yaml",
+    "sha256": "f0fc83c5e2a0f0bde52bfbf06167cf7a21fba4ae19f7483ca16a8c6b52fe5fc1",
+    "packaged_sha256": "f0fc83c5e2a0f0bde52bfbf06167cf7a21fba4ae19f7483ca16a8c6b52fe5fc1"
+  },
+  {
+    "source": "configs/experiments/m2_physics.yaml",
+    "destination": "configs/experiments/m2_physics.yaml",
+    "sha256": "3c9603fe726be6215da0d31a46a41c9fa466594b5958517a5dd2891146b193ac",
+    "packaged_sha256": "3c9603fe726be6215da0d31a46a41c9fa466594b5958517a5dd2891146b193ac"
+  },
+  {
+    "source": "configs/experiments/m3_selftrain.yaml",
+    "destination": "configs/experiments/m3_selftrain.yaml",
+    "sha256": "d66d3ad7d2027d1ee8eced555389107b657a7eb5497d120b5dbc0fb3ca53f27b",
+    "packaged_sha256": "d66d3ad7d2027d1ee8eced555389107b657a7eb5497d120b5dbc0fb3ca53f27b"
+  },
+  {
+    "source": "knowledge/aliases.csv",
+    "destination": "knowledge/aliases.csv",
+    "sha256": "d883871ba45fb087ed7ed05b394325af2fef4ca24abfac5a6f3b5ed3c6c3da6c",
+    "packaged_sha256": "d883871ba45fb087ed7ed05b394325af2fef4ca24abfac5a6f3b5ed3c6c3da6c"
+  },
+  {
+    "source": "knowledge/assemblage_hints.yaml",
+    "destination": "knowledge/assemblage_hints.yaml",
+    "sha256": "530693b1b9409d15212b2dfbad24484701a02390655cf7e60cd2d0c2570589cc",
+    "packaged_sha256": "530693b1b9409d15212b2dfbad24484701a02390655cf7e60cd2d0c2570589cc"
+  },
+  {
+    "source": "knowledge/hierarchy.yaml",
+    "destination": "knowledge/hierarchy.yaml",
+    "sha256": "663aa903921ed8166b7c25a0bf95d5922ee08f0410fbf57297b255dbf8c891e8",
+    "packaged_sha256": "663aa903921ed8166b7c25a0bf95d5922ee08f0410fbf57297b255dbf8c891e8"
+  },
+  {
+    "source": "knowledge/likelihoods.yaml",
+    "destination": "knowledge/likelihoods.yaml",
+    "sha256": "9278f25e4a2097263c7171193ec6b7009b4ab5dbefdae74cc7a8497b8d8b7408",
+    "packaged_sha256": "9278f25e4a2097263c7171193ec6b7009b4ab5dbefdae74cc7a8497b8d8b7408"
+  },
+  {
+    "source": "knowledge/minerals.csv",
+    "destination": "knowledge/minerals.csv",
+    "sha256": "e363adc2e09703919505a085cb216df75c82380129a04be8ab57a1a062244fb7",
+    "packaged_sha256": "e363adc2e09703919505a085cb216df75c82380129a04be8ab57a1a062244fb7"
+  },
+  {
+    "source": "knowledge/SOURCES.md",
+    "destination": "knowledge/SOURCES.md",
+    "sha256": "fbefac9e87c66ddf1b216ae0cdaedadb865a0e955eff6ce51d6c6b5e8c972149",
+    "packaged_sha256": "fbefac9e87c66ddf1b216ae0cdaedadb865a0e955eff6ce51d6c6b5e8c972149"
+  },
+  {
+    "source": "requirements.txt",
+    "destination": "requirements.txt",
+    "sha256": "e834e3580d0e85c98e39dc0643808e6762e83cbd108a92ea72575e94221ad212",
+    "packaged_sha256": "e834e3580d0e85c98e39dc0643808e6762e83cbd108a92ea72575e94221ad212"
+  },
+  {
+    "source": "PROJECT_SPEC.md",
+    "destination": "snapshot/PROJECT_SPEC.md",
+    "sha256": "fd82459db5c12ea15e88ee592e8337d2fae9ae09af578fdac25eb7e09eedd8ee",
+    "packaged_sha256": "fd82459db5c12ea15e88ee592e8337d2fae9ae09af578fdac25eb7e09eedd8ee"
+  },
+  {
+    "source": "gpt audit/professor_package/build/preliminary/raw.png",
+    "destination": "report/images/raw.png",
+    "sha256": "1bd60d8891f71c329f2e90ab454c6c56f87202f6e75ff6d5c48190c0a7c456c8",
+    "packaged_sha256": "1bd60d8891f71c329f2e90ab454c6c56f87202f6e75ff6d5c48190c0a7c456c8"
+  },
+  {
+    "source": "gpt audit/professor_package/build/preliminary/selected.png",
+    "destination": "report/images/selected.png",
+    "sha256": "1f8f1e18906827a0c1b84f6592907de00535e6498d244decdd53d91e7c8f8bd9",
+    "packaged_sha256": "1f8f1e18906827a0c1b84f6592907de00535e6498d244decdd53d91e7c8f8bd9"
+  },
+  {
+    "source": "gpt audit/professor_package/build/preliminary/crops1.png",
+    "destination": "report/images/crops1.png",
+    "sha256": "f4e0021ebc47ee789b8faad209a57826a9b1d1e05832e6aa3e87c69a719882f1",
+    "packaged_sha256": "f4e0021ebc47ee789b8faad209a57826a9b1d1e05832e6aa3e87c69a719882f1"
+  },
+  {
+    "source": "gpt audit/professor_package/build/preliminary/crops2.png",
+    "destination": "report/images/crops2.png",
+    "sha256": "e255fb5f549c023a92f9a5eaea5068cc52592eb72ce4afbfe0162a7f90d7064b",
+    "packaged_sha256": "e255fb5f549c023a92f9a5eaea5068cc52592eb72ce4afbfe0162a7f90d7064b"
+  },
+  {
+    "source": "gpt audit/professor_package/build/preliminary/probabilities.png",
+    "destination": "report/images/probabilities.png",
+    "sha256": "bfeb418ac9424ea266ee0d93d0db26bb4eca6024dff0a3e157dcb3ef3afff07b",
+    "packaged_sha256": "bfeb418ac9424ea266ee0d93d0db26bb4eca6024dff0a3e157dcb3ef3afff07b"
+  },
+  {
+    "source": "gpt audit/professor_package/build/preliminary/prediction_maps.png",
+    "destination": "report/images/prediction_maps.png",
+    "sha256": "159648c8697f5667fd7b18b4bfd2d58181e6f3272029c1572f10cd55a872e948",
+    "packaged_sha256": "159648c8697f5667fd7b18b4bfd2d58181e6f3272029c1572f10cd55a872e948"
+  },
+  {
+    "source": "data/interim/qc/align/granite_r1.png",
+    "destination": "report/images/align.png",
+    "sha256": "ceea756cdc27e3ba096b2f89cf724acb2a06e2fdf44f9f99a443a7c343dafd4e",
+    "packaged_sha256": "ceea756cdc27e3ba096b2f89cf724acb2a06e2fdf44f9f99a443a7c343dafd4e"
+  },
+  {
+    "source": "data/interim/qc/maps/granite_r1.png",
+    "destination": "report/images/maps.png",
+    "sha256": "d7bb92e91e48b7513bbbc3e5857bd35e9542e45257b5bc66b29c1123b5e1f748",
+    "packaged_sha256": "d7bb92e91e48b7513bbbc3e5857bd35e9542e45257b5bc66b29c1123b5e1f748"
+  },
+  {
+    "source": "data/interim/qc/segment/granite_r1.png",
+    "destination": "report/images/segment.png",
+    "sha256": "140197627d7aed0548999b69f9bd8ec41c0338070f93884ac6a81977287b3dee",
+    "packaged_sha256": "140197627d7aed0548999b69f9bd8ec41c0338070f93884ac6a81977287b3dee"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/learning_curves.png",
+    "destination": "report/images/learning_curves.png",
+    "sha256": "e6ed17639b697c8e94a8267845ed88d13a2cd51b1647f0d96fea0fb55e096db8",
+    "packaged_sha256": "e6ed17639b697c8e94a8267845ed88d13a2cd51b1647f0d96fea0fb55e096db8"
+  },
+  {
+    "source": "gpt audit/professor_package/build/preliminary/evidence.json",
+    "destination": "evidence/granite_example.json",
+    "sha256": "7d54656b6bef2a813b3884c4e3a6aba0ec2c02ab5eb15597abdf8ec1480dd298",
+    "packaged_sha256": "cdc88333754eb1518f63b69eef96d44a77f11d0a01e0a9716b3e3e757bfb23e9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/baseline_confidence_by_state.csv",
+    "destination": "evidence/audit_metrics/baseline_confidence_by_state.csv",
+    "sha256": "197a03ba1f89a17a5cb12369da4fbe64f1ffeb271a6dc0fcd820856bdcb0c3bc",
+    "packaged_sha256": "2ce4683b1cfc446141da7bab572697e5e3e7a18e68413132a3d39a16546d79eb"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/baseline_test_class_support.csv",
+    "destination": "evidence/audit_metrics/baseline_test_class_support.csv",
+    "sha256": "249a527afb43f760b1a190fb53aa471bb7fbcb292ba942b194750f4c006ee20d",
+    "packaged_sha256": "3eefea698ccb4b13a3ab497d69f51f00a9d45989b1e336707c45e123f9390f11"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/independent_class_metrics.csv",
+    "destination": "evidence/audit_metrics/independent_class_metrics.csv",
+    "sha256": "af59d9093a257d67df45018d1b1ef0d554791e279a8fdacb7a60cf1b94d189e6",
+    "packaged_sha256": "2d4774295d30b90a6f316109e524d724f146b74af44eff20623e2d8d5e8cc6a5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/independent_fold_metrics.csv",
+    "destination": "evidence/audit_metrics/independent_fold_metrics.csv",
+    "sha256": "8e4c5dc72bafb70c07194fae8eb4c52b8d89bcbfd28e2f99d41a04d3cacc540d",
+    "packaged_sha256": "2190cf3e193364acf71b9fd94a6ad980691d7194608fe746baf582b1bf58ac77"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/independent_seed_metrics.csv",
+    "destination": "evidence/audit_metrics/independent_seed_metrics.csv",
+    "sha256": "d2c0c495dbcff3d1b5c75cf886591f22a50f848345dd3e174148f314aaaccd27",
+    "packaged_sha256": "78cdbd6b36a10049d270325ebee01e7c213164dfa088bc1c7f996df62f9a0272"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/regularized_confidence_by_state.csv",
+    "destination": "evidence/audit_metrics/regularized_confidence_by_state.csv",
+    "sha256": "347f51c244a6c98e34eb5c88d66b8386d3f14a185505c55034af1586871ce512",
+    "packaged_sha256": "e8855c961cf8ca5547e1286a6cdacd254458da184c1e8217eef9afccd22b92b2"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/regularized_test_class_support.csv",
+    "destination": "evidence/audit_metrics/regularized_test_class_support.csv",
+    "sha256": "249a527afb43f760b1a190fb53aa471bb7fbcb292ba942b194750f4c006ee20d",
+    "packaged_sha256": "3eefea698ccb4b13a3ab497d69f51f00a9d45989b1e336707c45e123f9390f11"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/test_evidence_support.csv",
+    "destination": "evidence/audit_metrics/test_evidence_support.csv",
+    "sha256": "75565ea3c7cf83f030b367619c6a5f56aa97b63b3d828db4c96957e0b486bb36",
+    "packaged_sha256": "3ffa26cd0f57c8057eeff626dda57eaf57951981144e8f52465b01af406b0a60"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/training_diagnostics.csv",
+    "destination": "evidence/audit_metrics/training_diagnostics.csv",
+    "sha256": "bc488d617a994c134abe20ca45491df87a6916ddb4bc73ad355ade25454e3596",
+    "packaged_sha256": "b98fa7af79a40214e0a24a649dcabe3f60162afa49a8ff636c07a9f061b50965"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/metrics_analysis/independent_summary.json",
+    "destination": "evidence/audit_metrics/independent_summary.json",
+    "sha256": "3667990998d5da79b573a031001d9ae2dbad640e1d473a056d34b3cf45a0b943",
+    "packaged_sha256": "77e1ea7186950822794a541ff05f9a1497355e2fabfae2f7ada4d3f56e164db4"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/evaluation_report.md",
+    "destination": "results/baseline/evaluation_report.md",
+    "sha256": "5b7d0499861f22b3ff5ad3eb841465b82270b3f73d2f6414649d0966e250a0cd",
+    "packaged_sha256": "5b7d0499861f22b3ff5ad3eb841465b82270b3f73d2f6414649d0966e250a0cd"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/evaluation_summary.json",
+    "destination": "results/baseline/evaluation_summary.json",
+    "sha256": "53d92b344bfba1e681962af3af8556f9175962a2579100b7f53e85e0a45992fc",
+    "packaged_sha256": "53d92b344bfba1e681962af3af8556f9175962a2579100b7f53e85e0a45992fc"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/experiment_index.json",
+    "destination": "results/baseline/experiment_index.json",
+    "sha256": "c9f4a6f7b2afe6a308d60e9eed35fb5f8aafeacd87be36660444e72a3daae461",
+    "packaged_sha256": "c9f4a6f7b2afe6a308d60e9eed35fb5f8aafeacd87be36660444e72a3daae461"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_0/seed_0/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_0/seed_0/predictions.parquet",
+    "sha256": "c771b9113cfc56bbce0017d741907c904b9973bda87f40ffeb89dd01ba42cef2",
+    "packaged_sha256": "c771b9113cfc56bbce0017d741907c904b9973bda87f40ffeb89dd01ba42cef2"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_0/seed_0/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_0/seed_0/train_log.csv",
+    "sha256": "88fcc19ed023fc107d858b2e0e3712054fa586c5c71c38fb4a1165d9a9c90423",
+    "packaged_sha256": "88fcc19ed023fc107d858b2e0e3712054fa586c5c71c38fb4a1165d9a9c90423"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_0/seed_0/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_0/seed_0/train_summary.json",
+    "sha256": "dd7f2691f790858b111486d43dc756dc9f9514a05d35a8982fe5468584ca3097",
+    "packaged_sha256": "dd7f2691f790858b111486d43dc756dc9f9514a05d35a8982fe5468584ca3097"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_0/seed_1/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_0/seed_1/predictions.parquet",
+    "sha256": "7a6e85754b2015b71ef9ce5d2823159b2d148ab71eebdd753f5dce9fc18b8cd7",
+    "packaged_sha256": "7a6e85754b2015b71ef9ce5d2823159b2d148ab71eebdd753f5dce9fc18b8cd7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_0/seed_1/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_0/seed_1/train_log.csv",
+    "sha256": "6ec1e927cfef5724c0fba77571d713d8da2bbb31b4dec906c8d032f6649f54c5",
+    "packaged_sha256": "6ec1e927cfef5724c0fba77571d713d8da2bbb31b4dec906c8d032f6649f54c5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_0/seed_1/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_0/seed_1/train_summary.json",
+    "sha256": "ef20ca3ca9d833a26af94d584ac4be20fe1d3fe1748226e15d8b353c50dbcf85",
+    "packaged_sha256": "ef20ca3ca9d833a26af94d584ac4be20fe1d3fe1748226e15d8b353c50dbcf85"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_0/seed_2/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_0/seed_2/predictions.parquet",
+    "sha256": "4a8350c329a16f325a87e34ae75a684efb947f8aa9f1c46c310176849e8d4ee0",
+    "packaged_sha256": "4a8350c329a16f325a87e34ae75a684efb947f8aa9f1c46c310176849e8d4ee0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_0/seed_2/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_0/seed_2/train_log.csv",
+    "sha256": "4e8048bb63651801ac93f70e104e6c0f6ef1d32d667c6ec5b548d43c3f5da11c",
+    "packaged_sha256": "4e8048bb63651801ac93f70e104e6c0f6ef1d32d667c6ec5b548d43c3f5da11c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_0/seed_2/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_0/seed_2/train_summary.json",
+    "sha256": "bb03c08ae04f6e76a59b3e13d7411f5e938888289cd09c40b97492d7cbf86013",
+    "packaged_sha256": "bb03c08ae04f6e76a59b3e13d7411f5e938888289cd09c40b97492d7cbf86013"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_1/seed_0/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_1/seed_0/predictions.parquet",
+    "sha256": "2b1ad7ff17c7a1f570092bbb0ac4399e4b3167e4e40eae5375a607dbae09d9e6",
+    "packaged_sha256": "2b1ad7ff17c7a1f570092bbb0ac4399e4b3167e4e40eae5375a607dbae09d9e6"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_1/seed_0/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_1/seed_0/train_log.csv",
+    "sha256": "b9a32dae112a281d6a4fec1679e33a18adafa1f5b5bf7dea5d6b4de056a8d1b5",
+    "packaged_sha256": "b9a32dae112a281d6a4fec1679e33a18adafa1f5b5bf7dea5d6b4de056a8d1b5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_1/seed_0/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_1/seed_0/train_summary.json",
+    "sha256": "f6fe55efc355faa9b0a06b87037ed9a2f85e8dbcdd76a5e0b8daf7b1fd71dffb",
+    "packaged_sha256": "f6fe55efc355faa9b0a06b87037ed9a2f85e8dbcdd76a5e0b8daf7b1fd71dffb"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_1/seed_1/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_1/seed_1/predictions.parquet",
+    "sha256": "8a5f43853ed3e9864012406f45f6a6c8cf4a5afec4c582df3124ba84c6aa9abf",
+    "packaged_sha256": "8a5f43853ed3e9864012406f45f6a6c8cf4a5afec4c582df3124ba84c6aa9abf"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_1/seed_1/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_1/seed_1/train_log.csv",
+    "sha256": "f678ca19a236d7f66cea6a913b2f214bdb56470e991558cf66c4b7c9255b3e9f",
+    "packaged_sha256": "f678ca19a236d7f66cea6a913b2f214bdb56470e991558cf66c4b7c9255b3e9f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_1/seed_1/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_1/seed_1/train_summary.json",
+    "sha256": "81bb3202e7db9638f9b2ba6f94937845c3d84c8b311dfaa3c7a4c6c3127573b1",
+    "packaged_sha256": "81bb3202e7db9638f9b2ba6f94937845c3d84c8b311dfaa3c7a4c6c3127573b1"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_1/seed_2/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_1/seed_2/predictions.parquet",
+    "sha256": "b103cfcca53598028c81ba4ee7d605797109d32e1f732d83af2de6b43800a111",
+    "packaged_sha256": "b103cfcca53598028c81ba4ee7d605797109d32e1f732d83af2de6b43800a111"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_1/seed_2/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_1/seed_2/train_log.csv",
+    "sha256": "ad4b63fc28c22e1268cc50f82f9488572eafbd108594150c627d6af6448598b8",
+    "packaged_sha256": "ad4b63fc28c22e1268cc50f82f9488572eafbd108594150c627d6af6448598b8"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_1/seed_2/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_1/seed_2/train_summary.json",
+    "sha256": "5a2cdfb9ab0689f653f240d9349a98c3f0db9840d0303f05218cea4f3a5e3156",
+    "packaged_sha256": "5a2cdfb9ab0689f653f240d9349a98c3f0db9840d0303f05218cea4f3a5e3156"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_2/seed_0/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_2/seed_0/predictions.parquet",
+    "sha256": "7304c2a7131870816cf1d8504954bf43e28a5267f2a6a1ff99a84d2181ed848a",
+    "packaged_sha256": "7304c2a7131870816cf1d8504954bf43e28a5267f2a6a1ff99a84d2181ed848a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_2/seed_0/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_2/seed_0/train_log.csv",
+    "sha256": "94c6861da0e94fed5828974948782b8f1aa528aa210b82cd43864df2ae8fc4c2",
+    "packaged_sha256": "94c6861da0e94fed5828974948782b8f1aa528aa210b82cd43864df2ae8fc4c2"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_2/seed_0/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_2/seed_0/train_summary.json",
+    "sha256": "feaf5e1fca51675069b83c426c2d1da8420d8bb0e705fe56430730e179d6eee9",
+    "packaged_sha256": "feaf5e1fca51675069b83c426c2d1da8420d8bb0e705fe56430730e179d6eee9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_2/seed_1/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_2/seed_1/predictions.parquet",
+    "sha256": "c1238eb9279de205213552e2bd8545390f0448b076a3e788e88e131056ac78e1",
+    "packaged_sha256": "c1238eb9279de205213552e2bd8545390f0448b076a3e788e88e131056ac78e1"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_2/seed_1/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_2/seed_1/train_log.csv",
+    "sha256": "421f20f5cde69598363c64fff1b7ced1f9ba1924830b696c0812498ad32436c4",
+    "packaged_sha256": "421f20f5cde69598363c64fff1b7ced1f9ba1924830b696c0812498ad32436c4"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_2/seed_1/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_2/seed_1/train_summary.json",
+    "sha256": "6d26d92a4a44eaacb207cfd010a1fbb3a521f0aeef72c2b8f58ae3550ddd3670",
+    "packaged_sha256": "6d26d92a4a44eaacb207cfd010a1fbb3a521f0aeef72c2b8f58ae3550ddd3670"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_2/seed_2/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_2/seed_2/predictions.parquet",
+    "sha256": "de478d1d0b3e2a73238f29f5f1923a144c07e9f5db5b1af245c747c8f454aa3e",
+    "packaged_sha256": "de478d1d0b3e2a73238f29f5f1923a144c07e9f5db5b1af245c747c8f454aa3e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_2/seed_2/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_2/seed_2/train_log.csv",
+    "sha256": "3f0289dd045e6fc3e99e43f52596ebb982abf533f0e2f8aac40d246f68fe0472",
+    "packaged_sha256": "3f0289dd045e6fc3e99e43f52596ebb982abf533f0e2f8aac40d246f68fe0472"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_2/seed_2/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_2/seed_2/train_summary.json",
+    "sha256": "a637162e38bf174686737d400d69e85d54ee6726602cc5d549c29a23a22b3759",
+    "packaged_sha256": "a637162e38bf174686737d400d69e85d54ee6726602cc5d549c29a23a22b3759"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_3/seed_0/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_3/seed_0/predictions.parquet",
+    "sha256": "514a7d5ba774d59c231dc032c261a2d115b0d12e6c99a94fc0a55fffe8a64f63",
+    "packaged_sha256": "514a7d5ba774d59c231dc032c261a2d115b0d12e6c99a94fc0a55fffe8a64f63"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_3/seed_0/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_3/seed_0/train_log.csv",
+    "sha256": "b79617dbffe1601a7e80b3c58a11b9da0fe36d54ca5be607a4e492cb48a29614",
+    "packaged_sha256": "b79617dbffe1601a7e80b3c58a11b9da0fe36d54ca5be607a4e492cb48a29614"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_3/seed_0/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_3/seed_0/train_summary.json",
+    "sha256": "92a0b0736524f7554ab3c47318f8ca04b4ac0abeb15de2a2b8942842d9da070c",
+    "packaged_sha256": "92a0b0736524f7554ab3c47318f8ca04b4ac0abeb15de2a2b8942842d9da070c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_3/seed_1/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_3/seed_1/predictions.parquet",
+    "sha256": "25058900c340e012904c5df6778342a59943fb6c0d43454c4b88ece33c5f5394",
+    "packaged_sha256": "25058900c340e012904c5df6778342a59943fb6c0d43454c4b88ece33c5f5394"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_3/seed_1/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_3/seed_1/train_log.csv",
+    "sha256": "5a277690235c7dcd66e9ca110553aef77bcef9d2abc7948fbfdfeb9500a56afe",
+    "packaged_sha256": "5a277690235c7dcd66e9ca110553aef77bcef9d2abc7948fbfdfeb9500a56afe"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_3/seed_1/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_3/seed_1/train_summary.json",
+    "sha256": "d922f9b6489fce4302e2c8b67b3de70aebfae1988befff1331d028b6bd0437f9",
+    "packaged_sha256": "d922f9b6489fce4302e2c8b67b3de70aebfae1988befff1331d028b6bd0437f9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_3/seed_2/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_3/seed_2/predictions.parquet",
+    "sha256": "a96ab164ee69e702139e46bef2937786360fb29dec33bca0df4a7c7032843a2d",
+    "packaged_sha256": "a96ab164ee69e702139e46bef2937786360fb29dec33bca0df4a7c7032843a2d"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_3/seed_2/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_3/seed_2/train_log.csv",
+    "sha256": "3ce84e50edbe2771f3fb36c6e24500fec44c750364bd7f30fc7c05e655869963",
+    "packaged_sha256": "3ce84e50edbe2771f3fb36c6e24500fec44c750364bd7f30fc7c05e655869963"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_3/seed_2/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_3/seed_2/train_summary.json",
+    "sha256": "1549fd73bb6dcefe2616f02b3a18064bb52c1f67517142c6a0a46c5342e96ca9",
+    "packaged_sha256": "1549fd73bb6dcefe2616f02b3a18064bb52c1f67517142c6a0a46c5342e96ca9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_4/seed_0/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_4/seed_0/predictions.parquet",
+    "sha256": "8a84df0e7d2189f3639e5339f9bfdec9daddd3fbc8746842e2e1c0155f9240fc",
+    "packaged_sha256": "8a84df0e7d2189f3639e5339f9bfdec9daddd3fbc8746842e2e1c0155f9240fc"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_4/seed_0/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_4/seed_0/train_log.csv",
+    "sha256": "571aa132f3f8305367887908315b18f54ebfdd0ce3dddf4875c290b028c96416",
+    "packaged_sha256": "571aa132f3f8305367887908315b18f54ebfdd0ce3dddf4875c290b028c96416"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_4/seed_0/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_4/seed_0/train_summary.json",
+    "sha256": "bdb4360ef17e33e831c004303cce01b60c5e7d6cea7554fab21ec2906196317f",
+    "packaged_sha256": "bdb4360ef17e33e831c004303cce01b60c5e7d6cea7554fab21ec2906196317f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_4/seed_1/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_4/seed_1/predictions.parquet",
+    "sha256": "fb3acc3b05f656952467dcc09304cc84a96d54b657211f803d4b475d5bd743ea",
+    "packaged_sha256": "fb3acc3b05f656952467dcc09304cc84a96d54b657211f803d4b475d5bd743ea"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_4/seed_1/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_4/seed_1/train_log.csv",
+    "sha256": "97a759c2b82a39258a9f85bae64b72f0d55530407d11e77e7a3f1a0c63147a8e",
+    "packaged_sha256": "97a759c2b82a39258a9f85bae64b72f0d55530407d11e77e7a3f1a0c63147a8e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_4/seed_1/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_4/seed_1/train_summary.json",
+    "sha256": "14c116d5c017274d4379ad6303b559ac3effa081c2469c1c8637f7e9522b4d4b",
+    "packaged_sha256": "14c116d5c017274d4379ad6303b559ac3effa081c2469c1c8637f7e9522b4d4b"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_4/seed_2/predictions.parquet",
+    "destination": "results/baseline/angle_aware_k12/fold_4/seed_2/predictions.parquet",
+    "sha256": "e93bdb5d3d7a66f538337bd518b2bb4b3522f807e94b15c172a91e6d9174a235",
+    "packaged_sha256": "e93bdb5d3d7a66f538337bd518b2bb4b3522f807e94b15c172a91e6d9174a235"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_4/seed_2/train_log.csv",
+    "destination": "results/baseline/angle_aware_k12/fold_4/seed_2/train_log.csv",
+    "sha256": "f2ca919185657fb334e7aa462643fe410603c45563ee8ada59bf10d6dca848b0",
+    "packaged_sha256": "f2ca919185657fb334e7aa462643fe410603c45563ee8ada59bf10d6dca848b0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/angle_aware_k12/fold_4/seed_2/train_summary.json",
+    "destination": "results/baseline/angle_aware_k12/fold_4/seed_2/train_summary.json",
+    "sha256": "a6721eabd86d1be4715ade019b156b4e41e5da8b74cc9e76c5dc9952205f479a",
+    "packaged_sha256": "a6721eabd86d1be4715ade019b156b4e41e5da8b74cc9e76c5dc9952205f479a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_0/seed_0/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_0/seed_0/predictions.parquet",
+    "sha256": "e3e906a1efe08833ebf37cdd56fde74e4422b789c1b415f769ac3a116ae9d7d9",
+    "packaged_sha256": "e3e906a1efe08833ebf37cdd56fde74e4422b789c1b415f769ac3a116ae9d7d9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_0/seed_0/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_0/seed_0/train_log.csv",
+    "sha256": "88b0f7e12dcf9210e66fab096ccf0185e20a6e1e1ed6f704590a505e0e573dd0",
+    "packaged_sha256": "88b0f7e12dcf9210e66fab096ccf0185e20a6e1e1ed6f704590a505e0e573dd0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_0/seed_0/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_0/seed_0/train_summary.json",
+    "sha256": "2919f40f6f45fa6efc47d4e32cbe32bcf204ca8b3ca15b8c1ca2158d9e3339dc",
+    "packaged_sha256": "2919f40f6f45fa6efc47d4e32cbe32bcf204ca8b3ca15b8c1ca2158d9e3339dc"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_0/seed_1/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_0/seed_1/predictions.parquet",
+    "sha256": "291fa38c7331ba70b61d6d6730c7792dc5477a19d72fd56b63406aa60aa9b501",
+    "packaged_sha256": "291fa38c7331ba70b61d6d6730c7792dc5477a19d72fd56b63406aa60aa9b501"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_0/seed_1/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_0/seed_1/train_log.csv",
+    "sha256": "2a07a9c134e71fe851a1855a9f9a7b5e5b7150d6829a723ca5e975dcf65d34f3",
+    "packaged_sha256": "2a07a9c134e71fe851a1855a9f9a7b5e5b7150d6829a723ca5e975dcf65d34f3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_0/seed_1/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_0/seed_1/train_summary.json",
+    "sha256": "8f4a3b52f3045184afe0637f70b62e156925ff57311466df5680b5c8cdc5b1b5",
+    "packaged_sha256": "8f4a3b52f3045184afe0637f70b62e156925ff57311466df5680b5c8cdc5b1b5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_0/seed_2/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_0/seed_2/predictions.parquet",
+    "sha256": "5533662468c469e86c1284eef1074c2751d72aa9e4a3b6cc9aa9ed6b9719012b",
+    "packaged_sha256": "5533662468c469e86c1284eef1074c2751d72aa9e4a3b6cc9aa9ed6b9719012b"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_0/seed_2/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_0/seed_2/train_log.csv",
+    "sha256": "4893a7524220436e9e48ca8eacc80c8924e1fc1ec320edb2bbb5578140f434a2",
+    "packaged_sha256": "4893a7524220436e9e48ca8eacc80c8924e1fc1ec320edb2bbb5578140f434a2"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_0/seed_2/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_0/seed_2/train_summary.json",
+    "sha256": "194303b3bf00854fa8f3f9392785f660f2e7a797b5ffa6298064554b6e810c7e",
+    "packaged_sha256": "194303b3bf00854fa8f3f9392785f660f2e7a797b5ffa6298064554b6e810c7e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_1/seed_0/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_1/seed_0/predictions.parquet",
+    "sha256": "752321b0d30ae606fba920d4724c376333ada3a63e814d77ed44c484680e35f3",
+    "packaged_sha256": "752321b0d30ae606fba920d4724c376333ada3a63e814d77ed44c484680e35f3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_1/seed_0/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_1/seed_0/train_log.csv",
+    "sha256": "9bd7cb990d107d75a5b17af018d8f4b22654ade717e781163be766bcfdf64299",
+    "packaged_sha256": "9bd7cb990d107d75a5b17af018d8f4b22654ade717e781163be766bcfdf64299"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_1/seed_0/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_1/seed_0/train_summary.json",
+    "sha256": "99304ef7162500a9418f1adf4b9ebd750fc81be89b7c842abfdcbaac9fb0b153",
+    "packaged_sha256": "99304ef7162500a9418f1adf4b9ebd750fc81be89b7c842abfdcbaac9fb0b153"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_1/seed_1/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_1/seed_1/predictions.parquet",
+    "sha256": "88d0f7d48ed82d3cff117e5b676d6a9a8fcbca0b6ce8babf3e9e5a3d98aae14a",
+    "packaged_sha256": "88d0f7d48ed82d3cff117e5b676d6a9a8fcbca0b6ce8babf3e9e5a3d98aae14a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_1/seed_1/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_1/seed_1/train_log.csv",
+    "sha256": "401019ba2c78c4188c618cd90be073c9b0e4bb43bdec0eae6f2312eb38588b98",
+    "packaged_sha256": "401019ba2c78c4188c618cd90be073c9b0e4bb43bdec0eae6f2312eb38588b98"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_1/seed_1/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_1/seed_1/train_summary.json",
+    "sha256": "8aae5800b37b83eb3ea56a7158da7634497514bd058720e6d27202e1e3d374d7",
+    "packaged_sha256": "8aae5800b37b83eb3ea56a7158da7634497514bd058720e6d27202e1e3d374d7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_1/seed_2/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_1/seed_2/predictions.parquet",
+    "sha256": "da48b4a0f4c4698ec4b38ceffd0d49db074d849b1f0759cca45a8636c86e105f",
+    "packaged_sha256": "da48b4a0f4c4698ec4b38ceffd0d49db074d849b1f0759cca45a8636c86e105f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_1/seed_2/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_1/seed_2/train_log.csv",
+    "sha256": "93d372f5f19b33ebc4aefe4093c120fe713f81241672422d10befdebfbd92504",
+    "packaged_sha256": "93d372f5f19b33ebc4aefe4093c120fe713f81241672422d10befdebfbd92504"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_1/seed_2/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_1/seed_2/train_summary.json",
+    "sha256": "d965c54d7663652c788039a1ba1ae135d6f5158164072a51406eea57033170b2",
+    "packaged_sha256": "d965c54d7663652c788039a1ba1ae135d6f5158164072a51406eea57033170b2"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_2/seed_0/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_2/seed_0/predictions.parquet",
+    "sha256": "44d374621ee97c42616d1919f7cb37e2ed2ed2a19f89368c5dd0df52adc469b9",
+    "packaged_sha256": "44d374621ee97c42616d1919f7cb37e2ed2ed2a19f89368c5dd0df52adc469b9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_2/seed_0/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_2/seed_0/train_log.csv",
+    "sha256": "991fe8209f5287d4017183aafe9be4650e99713d80851ea8c578550adce0ebaa",
+    "packaged_sha256": "991fe8209f5287d4017183aafe9be4650e99713d80851ea8c578550adce0ebaa"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_2/seed_0/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_2/seed_0/train_summary.json",
+    "sha256": "588e1f2d666086029b40b905ad67d2f3f12ce9e3720c6a3c173cf28f4e050197",
+    "packaged_sha256": "588e1f2d666086029b40b905ad67d2f3f12ce9e3720c6a3c173cf28f4e050197"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_2/seed_1/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_2/seed_1/predictions.parquet",
+    "sha256": "89a88f085db02b05c127e24dda42bcb58cc44f1bd1c7b6cf56dd58e15e47abe7",
+    "packaged_sha256": "89a88f085db02b05c127e24dda42bcb58cc44f1bd1c7b6cf56dd58e15e47abe7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_2/seed_1/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_2/seed_1/train_log.csv",
+    "sha256": "f9d4b3852c975012e665813426e55c1d685f811a2d3285b3f08dc16eb0c3763e",
+    "packaged_sha256": "f9d4b3852c975012e665813426e55c1d685f811a2d3285b3f08dc16eb0c3763e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_2/seed_1/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_2/seed_1/train_summary.json",
+    "sha256": "af7f0061aa719ad1a806c6d757904cff7ef9ca75bf7112affbb441a4f6c5ad5b",
+    "packaged_sha256": "af7f0061aa719ad1a806c6d757904cff7ef9ca75bf7112affbb441a4f6c5ad5b"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_2/seed_2/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_2/seed_2/predictions.parquet",
+    "sha256": "b6e25134e8f24d156fad14959d6658f4052717386dbff725c8a8187161db6e8e",
+    "packaged_sha256": "b6e25134e8f24d156fad14959d6658f4052717386dbff725c8a8187161db6e8e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_2/seed_2/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_2/seed_2/train_log.csv",
+    "sha256": "b8f821b7464d223f30864845643875945dc341186c994d53ecac75006852ffeb",
+    "packaged_sha256": "b8f821b7464d223f30864845643875945dc341186c994d53ecac75006852ffeb"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_2/seed_2/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_2/seed_2/train_summary.json",
+    "sha256": "a0af7f9bc9f943e93e739fa0c9ab4ea532ed8401f0a20775d03ab6be49a70ac2",
+    "packaged_sha256": "a0af7f9bc9f943e93e739fa0c9ab4ea532ed8401f0a20775d03ab6be49a70ac2"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_3/seed_0/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_3/seed_0/predictions.parquet",
+    "sha256": "c53fa095a0f766b2707d9334c3f51e8614a85b98ac62e268c9f90db5a7497560",
+    "packaged_sha256": "c53fa095a0f766b2707d9334c3f51e8614a85b98ac62e268c9f90db5a7497560"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_3/seed_0/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_3/seed_0/train_log.csv",
+    "sha256": "91d9666512575d29cf820dbdfba8a253a5ecd9e201af8f6499ae8a7cf009b2d1",
+    "packaged_sha256": "91d9666512575d29cf820dbdfba8a253a5ecd9e201af8f6499ae8a7cf009b2d1"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_3/seed_0/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_3/seed_0/train_summary.json",
+    "sha256": "42f49c59a32568247ee2b750af5481e659a6f9b8b83d4250e44afc8dffe6537c",
+    "packaged_sha256": "42f49c59a32568247ee2b750af5481e659a6f9b8b83d4250e44afc8dffe6537c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_3/seed_1/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_3/seed_1/predictions.parquet",
+    "sha256": "900faa3a8f655b6fe897cffec8d341912bbcc13bc66d6e69f31aaa5514f49af3",
+    "packaged_sha256": "900faa3a8f655b6fe897cffec8d341912bbcc13bc66d6e69f31aaa5514f49af3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_3/seed_1/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_3/seed_1/train_log.csv",
+    "sha256": "32cb252fc51922b49873906bd2131fbc2287ff44c86ad5145fa8a9912a28c229",
+    "packaged_sha256": "32cb252fc51922b49873906bd2131fbc2287ff44c86ad5145fa8a9912a28c229"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_3/seed_1/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_3/seed_1/train_summary.json",
+    "sha256": "15a70334881f18e867b6102ddc721a001e61d5aa844d7634dee1785664b6c779",
+    "packaged_sha256": "15a70334881f18e867b6102ddc721a001e61d5aa844d7634dee1785664b6c779"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_3/seed_2/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_3/seed_2/predictions.parquet",
+    "sha256": "9a52f4e13a6e7b10823a5db9cc36a20ce63ca0457c29c0782491effa2d549a64",
+    "packaged_sha256": "9a52f4e13a6e7b10823a5db9cc36a20ce63ca0457c29c0782491effa2d549a64"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_3/seed_2/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_3/seed_2/train_log.csv",
+    "sha256": "8327ecd60d7e18d4f6b717d8b2112d5744823b9a3cad65bb7f40b506dc8aa95c",
+    "packaged_sha256": "8327ecd60d7e18d4f6b717d8b2112d5744823b9a3cad65bb7f40b506dc8aa95c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_3/seed_2/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_3/seed_2/train_summary.json",
+    "sha256": "9f7638b7d6dbfeb3d94cdd2e71cb84b655b837f79138188b59ad1bbe908760e9",
+    "packaged_sha256": "9f7638b7d6dbfeb3d94cdd2e71cb84b655b837f79138188b59ad1bbe908760e9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_4/seed_0/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_4/seed_0/predictions.parquet",
+    "sha256": "9b3f194af24bedba95ded5e43c7e969cde98fec3d6983bb301ab169559d2888f",
+    "packaged_sha256": "9b3f194af24bedba95ded5e43c7e969cde98fec3d6983bb301ab169559d2888f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_4/seed_0/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_4/seed_0/train_log.csv",
+    "sha256": "11537eac564e73133d7bb20dc8563a6f4c35ed5e11321a6254354ec57534e113",
+    "packaged_sha256": "11537eac564e73133d7bb20dc8563a6f4c35ed5e11321a6254354ec57534e113"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_4/seed_0/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_4/seed_0/train_summary.json",
+    "sha256": "395dd4c61f73e85d6f512d26d5082d57b0b5a4a0dfeb1a6082adad6cfc9dc5fa",
+    "packaged_sha256": "395dd4c61f73e85d6f512d26d5082d57b0b5a4a0dfeb1a6082adad6cfc9dc5fa"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_4/seed_1/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_4/seed_1/predictions.parquet",
+    "sha256": "aa1893f5ae46fc3b5572b4b489a5fa32b84dd6c2e23f83153d9622cc94fc42c3",
+    "packaged_sha256": "aa1893f5ae46fc3b5572b4b489a5fa32b84dd6c2e23f83153d9622cc94fc42c3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_4/seed_1/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_4/seed_1/train_log.csv",
+    "sha256": "3e26640b5b2ee9535ee0bbdc3c7a7edeb05c339fda5a43a4e575ed13438f26e0",
+    "packaged_sha256": "3e26640b5b2ee9535ee0bbdc3c7a7edeb05c339fda5a43a4e575ed13438f26e0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_4/seed_1/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_4/seed_1/train_summary.json",
+    "sha256": "bbad955ff44c68a994ec673afbc15939c6b74db369d689b021e8687e627bd2c3",
+    "packaged_sha256": "bbad955ff44c68a994ec673afbc15939c6b74db369d689b021e8687e627bd2c3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_4/seed_2/predictions.parquet",
+    "destination": "results/baseline/static_k1/fold_4/seed_2/predictions.parquet",
+    "sha256": "3ef5260b342e1b9b66584d7dfc73748b53e559e5a7ba5b7582666cb77bd03343",
+    "packaged_sha256": "3ef5260b342e1b9b66584d7dfc73748b53e559e5a7ba5b7582666cb77bd03343"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_4/seed_2/train_log.csv",
+    "destination": "results/baseline/static_k1/fold_4/seed_2/train_log.csv",
+    "sha256": "b373c2f3142e0ef82517e1c1d3b7db9ce6ec3f9546e727cd2a68b65eb4acbcd7",
+    "packaged_sha256": "b373c2f3142e0ef82517e1c1d3b7db9ce6ec3f9546e727cd2a68b65eb4acbcd7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/static_k1/fold_4/seed_2/train_summary.json",
+    "destination": "results/baseline/static_k1/fold_4/seed_2/train_summary.json",
+    "sha256": "90e7991f4213a31feb6dbfccc7f30b7e810400d3ea293c6e0da96e4daf7251a9",
+    "packaged_sha256": "90e7991f4213a31feb6dbfccc7f30b7e810400d3ea293c6e0da96e4daf7251a9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_0/seed_0/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_0/seed_0/predictions.parquet",
+    "sha256": "cf6bf7ec0517a1321183f64282e380b6ba7d9f49a72ac6732ffc86ac627e2421",
+    "packaged_sha256": "cf6bf7ec0517a1321183f64282e380b6ba7d9f49a72ac6732ffc86ac627e2421"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_0/seed_0/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_0/seed_0/train_log.csv",
+    "sha256": "024ea27aa90cc9daf2d1eee9979847776736c0a36bdb0ad2ceac0654dbe261ec",
+    "packaged_sha256": "024ea27aa90cc9daf2d1eee9979847776736c0a36bdb0ad2ceac0654dbe261ec"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_0/seed_0/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_0/seed_0/train_summary.json",
+    "sha256": "cc2b04a7efaab2d0583290a2a7fd4feade153347b05d43c34fa8bc0d965ab1dc",
+    "packaged_sha256": "cc2b04a7efaab2d0583290a2a7fd4feade153347b05d43c34fa8bc0d965ab1dc"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_0/seed_1/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_0/seed_1/predictions.parquet",
+    "sha256": "e4fc1674f9b90c955e4a55a5455b759e32a23599a0df917c42d87d5e6413a1a5",
+    "packaged_sha256": "e4fc1674f9b90c955e4a55a5455b759e32a23599a0df917c42d87d5e6413a1a5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_0/seed_1/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_0/seed_1/train_log.csv",
+    "sha256": "d22d70644bcc82a416289aed78c1c417ad5a1ba1b68bc842ffa233600fb51dbe",
+    "packaged_sha256": "d22d70644bcc82a416289aed78c1c417ad5a1ba1b68bc842ffa233600fb51dbe"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_0/seed_1/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_0/seed_1/train_summary.json",
+    "sha256": "f5df896847acee4e785c0df6d90696ba78099f47e16506eb6468718a337d1e30",
+    "packaged_sha256": "f5df896847acee4e785c0df6d90696ba78099f47e16506eb6468718a337d1e30"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_0/seed_2/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_0/seed_2/predictions.parquet",
+    "sha256": "f6df99a032a6e412cee1ba7f0aaa140b76c220feb2ab59209f79ef4f8d33d7f0",
+    "packaged_sha256": "f6df99a032a6e412cee1ba7f0aaa140b76c220feb2ab59209f79ef4f8d33d7f0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_0/seed_2/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_0/seed_2/train_log.csv",
+    "sha256": "80b139a8b187a43b3ad145a9843f1527e493b0bba8b658d4a6ba4a043bb899cc",
+    "packaged_sha256": "80b139a8b187a43b3ad145a9843f1527e493b0bba8b658d4a6ba4a043bb899cc"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_0/seed_2/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_0/seed_2/train_summary.json",
+    "sha256": "e950a467d08c45b40b539ad89ba8e2fed68c9cfa7e7a58f7fa52753117758cad",
+    "packaged_sha256": "e950a467d08c45b40b539ad89ba8e2fed68c9cfa7e7a58f7fa52753117758cad"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_1/seed_0/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_1/seed_0/predictions.parquet",
+    "sha256": "42cbbd2af06119f9b9d60c383a9e547b9f1ccbec6c6234081740e459f207ddcf",
+    "packaged_sha256": "42cbbd2af06119f9b9d60c383a9e547b9f1ccbec6c6234081740e459f207ddcf"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_1/seed_0/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_1/seed_0/train_log.csv",
+    "sha256": "46327253d737de536c0b4338c39d29960bac6e9ff4029aee41033b0f2f80c601",
+    "packaged_sha256": "46327253d737de536c0b4338c39d29960bac6e9ff4029aee41033b0f2f80c601"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_1/seed_0/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_1/seed_0/train_summary.json",
+    "sha256": "c1ab8387e0d51c6f9e170f2f1a1035149915ef956bfd3d20b17220a170509b65",
+    "packaged_sha256": "c1ab8387e0d51c6f9e170f2f1a1035149915ef956bfd3d20b17220a170509b65"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_1/seed_1/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_1/seed_1/predictions.parquet",
+    "sha256": "837e776df8bfde346b5fcdfdae11466db25bc588466251dff070b952de272f22",
+    "packaged_sha256": "837e776df8bfde346b5fcdfdae11466db25bc588466251dff070b952de272f22"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_1/seed_1/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_1/seed_1/train_log.csv",
+    "sha256": "e4e22b8e67350d96261f5ae283e16db939c94e324e5d41cccebf42aed7919f4e",
+    "packaged_sha256": "e4e22b8e67350d96261f5ae283e16db939c94e324e5d41cccebf42aed7919f4e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_1/seed_1/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_1/seed_1/train_summary.json",
+    "sha256": "688e13e632a7d48c022f4ecaf21c731fa8d0e55e0e51b00958a086a6b02e30da",
+    "packaged_sha256": "688e13e632a7d48c022f4ecaf21c731fa8d0e55e0e51b00958a086a6b02e30da"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_1/seed_2/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_1/seed_2/predictions.parquet",
+    "sha256": "0ffdfd1bbf6d3fa27689aaf5d62b9de0eadefa12da7ed39b701921b9c62cf214",
+    "packaged_sha256": "0ffdfd1bbf6d3fa27689aaf5d62b9de0eadefa12da7ed39b701921b9c62cf214"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_1/seed_2/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_1/seed_2/train_log.csv",
+    "sha256": "92f1ce735014ab2cc502f00a29c1af98c25d4b2ab9a12ff6f302515d81e40e8b",
+    "packaged_sha256": "92f1ce735014ab2cc502f00a29c1af98c25d4b2ab9a12ff6f302515d81e40e8b"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_1/seed_2/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_1/seed_2/train_summary.json",
+    "sha256": "6d01109280a9cd081a6933e21001e04e42935a4c4b86211f0e12fe8ce3f9e27b",
+    "packaged_sha256": "6d01109280a9cd081a6933e21001e04e42935a4c4b86211f0e12fe8ce3f9e27b"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_2/seed_0/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_2/seed_0/predictions.parquet",
+    "sha256": "c42d66d85a54ab9d7ce851f53d171259f3ad058b3ef498ad23d87c4293dd820f",
+    "packaged_sha256": "c42d66d85a54ab9d7ce851f53d171259f3ad058b3ef498ad23d87c4293dd820f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_2/seed_0/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_2/seed_0/train_log.csv",
+    "sha256": "31b30287cb03f41e17f06229c8e2021ff9c590351335a89aa2deaf8e1c56586c",
+    "packaged_sha256": "31b30287cb03f41e17f06229c8e2021ff9c590351335a89aa2deaf8e1c56586c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_2/seed_0/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_2/seed_0/train_summary.json",
+    "sha256": "83bbc90ba57c5877234b8133e3b75c1e7a76708a11812f827653aa7a9de3a4c3",
+    "packaged_sha256": "83bbc90ba57c5877234b8133e3b75c1e7a76708a11812f827653aa7a9de3a4c3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_2/seed_1/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_2/seed_1/predictions.parquet",
+    "sha256": "115fdd2d797a3ff4e187916f729d947efc1ce6d45de4f2cd88dee1842d4f6df8",
+    "packaged_sha256": "115fdd2d797a3ff4e187916f729d947efc1ce6d45de4f2cd88dee1842d4f6df8"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_2/seed_1/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_2/seed_1/train_log.csv",
+    "sha256": "8bd2d36d5dc0dc3e47390bb14165a7af11d9906274a48aa692d450d5689821ec",
+    "packaged_sha256": "8bd2d36d5dc0dc3e47390bb14165a7af11d9906274a48aa692d450d5689821ec"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_2/seed_1/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_2/seed_1/train_summary.json",
+    "sha256": "65b0d2b82ebb4f46ceb66c26e8e9c385df45f6c41b5d75d23626f771fbe491c9",
+    "packaged_sha256": "65b0d2b82ebb4f46ceb66c26e8e9c385df45f6c41b5d75d23626f771fbe491c9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_2/seed_2/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_2/seed_2/predictions.parquet",
+    "sha256": "cd4c5d50e3a62f3b658998a523cfd34e40f5c66f6372d4c804038a45e17cc519",
+    "packaged_sha256": "cd4c5d50e3a62f3b658998a523cfd34e40f5c66f6372d4c804038a45e17cc519"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_2/seed_2/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_2/seed_2/train_log.csv",
+    "sha256": "33855c9a58799e256e13231a8795e067fa2c38229dfcf9354841ef6962ebe331",
+    "packaged_sha256": "33855c9a58799e256e13231a8795e067fa2c38229dfcf9354841ef6962ebe331"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_2/seed_2/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_2/seed_2/train_summary.json",
+    "sha256": "b9319abdcde13b45cd3ca6112d22e60fb8da1bc02be5083958f41e47108b3426",
+    "packaged_sha256": "b9319abdcde13b45cd3ca6112d22e60fb8da1bc02be5083958f41e47108b3426"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_3/seed_0/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_3/seed_0/predictions.parquet",
+    "sha256": "1366228e20dbb04fcd67385c0344d1f1cda087238e2dbf2a2014c14d9749be67",
+    "packaged_sha256": "1366228e20dbb04fcd67385c0344d1f1cda087238e2dbf2a2014c14d9749be67"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_3/seed_0/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_3/seed_0/train_log.csv",
+    "sha256": "1d6f64602725361fe232a642d5e1995580736133a075b687f4b354846699073b",
+    "packaged_sha256": "1d6f64602725361fe232a642d5e1995580736133a075b687f4b354846699073b"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_3/seed_0/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_3/seed_0/train_summary.json",
+    "sha256": "f4e7c4b16f22a15200a4389b9aaccf550b65e9113601b25899cfb4b8753f6559",
+    "packaged_sha256": "f4e7c4b16f22a15200a4389b9aaccf550b65e9113601b25899cfb4b8753f6559"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_3/seed_1/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_3/seed_1/predictions.parquet",
+    "sha256": "3398f9f1aae70dee4f9f3e65098bcaf5f189c08f6f115ad7d1642662373888de",
+    "packaged_sha256": "3398f9f1aae70dee4f9f3e65098bcaf5f189c08f6f115ad7d1642662373888de"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_3/seed_1/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_3/seed_1/train_log.csv",
+    "sha256": "50b8e642fc8c6048d6a12ce92b1b7f750a61598ce45f8ac06b036b2e2ca19508",
+    "packaged_sha256": "50b8e642fc8c6048d6a12ce92b1b7f750a61598ce45f8ac06b036b2e2ca19508"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_3/seed_1/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_3/seed_1/train_summary.json",
+    "sha256": "be9a0e7e359c9697c12851f867774316cd1f9b4fb6da3aeb9237efd61b7328fe",
+    "packaged_sha256": "be9a0e7e359c9697c12851f867774316cd1f9b4fb6da3aeb9237efd61b7328fe"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_3/seed_2/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_3/seed_2/predictions.parquet",
+    "sha256": "21d02c7475b374e46a9e1c6ce3073cddf544d43592da9a8e24dec91f6b46ee64",
+    "packaged_sha256": "21d02c7475b374e46a9e1c6ce3073cddf544d43592da9a8e24dec91f6b46ee64"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_3/seed_2/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_3/seed_2/train_log.csv",
+    "sha256": "df80400291338482b9f4e4c0a9e2a41abe4e3cc84a9aed0dd5d55b9cffa1abdd",
+    "packaged_sha256": "df80400291338482b9f4e4c0a9e2a41abe4e3cc84a9aed0dd5d55b9cffa1abdd"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_3/seed_2/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_3/seed_2/train_summary.json",
+    "sha256": "bdf2b4b6749af785a8765d509c9fbac100bd72ce7622a586f739f94ad100b6d4",
+    "packaged_sha256": "bdf2b4b6749af785a8765d509c9fbac100bd72ce7622a586f739f94ad100b6d4"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_4/seed_0/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_4/seed_0/predictions.parquet",
+    "sha256": "63cbf85943ceb539c712ded8320162bce2de221d7005a009200a8117f658898d",
+    "packaged_sha256": "63cbf85943ceb539c712ded8320162bce2de221d7005a009200a8117f658898d"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_4/seed_0/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_4/seed_0/train_log.csv",
+    "sha256": "b32d5e5e0730080a7bb9ab6e0841da12174dd0286d63fe54d65e540e7a4da374",
+    "packaged_sha256": "b32d5e5e0730080a7bb9ab6e0841da12174dd0286d63fe54d65e540e7a4da374"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_4/seed_0/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_4/seed_0/train_summary.json",
+    "sha256": "743b50cfaa701bf910d89ea2722c7d7641545812d5eb0cd7e0433ec7748b8e15",
+    "packaged_sha256": "743b50cfaa701bf910d89ea2722c7d7641545812d5eb0cd7e0433ec7748b8e15"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_4/seed_1/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_4/seed_1/predictions.parquet",
+    "sha256": "71d2369a2a527f2281ec0dcc0b988c2c92bb9c5384265e7389c3f0a134b8ff04",
+    "packaged_sha256": "71d2369a2a527f2281ec0dcc0b988c2c92bb9c5384265e7389c3f0a134b8ff04"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_4/seed_1/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_4/seed_1/train_log.csv",
+    "sha256": "26c4cef811e1cffdcc1e38a4b52bc1d99fc4aa1bcf4778ed53abd3974f94beee",
+    "packaged_sha256": "26c4cef811e1cffdcc1e38a4b52bc1d99fc4aa1bcf4778ed53abd3974f94beee"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_4/seed_1/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_4/seed_1/train_summary.json",
+    "sha256": "91d44b5b1e770d643968135fca523ecc57d14b57d603800553a413c75ea34c04",
+    "packaged_sha256": "91d44b5b1e770d643968135fca523ecc57d14b57d603800553a413c75ea34c04"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_4/seed_2/predictions.parquet",
+    "destination": "results/baseline/unordered_k12/fold_4/seed_2/predictions.parquet",
+    "sha256": "57f5dd96231b4316833d1a0ed25d2740dab430062d99d21a77014aaaf988db03",
+    "packaged_sha256": "57f5dd96231b4316833d1a0ed25d2740dab430062d99d21a77014aaaf988db03"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_4/seed_2/train_log.csv",
+    "destination": "results/baseline/unordered_k12/fold_4/seed_2/train_log.csv",
+    "sha256": "2a406399d0493e214d44f7b11d73592b2fe0c4e7109a62f825b95c4117379108",
+    "packaged_sha256": "2a406399d0493e214d44f7b11d73592b2fe0c4e7109a62f825b95c4117379108"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/baseline/outputs/v1/unordered_k12/fold_4/seed_2/train_summary.json",
+    "destination": "results/baseline/unordered_k12/fold_4/seed_2/train_summary.json",
+    "sha256": "0757f8e4b530a079dd8db4e37fed74349b0af1147d3d19d73c148d18cb8540cf",
+    "packaged_sha256": "0757f8e4b530a079dd8db4e37fed74349b0af1147d3d19d73c148d18cb8540cf"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/evaluation_report.md",
+    "destination": "results/regularized/evaluation_report.md",
+    "sha256": "cb9477309d3dd8bff2f1350908898e232459bffc1bb57c8bb3ba02b16257ee5a",
+    "packaged_sha256": "cb9477309d3dd8bff2f1350908898e232459bffc1bb57c8bb3ba02b16257ee5a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/evaluation_summary.json",
+    "destination": "results/regularized/evaluation_summary.json",
+    "sha256": "6dee6e741bcf95522d41fe363286c5e02fb2e70330b6aaf322e4b6c72bcd8082",
+    "packaged_sha256": "6dee6e741bcf95522d41fe363286c5e02fb2e70330b6aaf322e4b6c72bcd8082"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/experiment_index.json",
+    "destination": "results/regularized/experiment_index.json",
+    "sha256": "e3d23fa845a5dda6fd98cc06ee9c8ec3c1ab0674623c7948b23054bf19b8539c",
+    "packaged_sha256": "e3d23fa845a5dda6fd98cc06ee9c8ec3c1ab0674623c7948b23054bf19b8539c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_0/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_0/predictions.parquet",
+    "sha256": "af0aa324df9544965ef8e4dc25fca5b7f569aeb13fc12766b335125dffc41b6a",
+    "packaged_sha256": "af0aa324df9544965ef8e4dc25fca5b7f569aeb13fc12766b335125dffc41b6a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_0/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_0/train_log.csv",
+    "sha256": "3efc454aed6677c0dfa6a9d14e5f819cbce2c22b2457fe699e9b0322cb1c4faa",
+    "packaged_sha256": "3efc454aed6677c0dfa6a9d14e5f819cbce2c22b2457fe699e9b0322cb1c4faa"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_0/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_0/train_summary.json",
+    "sha256": "a30ecfc1da0e48247f823297a9f84d5fba6ea7825604d66f88eb594ded1ed2f7",
+    "packaged_sha256": "a30ecfc1da0e48247f823297a9f84d5fba6ea7825604d66f88eb594ded1ed2f7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_1/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_1/predictions.parquet",
+    "sha256": "e8276805b19fa2fe0191c7be9df12e9be0c6bc0a115bf8700abbdab26cea3946",
+    "packaged_sha256": "e8276805b19fa2fe0191c7be9df12e9be0c6bc0a115bf8700abbdab26cea3946"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_1/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_1/train_log.csv",
+    "sha256": "e421c8cd8ab62ed351b4c2cf816cfbcbb8f76791ca493c01add65d2acc409dee",
+    "packaged_sha256": "e421c8cd8ab62ed351b4c2cf816cfbcbb8f76791ca493c01add65d2acc409dee"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_1/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_1/train_summary.json",
+    "sha256": "22e18e17cbdb76b997a5ccb97ce9dc58ac775fb128d143db69dc319bcbf5dfcb",
+    "packaged_sha256": "22e18e17cbdb76b997a5ccb97ce9dc58ac775fb128d143db69dc319bcbf5dfcb"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_2/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_2/predictions.parquet",
+    "sha256": "17a8a39b9771f88272434e3a7708331301cb89a41f8a7eb2d7dd371ad3e4858f",
+    "packaged_sha256": "17a8a39b9771f88272434e3a7708331301cb89a41f8a7eb2d7dd371ad3e4858f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_2/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_2/train_log.csv",
+    "sha256": "68e722503f77f10d71f0630ca15b54397c22714e6520bac3d711fa21d3678a3a",
+    "packaged_sha256": "68e722503f77f10d71f0630ca15b54397c22714e6520bac3d711fa21d3678a3a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_2/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_2/train_summary.json",
+    "sha256": "172485d8bea3712ffd16c419a933021ca75bf03f02c40a024a2bca87abc83de4",
+    "packaged_sha256": "172485d8bea3712ffd16c419a933021ca75bf03f02c40a024a2bca87abc83de4"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_3/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_3/predictions.parquet",
+    "sha256": "fee1e4ee5a301a1d5a1fc75932d7d023c68a747f972666e42539081d9dc2b1d1",
+    "packaged_sha256": "fee1e4ee5a301a1d5a1fc75932d7d023c68a747f972666e42539081d9dc2b1d1"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_3/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_3/train_log.csv",
+    "sha256": "7aaea550588f5b39412a4a12a6f4463c4507cc23b6abc5373c08a761d53584f0",
+    "packaged_sha256": "7aaea550588f5b39412a4a12a6f4463c4507cc23b6abc5373c08a761d53584f0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_3/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_3/train_summary.json",
+    "sha256": "58c72b5a0da87fc938ee73971b6ef51d099745c54edbdb54ddc0760d3cc1a177",
+    "packaged_sha256": "58c72b5a0da87fc938ee73971b6ef51d099745c54edbdb54ddc0760d3cc1a177"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_4/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_4/predictions.parquet",
+    "sha256": "5c5d42f99faa40e6c2becf56aaeac0309be814f6226086d8ad61dfa005969a77",
+    "packaged_sha256": "5c5d42f99faa40e6c2becf56aaeac0309be814f6226086d8ad61dfa005969a77"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_4/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_4/train_log.csv",
+    "sha256": "7f28e8a1360150494f846a71fff17488bbf9a09528b47aacd25ba0fd8d2fbf61",
+    "packaged_sha256": "7f28e8a1360150494f846a71fff17488bbf9a09528b47aacd25ba0fd8d2fbf61"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_0/seed_4/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_0/seed_4/train_summary.json",
+    "sha256": "a3823cf6fad94fadde0be32096faba678a3a526dbb7ac8ce7dee81c7cde7fe54",
+    "packaged_sha256": "a3823cf6fad94fadde0be32096faba678a3a526dbb7ac8ce7dee81c7cde7fe54"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_0/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_0/predictions.parquet",
+    "sha256": "30c4f653d13d133730fb3fe1cb89555a073976ba50216857fcdc730630ca209d",
+    "packaged_sha256": "30c4f653d13d133730fb3fe1cb89555a073976ba50216857fcdc730630ca209d"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_0/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_0/train_log.csv",
+    "sha256": "e780ffcdad072c7af2756d241d64279ac0ae4f40a368a5795cb7292ee95f106e",
+    "packaged_sha256": "e780ffcdad072c7af2756d241d64279ac0ae4f40a368a5795cb7292ee95f106e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_0/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_0/train_summary.json",
+    "sha256": "00b94457b3d2e482a0868110fc6d2f7bfb9f6ffeeef0aa19e4e03d1ec1845a57",
+    "packaged_sha256": "00b94457b3d2e482a0868110fc6d2f7bfb9f6ffeeef0aa19e4e03d1ec1845a57"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_1/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_1/predictions.parquet",
+    "sha256": "cea65255c6e95bce75c089cee7f4d6e2cc9d560cf6b75f62d4e3acf40a7162e9",
+    "packaged_sha256": "cea65255c6e95bce75c089cee7f4d6e2cc9d560cf6b75f62d4e3acf40a7162e9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_1/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_1/train_log.csv",
+    "sha256": "d00aaa24e4b51af9afd8b94c46bd66c08378910309b5843ce2c38997c4147a8a",
+    "packaged_sha256": "d00aaa24e4b51af9afd8b94c46bd66c08378910309b5843ce2c38997c4147a8a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_1/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_1/train_summary.json",
+    "sha256": "97245c9c9c6c2f46be7a18b37b317fee88ba88ebba513bb7ed75d1b43cc66707",
+    "packaged_sha256": "97245c9c9c6c2f46be7a18b37b317fee88ba88ebba513bb7ed75d1b43cc66707"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_2/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_2/predictions.parquet",
+    "sha256": "ff6213cc7ebe35ecb387930e2c0aa8897796f536ed52224e7116c90394c9820a",
+    "packaged_sha256": "ff6213cc7ebe35ecb387930e2c0aa8897796f536ed52224e7116c90394c9820a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_2/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_2/train_log.csv",
+    "sha256": "ad5011d65e78e493209bbc6b73346fcbec90e4bb3e47f5e396bd8605601b15d0",
+    "packaged_sha256": "ad5011d65e78e493209bbc6b73346fcbec90e4bb3e47f5e396bd8605601b15d0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_2/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_2/train_summary.json",
+    "sha256": "472a7fcb220976fb316ed1cf7c0cb8fccc459ab3bf774b0b1fd6653e2ed909da",
+    "packaged_sha256": "472a7fcb220976fb316ed1cf7c0cb8fccc459ab3bf774b0b1fd6653e2ed909da"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_3/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_3/predictions.parquet",
+    "sha256": "0cb53e21f9e2b87d759a5f70544d959068ed6a90af40da65a86468439f42d16e",
+    "packaged_sha256": "0cb53e21f9e2b87d759a5f70544d959068ed6a90af40da65a86468439f42d16e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_3/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_3/train_log.csv",
+    "sha256": "be49351817aa37a07bd63f34a58242631db74f13df6b1537ca583325cf81f9f8",
+    "packaged_sha256": "be49351817aa37a07bd63f34a58242631db74f13df6b1537ca583325cf81f9f8"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_3/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_3/train_summary.json",
+    "sha256": "8ab9d25cfa942b2ed293da0deabd1afefb5955cfac27000a8f6889bfdc14ed53",
+    "packaged_sha256": "8ab9d25cfa942b2ed293da0deabd1afefb5955cfac27000a8f6889bfdc14ed53"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_4/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_4/predictions.parquet",
+    "sha256": "193f8912295d85ff35c2901f606f1e4cc833feabe56b83b1b97c0b563afc4c23",
+    "packaged_sha256": "193f8912295d85ff35c2901f606f1e4cc833feabe56b83b1b97c0b563afc4c23"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_4/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_4/train_log.csv",
+    "sha256": "d10a424ccdb0930acd735ee01c5384096751af9e3cf6e7d1257f59768b3a1883",
+    "packaged_sha256": "d10a424ccdb0930acd735ee01c5384096751af9e3cf6e7d1257f59768b3a1883"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_1/seed_4/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_1/seed_4/train_summary.json",
+    "sha256": "7f20e114ff1b071d6b4a8a331e97e4eb72beb93f8fd726743ebf33d114a1d671",
+    "packaged_sha256": "7f20e114ff1b071d6b4a8a331e97e4eb72beb93f8fd726743ebf33d114a1d671"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_0/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_0/predictions.parquet",
+    "sha256": "fc0e838a37a612793455af61367d88668ac7d9b1c0de8e9cd941893eaead92c1",
+    "packaged_sha256": "fc0e838a37a612793455af61367d88668ac7d9b1c0de8e9cd941893eaead92c1"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_0/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_0/train_log.csv",
+    "sha256": "089a545d4340856d8105c5104e6e0b6e7d370bcdf1dc0486a6c397b09e5e5189",
+    "packaged_sha256": "089a545d4340856d8105c5104e6e0b6e7d370bcdf1dc0486a6c397b09e5e5189"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_0/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_0/train_summary.json",
+    "sha256": "97c330184eaaba6a58ff1ccd340901c48c22ea5a5974c826ea5207963736133f",
+    "packaged_sha256": "97c330184eaaba6a58ff1ccd340901c48c22ea5a5974c826ea5207963736133f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_1/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_1/predictions.parquet",
+    "sha256": "12c724c9dbf8b0615e271d319f1d6cbb24976f68c97bcf369a777fc06c78a6f3",
+    "packaged_sha256": "12c724c9dbf8b0615e271d319f1d6cbb24976f68c97bcf369a777fc06c78a6f3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_1/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_1/train_log.csv",
+    "sha256": "d8ffc9f5eff373e5010f4c235391c0cb21d08a3e4eb7cc507d799fdd586db2ea",
+    "packaged_sha256": "d8ffc9f5eff373e5010f4c235391c0cb21d08a3e4eb7cc507d799fdd586db2ea"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_1/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_1/train_summary.json",
+    "sha256": "75fe9d5b18cb2c13e97e1f676f98225a70730e9fff42aa8abc82b457c87481d0",
+    "packaged_sha256": "75fe9d5b18cb2c13e97e1f676f98225a70730e9fff42aa8abc82b457c87481d0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_2/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_2/predictions.parquet",
+    "sha256": "777d2adff0f929975d91d3d0c6eadd355c30e36bbc877be121473b2bbd4aa8bd",
+    "packaged_sha256": "777d2adff0f929975d91d3d0c6eadd355c30e36bbc877be121473b2bbd4aa8bd"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_2/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_2/train_log.csv",
+    "sha256": "a19e42f173dcbcdb87ab5694bef5dbc02b6df8f5ae604ed6e375cfd1c484f5ac",
+    "packaged_sha256": "a19e42f173dcbcdb87ab5694bef5dbc02b6df8f5ae604ed6e375cfd1c484f5ac"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_2/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_2/train_summary.json",
+    "sha256": "1e2f8b063473177536db83377ba9486d20885bb4ff4aa41577252f6cf15a90f7",
+    "packaged_sha256": "1e2f8b063473177536db83377ba9486d20885bb4ff4aa41577252f6cf15a90f7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_3/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_3/predictions.parquet",
+    "sha256": "83c78c258b7ef9fed7c61db5bdc807faedcf44e15cfc60cb391739eef76eefed",
+    "packaged_sha256": "83c78c258b7ef9fed7c61db5bdc807faedcf44e15cfc60cb391739eef76eefed"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_3/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_3/train_log.csv",
+    "sha256": "9776faaf6a175db20adcffe5934f095419ecee40b80998ba9d4c960edae50676",
+    "packaged_sha256": "9776faaf6a175db20adcffe5934f095419ecee40b80998ba9d4c960edae50676"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_3/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_3/train_summary.json",
+    "sha256": "0f46920e7efd9506401b98eef6a183d9bb406bfede6ac00116cbec51642b5967",
+    "packaged_sha256": "0f46920e7efd9506401b98eef6a183d9bb406bfede6ac00116cbec51642b5967"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_4/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_4/predictions.parquet",
+    "sha256": "75647b75aed2f3004354520e2632ad4677de2a23937364670ca51d92d4c342ef",
+    "packaged_sha256": "75647b75aed2f3004354520e2632ad4677de2a23937364670ca51d92d4c342ef"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_4/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_4/train_log.csv",
+    "sha256": "c5d2e822157915827496960a23c3bcbbb53242639576c9d3c6f416f60ffc4b2a",
+    "packaged_sha256": "c5d2e822157915827496960a23c3bcbbb53242639576c9d3c6f416f60ffc4b2a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_2/seed_4/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_2/seed_4/train_summary.json",
+    "sha256": "fd46654dcfe054598bc875df20ac1adb7dcfdbed7291aa4e6c4293a46a60a814",
+    "packaged_sha256": "fd46654dcfe054598bc875df20ac1adb7dcfdbed7291aa4e6c4293a46a60a814"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_0/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_0/predictions.parquet",
+    "sha256": "3aed6bc984d056dc68d0f1cd8fece14385908f9fcc4d4118f714e19d57b6478e",
+    "packaged_sha256": "3aed6bc984d056dc68d0f1cd8fece14385908f9fcc4d4118f714e19d57b6478e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_0/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_0/train_log.csv",
+    "sha256": "bd1a1b731d1abd40de18ccb547d9ed81854639a0f7fc1ad92146ac21325a64e0",
+    "packaged_sha256": "bd1a1b731d1abd40de18ccb547d9ed81854639a0f7fc1ad92146ac21325a64e0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_0/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_0/train_summary.json",
+    "sha256": "1794532033ecac476c895ca0cd22da73cd487c30a358e43b9c79e4aef646d10e",
+    "packaged_sha256": "1794532033ecac476c895ca0cd22da73cd487c30a358e43b9c79e4aef646d10e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_1/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_1/predictions.parquet",
+    "sha256": "d0c7a9225d0007b7c1e4cabf6af4e5be894d45fd3106f1f04610ec3a7e2a4e86",
+    "packaged_sha256": "d0c7a9225d0007b7c1e4cabf6af4e5be894d45fd3106f1f04610ec3a7e2a4e86"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_1/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_1/train_log.csv",
+    "sha256": "00d406659bf3472183f33204cd41da142de83f72503c53bf1547f77936202de7",
+    "packaged_sha256": "00d406659bf3472183f33204cd41da142de83f72503c53bf1547f77936202de7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_1/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_1/train_summary.json",
+    "sha256": "de6b32930eef6555a6e568327ca164b755aa571e8886766723922466ffd4b707",
+    "packaged_sha256": "de6b32930eef6555a6e568327ca164b755aa571e8886766723922466ffd4b707"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_2/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_2/predictions.parquet",
+    "sha256": "d1897cadb7a9cbd38f3d23dca229eb62d4d3b6175af6021d4eb4137a0d562090",
+    "packaged_sha256": "d1897cadb7a9cbd38f3d23dca229eb62d4d3b6175af6021d4eb4137a0d562090"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_2/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_2/train_log.csv",
+    "sha256": "ffe42bd085fa75c40e30fe5ed8c3f508db063507512561b76b2d2170f2b2cb17",
+    "packaged_sha256": "ffe42bd085fa75c40e30fe5ed8c3f508db063507512561b76b2d2170f2b2cb17"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_2/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_2/train_summary.json",
+    "sha256": "9e25c748970d4e96f3317a21f79ef6025f3f72a691f88aa766a45656ae7f474f",
+    "packaged_sha256": "9e25c748970d4e96f3317a21f79ef6025f3f72a691f88aa766a45656ae7f474f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_3/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_3/predictions.parquet",
+    "sha256": "1398780554d37a00a3daa769d791c8ac6fb50c6d95c0725be8135c76116785b4",
+    "packaged_sha256": "1398780554d37a00a3daa769d791c8ac6fb50c6d95c0725be8135c76116785b4"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_3/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_3/train_log.csv",
+    "sha256": "1e86076777656b2541f6e537e674d2daeefa55d068ff0a9d7971726de88b7f6e",
+    "packaged_sha256": "1e86076777656b2541f6e537e674d2daeefa55d068ff0a9d7971726de88b7f6e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_3/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_3/train_summary.json",
+    "sha256": "d18971c3532c4f53ad4d61bffd3383dff354928b954ce77f97e88a8d4117493c",
+    "packaged_sha256": "d18971c3532c4f53ad4d61bffd3383dff354928b954ce77f97e88a8d4117493c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_4/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_4/predictions.parquet",
+    "sha256": "63edf409b72ba1f08d48a4a26bfdebaf3eb853f9ff6660a1fcd8b103be674815",
+    "packaged_sha256": "63edf409b72ba1f08d48a4a26bfdebaf3eb853f9ff6660a1fcd8b103be674815"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_4/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_4/train_log.csv",
+    "sha256": "a53ebc2d61e25aea579e0ca3ae1251a74b361df29a5f3894ae7e979f7c0f74e9",
+    "packaged_sha256": "a53ebc2d61e25aea579e0ca3ae1251a74b361df29a5f3894ae7e979f7c0f74e9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_3/seed_4/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_3/seed_4/train_summary.json",
+    "sha256": "282207cf5d7d586d3895689bfadcac4139b8a0a735f3f1bf06227ace3f4d71ab",
+    "packaged_sha256": "282207cf5d7d586d3895689bfadcac4139b8a0a735f3f1bf06227ace3f4d71ab"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_0/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_0/predictions.parquet",
+    "sha256": "8cbf72d5e47b9bd121bcf86863ae275f0ae253ec1839b328a8bec1e493f75119",
+    "packaged_sha256": "8cbf72d5e47b9bd121bcf86863ae275f0ae253ec1839b328a8bec1e493f75119"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_0/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_0/train_log.csv",
+    "sha256": "19d1f207770873a2a676e79eb24e52514c3c1fd5abd921d63668f027f423e90c",
+    "packaged_sha256": "19d1f207770873a2a676e79eb24e52514c3c1fd5abd921d63668f027f423e90c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_0/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_0/train_summary.json",
+    "sha256": "4f42c391b8573d42106d82cc3f2c4e1dd3b90b92e014f3e9bb50190322557d31",
+    "packaged_sha256": "4f42c391b8573d42106d82cc3f2c4e1dd3b90b92e014f3e9bb50190322557d31"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_1/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_1/predictions.parquet",
+    "sha256": "638af1070089bc5017277c9c7beaa98c82a2a9b4014332eff1b02ff971b038fe",
+    "packaged_sha256": "638af1070089bc5017277c9c7beaa98c82a2a9b4014332eff1b02ff971b038fe"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_1/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_1/train_log.csv",
+    "sha256": "89863c5b1ceb6d623109d5c082b533aaa1f6ada7f25aa78d4ee55ceb09e1bd65",
+    "packaged_sha256": "89863c5b1ceb6d623109d5c082b533aaa1f6ada7f25aa78d4ee55ceb09e1bd65"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_1/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_1/train_summary.json",
+    "sha256": "9fc8ce934902fcb64b67a20a7fe41fd4daed799fbfd6775aa9fd7fea251791e9",
+    "packaged_sha256": "9fc8ce934902fcb64b67a20a7fe41fd4daed799fbfd6775aa9fd7fea251791e9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_2/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_2/predictions.parquet",
+    "sha256": "57fff0163c3dbec2f5974a9a19adccdb552e02b7fd0fe3a90110fd2ee7a2fdbc",
+    "packaged_sha256": "57fff0163c3dbec2f5974a9a19adccdb552e02b7fd0fe3a90110fd2ee7a2fdbc"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_2/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_2/train_log.csv",
+    "sha256": "cbf721b77bc5c1d9eadd95e24c4ee02dd7b7c85773c9605a9ac5571757753d06",
+    "packaged_sha256": "cbf721b77bc5c1d9eadd95e24c4ee02dd7b7c85773c9605a9ac5571757753d06"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_2/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_2/train_summary.json",
+    "sha256": "f5e8b9f4bad03431e04984182fdf8c942f5175afbb6fa7eeef017502a79d2441",
+    "packaged_sha256": "f5e8b9f4bad03431e04984182fdf8c942f5175afbb6fa7eeef017502a79d2441"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_3/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_3/predictions.parquet",
+    "sha256": "71fe38dbcaae3cf470aedeeba75badba99451b2d20ab14d5e7581d93249d4910",
+    "packaged_sha256": "71fe38dbcaae3cf470aedeeba75badba99451b2d20ab14d5e7581d93249d4910"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_3/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_3/train_log.csv",
+    "sha256": "774b861139b521d91bbb879b28c785559e8210c1ad345d76bf4ca6226f5dc2e1",
+    "packaged_sha256": "774b861139b521d91bbb879b28c785559e8210c1ad345d76bf4ca6226f5dc2e1"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_3/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_3/train_summary.json",
+    "sha256": "11b0a321096bee68c0d80abed889757d3d865e504456a4ac754a0159c9123702",
+    "packaged_sha256": "11b0a321096bee68c0d80abed889757d3d865e504456a4ac754a0159c9123702"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_4/predictions.parquet",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_4/predictions.parquet",
+    "sha256": "a0a9ed9083b1fc24779262a39ac496c1d197383f7068fa58cfbff50bc85bd587",
+    "packaged_sha256": "a0a9ed9083b1fc24779262a39ac496c1d197383f7068fa58cfbff50bc85bd587"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_4/train_log.csv",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_4/train_log.csv",
+    "sha256": "0d816917448769d57bddb0ee19ab607b961255399817b51216a609685f2338e9",
+    "packaged_sha256": "0d816917448769d57bddb0ee19ab607b961255399817b51216a609685f2338e9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/angle_aware_k12/fold_4/seed_4/train_summary.json",
+    "destination": "results/regularized/angle_aware_k12/fold_4/seed_4/train_summary.json",
+    "sha256": "99068c0ecf06271cd432932f2449e7396b02121b77092d67d95e0f759be1df89",
+    "packaged_sha256": "99068c0ecf06271cd432932f2449e7396b02121b77092d67d95e0f759be1df89"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_0/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_0/seed_0/predictions.parquet",
+    "sha256": "e50edafb5ec5de24c38860a0b72682d61e58cce34af6bd343080da5c5daaecd1",
+    "packaged_sha256": "e50edafb5ec5de24c38860a0b72682d61e58cce34af6bd343080da5c5daaecd1"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_0/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_0/seed_0/train_log.csv",
+    "sha256": "f38e2f6b8a7df1ed3c524d417b58f0bbabc4e17c950c5510e83371a5ae910c91",
+    "packaged_sha256": "f38e2f6b8a7df1ed3c524d417b58f0bbabc4e17c950c5510e83371a5ae910c91"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_0/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_0/seed_0/train_summary.json",
+    "sha256": "469a81448083249859e6dc007ea9528b951cb853fbd10ac838dfd8070316d4cd",
+    "packaged_sha256": "469a81448083249859e6dc007ea9528b951cb853fbd10ac838dfd8070316d4cd"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_1/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_0/seed_1/predictions.parquet",
+    "sha256": "8386345c8b19f548662fcfa8413601ec978be6f3eb1e3c9da534e427b900fbf0",
+    "packaged_sha256": "8386345c8b19f548662fcfa8413601ec978be6f3eb1e3c9da534e427b900fbf0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_1/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_0/seed_1/train_log.csv",
+    "sha256": "9db70872c2e778b1bb1266062390d6ad3ff5ef38c526fbc188fdff8d6bd18450",
+    "packaged_sha256": "9db70872c2e778b1bb1266062390d6ad3ff5ef38c526fbc188fdff8d6bd18450"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_1/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_0/seed_1/train_summary.json",
+    "sha256": "6e3e8a5cfbe6c830c64c5de05547c19b577576a607477833612d84efd73f5950",
+    "packaged_sha256": "6e3e8a5cfbe6c830c64c5de05547c19b577576a607477833612d84efd73f5950"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_2/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_0/seed_2/predictions.parquet",
+    "sha256": "37d315cd19ea59d9820812b6769aed83afea22b0f509d16b6d98d3dd6bdc5842",
+    "packaged_sha256": "37d315cd19ea59d9820812b6769aed83afea22b0f509d16b6d98d3dd6bdc5842"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_2/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_0/seed_2/train_log.csv",
+    "sha256": "74522a83c3cae4d9542bb3bd9878534d556cb57ee8342525d447b72d542e7fdf",
+    "packaged_sha256": "74522a83c3cae4d9542bb3bd9878534d556cb57ee8342525d447b72d542e7fdf"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_2/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_0/seed_2/train_summary.json",
+    "sha256": "bd9a6ef195962f01e98e1e6d11bada57bf65a5b8a68ce0bfea21a72bd76533f8",
+    "packaged_sha256": "bd9a6ef195962f01e98e1e6d11bada57bf65a5b8a68ce0bfea21a72bd76533f8"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_3/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_0/seed_3/predictions.parquet",
+    "sha256": "d38ac870c23c690d49a7f301c3774ace16877635cab636629ecc6694f2588b83",
+    "packaged_sha256": "d38ac870c23c690d49a7f301c3774ace16877635cab636629ecc6694f2588b83"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_3/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_0/seed_3/train_log.csv",
+    "sha256": "eb0e0e0d845045d2699028f39fe2f1652802a64ffe4a1ced4edceeec6b5b51e4",
+    "packaged_sha256": "eb0e0e0d845045d2699028f39fe2f1652802a64ffe4a1ced4edceeec6b5b51e4"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_3/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_0/seed_3/train_summary.json",
+    "sha256": "fddd12506e6af7e45d6387305817f6ae0a26d0622bb4de9aca000df45fb96cb0",
+    "packaged_sha256": "fddd12506e6af7e45d6387305817f6ae0a26d0622bb4de9aca000df45fb96cb0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_4/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_0/seed_4/predictions.parquet",
+    "sha256": "4b91db8f5cf462bee47999848290343a5b81723c101934ae7e2c1db107645f84",
+    "packaged_sha256": "4b91db8f5cf462bee47999848290343a5b81723c101934ae7e2c1db107645f84"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_4/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_0/seed_4/train_log.csv",
+    "sha256": "8a4b8efda3f9531ee581a235fc57dd7bdcc84a26da368699b084d2b93b67a569",
+    "packaged_sha256": "8a4b8efda3f9531ee581a235fc57dd7bdcc84a26da368699b084d2b93b67a569"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_0/seed_4/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_0/seed_4/train_summary.json",
+    "sha256": "078ccdd2e51b660563855121a70cf40c217b1f8dc3a7ba15545664dd11c20e71",
+    "packaged_sha256": "078ccdd2e51b660563855121a70cf40c217b1f8dc3a7ba15545664dd11c20e71"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_0/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_1/seed_0/predictions.parquet",
+    "sha256": "ca5b7e71d11e8f3aacc810ff3a7f1b734c9ddcbb45fb49f7db82d385012f64ac",
+    "packaged_sha256": "ca5b7e71d11e8f3aacc810ff3a7f1b734c9ddcbb45fb49f7db82d385012f64ac"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_0/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_1/seed_0/train_log.csv",
+    "sha256": "0989aa487458e3477730a6cee1d12c1683e3c0202618833f0ace503703fd4abb",
+    "packaged_sha256": "0989aa487458e3477730a6cee1d12c1683e3c0202618833f0ace503703fd4abb"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_0/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_1/seed_0/train_summary.json",
+    "sha256": "954b27c8e60db1dea05abf48c102bd53f458be25433a869b4a34eb062c5dc04b",
+    "packaged_sha256": "954b27c8e60db1dea05abf48c102bd53f458be25433a869b4a34eb062c5dc04b"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_1/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_1/seed_1/predictions.parquet",
+    "sha256": "235709515eb61a20fb151d8502dbbbd07982ad32bc852cd84e30f90c36207564",
+    "packaged_sha256": "235709515eb61a20fb151d8502dbbbd07982ad32bc852cd84e30f90c36207564"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_1/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_1/seed_1/train_log.csv",
+    "sha256": "77a576734264016262e2a71df345c6c3d0a02326381f996942e896c83465d3b5",
+    "packaged_sha256": "77a576734264016262e2a71df345c6c3d0a02326381f996942e896c83465d3b5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_1/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_1/seed_1/train_summary.json",
+    "sha256": "440b510c161444608ce0476c0edad85ad2bbfe1b2eb2412e5e3ccce88de14ba3",
+    "packaged_sha256": "440b510c161444608ce0476c0edad85ad2bbfe1b2eb2412e5e3ccce88de14ba3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_2/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_1/seed_2/predictions.parquet",
+    "sha256": "1742c1476d30b6cf470be193aa2e47fb3efef3f6038e0cb8f7f471e0042f12bd",
+    "packaged_sha256": "1742c1476d30b6cf470be193aa2e47fb3efef3f6038e0cb8f7f471e0042f12bd"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_2/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_1/seed_2/train_log.csv",
+    "sha256": "6534219ec953fbe4e01df7a70400daa4ad2c740aafd1a591c511cb6664bca3ba",
+    "packaged_sha256": "6534219ec953fbe4e01df7a70400daa4ad2c740aafd1a591c511cb6664bca3ba"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_2/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_1/seed_2/train_summary.json",
+    "sha256": "ec5fc9aa2f07a47cd015a014104398e129961e59904501e5793c9df0c24cee23",
+    "packaged_sha256": "ec5fc9aa2f07a47cd015a014104398e129961e59904501e5793c9df0c24cee23"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_3/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_1/seed_3/predictions.parquet",
+    "sha256": "1c022a4d57dd8ef6d0e9af2b0c9f79b7e3605d8a18b18b21ce425f2e3df8124f",
+    "packaged_sha256": "1c022a4d57dd8ef6d0e9af2b0c9f79b7e3605d8a18b18b21ce425f2e3df8124f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_3/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_1/seed_3/train_log.csv",
+    "sha256": "551ebd92fa90c14870e0a815017b4859124d6c5eaaaa55a57ea70e2a3506b444",
+    "packaged_sha256": "551ebd92fa90c14870e0a815017b4859124d6c5eaaaa55a57ea70e2a3506b444"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_3/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_1/seed_3/train_summary.json",
+    "sha256": "aadc7433690f8dc5572142abaffdf9c24272d33ca365718258edc0489e1256bd",
+    "packaged_sha256": "aadc7433690f8dc5572142abaffdf9c24272d33ca365718258edc0489e1256bd"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_4/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_1/seed_4/predictions.parquet",
+    "sha256": "b299912813f02e5bdb3517cb073ab3da5c22427213a8c2f4faf88d0d84fa9674",
+    "packaged_sha256": "b299912813f02e5bdb3517cb073ab3da5c22427213a8c2f4faf88d0d84fa9674"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_4/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_1/seed_4/train_log.csv",
+    "sha256": "0891e0b59ecd073bca2816d87be7b9e5104dc174b7ae6f197068564d8fa19886",
+    "packaged_sha256": "0891e0b59ecd073bca2816d87be7b9e5104dc174b7ae6f197068564d8fa19886"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_1/seed_4/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_1/seed_4/train_summary.json",
+    "sha256": "8d50e1aa3c2a3cc6b1f041333a4d15c25ab28ca58a6926359d6d4bac386d8011",
+    "packaged_sha256": "8d50e1aa3c2a3cc6b1f041333a4d15c25ab28ca58a6926359d6d4bac386d8011"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_0/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_2/seed_0/predictions.parquet",
+    "sha256": "fa3697109e9e450e549b4fe5abfec659406229928938120f512a0c3370f849e5",
+    "packaged_sha256": "fa3697109e9e450e549b4fe5abfec659406229928938120f512a0c3370f849e5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_0/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_2/seed_0/train_log.csv",
+    "sha256": "220b60596779cb76bc1688d4de35498b5db0cfac6c76a2b590db53efe404c24e",
+    "packaged_sha256": "220b60596779cb76bc1688d4de35498b5db0cfac6c76a2b590db53efe404c24e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_0/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_2/seed_0/train_summary.json",
+    "sha256": "2613d6f5db4d35e24fce49e4fb2659a0fc9fb7b59e3901612085543a48f4ad1c",
+    "packaged_sha256": "2613d6f5db4d35e24fce49e4fb2659a0fc9fb7b59e3901612085543a48f4ad1c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_1/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_2/seed_1/predictions.parquet",
+    "sha256": "ecbb12f8f7e70fd3f0afa414d5a95471819f7d563b5d4761c908ba32c5e22332",
+    "packaged_sha256": "ecbb12f8f7e70fd3f0afa414d5a95471819f7d563b5d4761c908ba32c5e22332"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_1/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_2/seed_1/train_log.csv",
+    "sha256": "dc31e071bcda94ab06b87b5092654dcc4ffb429c6ec9de13d18febae1dc6e3b6",
+    "packaged_sha256": "dc31e071bcda94ab06b87b5092654dcc4ffb429c6ec9de13d18febae1dc6e3b6"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_1/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_2/seed_1/train_summary.json",
+    "sha256": "83035c5603692add3ab57ba295f1ffb514e252899559b5d626366ef60ac26c9d",
+    "packaged_sha256": "83035c5603692add3ab57ba295f1ffb514e252899559b5d626366ef60ac26c9d"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_2/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_2/seed_2/predictions.parquet",
+    "sha256": "38f4dcdb6624cde6f2cebd9b4f6a4beb8d7a9a6238ccec01669c0104f45ede54",
+    "packaged_sha256": "38f4dcdb6624cde6f2cebd9b4f6a4beb8d7a9a6238ccec01669c0104f45ede54"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_2/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_2/seed_2/train_log.csv",
+    "sha256": "57c3148e1f7a9e8510f44379abf909d5495ae353ee6aec9110eb7e0777e62c30",
+    "packaged_sha256": "57c3148e1f7a9e8510f44379abf909d5495ae353ee6aec9110eb7e0777e62c30"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_2/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_2/seed_2/train_summary.json",
+    "sha256": "6b86e99757cc8bd42fe5f20276a9a78ca0cb81cc4ebb3fc34635556d8d4bc699",
+    "packaged_sha256": "6b86e99757cc8bd42fe5f20276a9a78ca0cb81cc4ebb3fc34635556d8d4bc699"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_3/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_2/seed_3/predictions.parquet",
+    "sha256": "c3c74e0c44939bfe2ae1c3955497c058c9505cd552cf7efbe5276a0d7031ef21",
+    "packaged_sha256": "c3c74e0c44939bfe2ae1c3955497c058c9505cd552cf7efbe5276a0d7031ef21"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_3/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_2/seed_3/train_log.csv",
+    "sha256": "c3bd1c2a6059476b4f596b20ef496280960708ea8ed5e90f68a5a4380d66771d",
+    "packaged_sha256": "c3bd1c2a6059476b4f596b20ef496280960708ea8ed5e90f68a5a4380d66771d"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_3/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_2/seed_3/train_summary.json",
+    "sha256": "c83f8df79b560d501890f0d15b3928b9e3fd2bb59e14c95bd9203b17b8c8292b",
+    "packaged_sha256": "c83f8df79b560d501890f0d15b3928b9e3fd2bb59e14c95bd9203b17b8c8292b"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_4/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_2/seed_4/predictions.parquet",
+    "sha256": "9b40fa9ce4aeb4e1a63b8b93ab098c7682bcc48b926c3a22f25f84aaad6aabcd",
+    "packaged_sha256": "9b40fa9ce4aeb4e1a63b8b93ab098c7682bcc48b926c3a22f25f84aaad6aabcd"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_4/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_2/seed_4/train_log.csv",
+    "sha256": "7ba1187adb6a234058cb2fe99ff69cf8b9c962d43cbb3bbc7215776218b25d2d",
+    "packaged_sha256": "7ba1187adb6a234058cb2fe99ff69cf8b9c962d43cbb3bbc7215776218b25d2d"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_2/seed_4/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_2/seed_4/train_summary.json",
+    "sha256": "4628cb0ab591f6d15c925eac1fbdfbcd66704271a184af682fc672f2c771a8e3",
+    "packaged_sha256": "4628cb0ab591f6d15c925eac1fbdfbcd66704271a184af682fc672f2c771a8e3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_0/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_3/seed_0/predictions.parquet",
+    "sha256": "acc7c6f1e3f3bbfb827a9f339d9cb2167822efbbe17293920bce2609acd9cdf4",
+    "packaged_sha256": "acc7c6f1e3f3bbfb827a9f339d9cb2167822efbbe17293920bce2609acd9cdf4"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_0/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_3/seed_0/train_log.csv",
+    "sha256": "17d058a6fff7c9265708ae2cb64ae99753e9084d75ac310353992cd1cc8ce41c",
+    "packaged_sha256": "17d058a6fff7c9265708ae2cb64ae99753e9084d75ac310353992cd1cc8ce41c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_0/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_3/seed_0/train_summary.json",
+    "sha256": "9d6b0b4d98283c40a4d116a2263b0f140deb5cdd97ef3afa2475e8a20fdcbcd5",
+    "packaged_sha256": "9d6b0b4d98283c40a4d116a2263b0f140deb5cdd97ef3afa2475e8a20fdcbcd5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_1/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_3/seed_1/predictions.parquet",
+    "sha256": "32df77cd0ac16fc5f0eebb8c819644ff57818de8ff3bde32ff4f7246ca316ba0",
+    "packaged_sha256": "32df77cd0ac16fc5f0eebb8c819644ff57818de8ff3bde32ff4f7246ca316ba0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_1/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_3/seed_1/train_log.csv",
+    "sha256": "c05bd2a5ab0eff26c490bf452637f80282faa704af04a6b781daf44cefcd8de9",
+    "packaged_sha256": "c05bd2a5ab0eff26c490bf452637f80282faa704af04a6b781daf44cefcd8de9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_1/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_3/seed_1/train_summary.json",
+    "sha256": "1e29b5a9fca930944d6d88b2a89c11efa02058bb8141dda59b53a4c0b585b27f",
+    "packaged_sha256": "1e29b5a9fca930944d6d88b2a89c11efa02058bb8141dda59b53a4c0b585b27f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_2/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_3/seed_2/predictions.parquet",
+    "sha256": "59f8c8301ba1a649d69cc704d0d66c056adb7efee170c2dcaff026021e38b0d9",
+    "packaged_sha256": "59f8c8301ba1a649d69cc704d0d66c056adb7efee170c2dcaff026021e38b0d9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_2/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_3/seed_2/train_log.csv",
+    "sha256": "1da444d109823d84ebae4811e22073dc2cc5fee87696444c0fea8142b56f0fc1",
+    "packaged_sha256": "1da444d109823d84ebae4811e22073dc2cc5fee87696444c0fea8142b56f0fc1"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_2/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_3/seed_2/train_summary.json",
+    "sha256": "3a49e37c332a52612462973f1b9f479d90d7fc46660a91617963a74522f220d5",
+    "packaged_sha256": "3a49e37c332a52612462973f1b9f479d90d7fc46660a91617963a74522f220d5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_3/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_3/seed_3/predictions.parquet",
+    "sha256": "ade9ea1da1d0f1df12564d3c5c6d1d8578a1d689fbdd5a6233a1af44648dd1ab",
+    "packaged_sha256": "ade9ea1da1d0f1df12564d3c5c6d1d8578a1d689fbdd5a6233a1af44648dd1ab"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_3/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_3/seed_3/train_log.csv",
+    "sha256": "6b429980a95be1e100781ba4510bb8355b2ac0fce3a2eab296800e7a3311e3cd",
+    "packaged_sha256": "6b429980a95be1e100781ba4510bb8355b2ac0fce3a2eab296800e7a3311e3cd"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_3/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_3/seed_3/train_summary.json",
+    "sha256": "524a82e766e760ecbbecfc0a54870b3ecb7a6b8a4fbaebbbf85589f67414dca3",
+    "packaged_sha256": "524a82e766e760ecbbecfc0a54870b3ecb7a6b8a4fbaebbbf85589f67414dca3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_4/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_3/seed_4/predictions.parquet",
+    "sha256": "db98d7f640a4d9ca16a1b2f8098c090fd16de446110f0f85aca340001bbb53e3",
+    "packaged_sha256": "db98d7f640a4d9ca16a1b2f8098c090fd16de446110f0f85aca340001bbb53e3"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_4/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_3/seed_4/train_log.csv",
+    "sha256": "a9d51dd0492473042831cc53ce596a539a8e7424daa7e4d7af4d302bdbbb8e77",
+    "packaged_sha256": "a9d51dd0492473042831cc53ce596a539a8e7424daa7e4d7af4d302bdbbb8e77"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_3/seed_4/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_3/seed_4/train_summary.json",
+    "sha256": "27fc2fa94f531afcbdfcbf3a06ccc6dd7e2f824c9be0a6f18eb4d5cf72d1a1fb",
+    "packaged_sha256": "27fc2fa94f531afcbdfcbf3a06ccc6dd7e2f824c9be0a6f18eb4d5cf72d1a1fb"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_0/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_4/seed_0/predictions.parquet",
+    "sha256": "c810496c6981ce7ea12216a46131cdf0b4e9d64d66551cd1ce9cb47c7c70fab7",
+    "packaged_sha256": "c810496c6981ce7ea12216a46131cdf0b4e9d64d66551cd1ce9cb47c7c70fab7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_0/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_4/seed_0/train_log.csv",
+    "sha256": "ccffb9880e3c57a736eb868ec4b88ffe5cdebc8e29d3626fb7e7d8573f4fbd41",
+    "packaged_sha256": "ccffb9880e3c57a736eb868ec4b88ffe5cdebc8e29d3626fb7e7d8573f4fbd41"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_0/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_4/seed_0/train_summary.json",
+    "sha256": "9f9688bb34800187686f2ed3ef3d04574d333e3e57322bce6e50ab333db18747",
+    "packaged_sha256": "9f9688bb34800187686f2ed3ef3d04574d333e3e57322bce6e50ab333db18747"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_1/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_4/seed_1/predictions.parquet",
+    "sha256": "2316d4fba67e0fef9c633a143abebe02048e9fc9f473a6349adb507fb3ebe813",
+    "packaged_sha256": "2316d4fba67e0fef9c633a143abebe02048e9fc9f473a6349adb507fb3ebe813"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_1/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_4/seed_1/train_log.csv",
+    "sha256": "bcda80a856ab374bf6413067dac254aa9829ed70f37e1ff214cdf353fd2c89be",
+    "packaged_sha256": "bcda80a856ab374bf6413067dac254aa9829ed70f37e1ff214cdf353fd2c89be"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_1/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_4/seed_1/train_summary.json",
+    "sha256": "9a3d04b414b83afd80e2b9406e90ef7c64944bf43568f4f2d3b9e6e000f13a4f",
+    "packaged_sha256": "9a3d04b414b83afd80e2b9406e90ef7c64944bf43568f4f2d3b9e6e000f13a4f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_2/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_4/seed_2/predictions.parquet",
+    "sha256": "789c0c8df73dc9d6dee1d0567330515b674c74473951eb2121003fdba0cde3fc",
+    "packaged_sha256": "789c0c8df73dc9d6dee1d0567330515b674c74473951eb2121003fdba0cde3fc"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_2/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_4/seed_2/train_log.csv",
+    "sha256": "fc46d3da7e3aa531a08fe5fee54947176c3097c9da5cac76e8c23c1d77ce5849",
+    "packaged_sha256": "fc46d3da7e3aa531a08fe5fee54947176c3097c9da5cac76e8c23c1d77ce5849"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_2/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_4/seed_2/train_summary.json",
+    "sha256": "9f60aad98c60e02a4c5e6cc73cdaad14b78b1c07ddab632b98e5d0ab669a518e",
+    "packaged_sha256": "9f60aad98c60e02a4c5e6cc73cdaad14b78b1c07ddab632b98e5d0ab669a518e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_3/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_4/seed_3/predictions.parquet",
+    "sha256": "53171d2c66da5137c61295f6dd2f70ae56521e49e86e3505c3f264cc2b74b534",
+    "packaged_sha256": "53171d2c66da5137c61295f6dd2f70ae56521e49e86e3505c3f264cc2b74b534"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_3/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_4/seed_3/train_log.csv",
+    "sha256": "227f2820c947b36c98e09068bcf98ea5da840e727fd6f6b58d7c00438250627f",
+    "packaged_sha256": "227f2820c947b36c98e09068bcf98ea5da840e727fd6f6b58d7c00438250627f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_3/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_4/seed_3/train_summary.json",
+    "sha256": "d553c270c51f70168047fdc98e8456166c1d23c87ccbb6fd6c5529614f225502",
+    "packaged_sha256": "d553c270c51f70168047fdc98e8456166c1d23c87ccbb6fd6c5529614f225502"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_4/predictions.parquet",
+    "destination": "results/regularized/static_k1/fold_4/seed_4/predictions.parquet",
+    "sha256": "c6a129dd4902b460fce9edb694855f26e2482806775d76494e83bbc04da7e7c8",
+    "packaged_sha256": "c6a129dd4902b460fce9edb694855f26e2482806775d76494e83bbc04da7e7c8"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_4/train_log.csv",
+    "destination": "results/regularized/static_k1/fold_4/seed_4/train_log.csv",
+    "sha256": "213ea8035cb9161d10954a24c1f603d44f03f77df4f0b3f1bc11e0c8b4416a13",
+    "packaged_sha256": "213ea8035cb9161d10954a24c1f603d44f03f77df4f0b3f1bc11e0c8b4416a13"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/static_k1/fold_4/seed_4/train_summary.json",
+    "destination": "results/regularized/static_k1/fold_4/seed_4/train_summary.json",
+    "sha256": "16d3566a524a69da768e809131fdab83e25ff34ce47e6123c7b1a5d814427f1f",
+    "packaged_sha256": "16d3566a524a69da768e809131fdab83e25ff34ce47e6123c7b1a5d814427f1f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_0/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_0/predictions.parquet",
+    "sha256": "f4202491590709696b0279c06995243df49cca4390d3903365d5179efc9ba574",
+    "packaged_sha256": "f4202491590709696b0279c06995243df49cca4390d3903365d5179efc9ba574"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_0/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_0/train_log.csv",
+    "sha256": "34e925984db592ecf78daffde3761cd894f388eb16c36a7e2f9fe5f51405f6b6",
+    "packaged_sha256": "34e925984db592ecf78daffde3761cd894f388eb16c36a7e2f9fe5f51405f6b6"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_0/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_0/train_summary.json",
+    "sha256": "f237d2d7d55edbedbd667a710e695417dd16a6546f2381fa44ce86426f22398c",
+    "packaged_sha256": "f237d2d7d55edbedbd667a710e695417dd16a6546f2381fa44ce86426f22398c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_1/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_1/predictions.parquet",
+    "sha256": "c8c02fabef355427bea522431626f0e09417272bdfe561ca308b9722a274a441",
+    "packaged_sha256": "c8c02fabef355427bea522431626f0e09417272bdfe561ca308b9722a274a441"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_1/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_1/train_log.csv",
+    "sha256": "f77929220783c93eb7e73595657305d8419fe81c86d8eece22a3468faa5c2b05",
+    "packaged_sha256": "f77929220783c93eb7e73595657305d8419fe81c86d8eece22a3468faa5c2b05"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_1/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_1/train_summary.json",
+    "sha256": "509218b46dfc87a6c51904c2494045f91515b8116a91056d984aa78382160e4c",
+    "packaged_sha256": "509218b46dfc87a6c51904c2494045f91515b8116a91056d984aa78382160e4c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_2/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_2/predictions.parquet",
+    "sha256": "99f10e87898408fe759e79e847b861135636c412a822dd58096b0787f5258fd7",
+    "packaged_sha256": "99f10e87898408fe759e79e847b861135636c412a822dd58096b0787f5258fd7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_2/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_2/train_log.csv",
+    "sha256": "7682e476864e28a2edb8969bccadb528fa8557984adcddc4c2f3325b3727d122",
+    "packaged_sha256": "7682e476864e28a2edb8969bccadb528fa8557984adcddc4c2f3325b3727d122"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_2/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_2/train_summary.json",
+    "sha256": "8c3982119f36968b85554a75dc8f5a722960132bb044e259119e9558097b417e",
+    "packaged_sha256": "8c3982119f36968b85554a75dc8f5a722960132bb044e259119e9558097b417e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_3/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_3/predictions.parquet",
+    "sha256": "5a77f03e2ebd2047887f5a5374a9a248505bde39a0ff1e51bbbc6eefe97ead85",
+    "packaged_sha256": "5a77f03e2ebd2047887f5a5374a9a248505bde39a0ff1e51bbbc6eefe97ead85"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_3/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_3/train_log.csv",
+    "sha256": "cb6c16e69037b8b9ac5a4a2364ced2514bfee5f4c744aa4097c49bc743b999bc",
+    "packaged_sha256": "cb6c16e69037b8b9ac5a4a2364ced2514bfee5f4c744aa4097c49bc743b999bc"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_3/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_3/train_summary.json",
+    "sha256": "be285316288a077fdf5c19b480950755239f09d727044170eee1a8070e74e7b9",
+    "packaged_sha256": "be285316288a077fdf5c19b480950755239f09d727044170eee1a8070e74e7b9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_4/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_4/predictions.parquet",
+    "sha256": "faa3f2b3adb0326ec23d01b5219d721b665bc0dd3b4bc1a42d372a0a249ced57",
+    "packaged_sha256": "faa3f2b3adb0326ec23d01b5219d721b665bc0dd3b4bc1a42d372a0a249ced57"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_4/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_4/train_log.csv",
+    "sha256": "336f25d5178c2095b99eb3fb5aa03c53c371af238b404fa9527a55d6b78cce89",
+    "packaged_sha256": "336f25d5178c2095b99eb3fb5aa03c53c371af238b404fa9527a55d6b78cce89"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_0/seed_4/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_0/seed_4/train_summary.json",
+    "sha256": "c476963ecb4d34b4481161acd6c5c02f2a320b20ec37362b858973cfd0155ff5",
+    "packaged_sha256": "c476963ecb4d34b4481161acd6c5c02f2a320b20ec37362b858973cfd0155ff5"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_0/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_0/predictions.parquet",
+    "sha256": "4a0a218fa215e5eb48d78df41a780825e6a2ea1aaa5634d6c65230ae40ef4eed",
+    "packaged_sha256": "4a0a218fa215e5eb48d78df41a780825e6a2ea1aaa5634d6c65230ae40ef4eed"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_0/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_0/train_log.csv",
+    "sha256": "8381b96dc2a639dfb11f6a2ad9e73bcc967f62277eae206b2602441e64d7c6aa",
+    "packaged_sha256": "8381b96dc2a639dfb11f6a2ad9e73bcc967f62277eae206b2602441e64d7c6aa"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_0/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_0/train_summary.json",
+    "sha256": "4b54eda245aad451818ad1a4115a992d88ffa14c5b89b34550afe221efef8850",
+    "packaged_sha256": "4b54eda245aad451818ad1a4115a992d88ffa14c5b89b34550afe221efef8850"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_1/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_1/predictions.parquet",
+    "sha256": "133fbf3056a9f8b9db53edd85744b6926f83389de7e2dcbef8d97dbd357fc603",
+    "packaged_sha256": "133fbf3056a9f8b9db53edd85744b6926f83389de7e2dcbef8d97dbd357fc603"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_1/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_1/train_log.csv",
+    "sha256": "b35187890477a36ce06abe9bc5b762d13f7f91ad52ed37257a7c527873735fde",
+    "packaged_sha256": "b35187890477a36ce06abe9bc5b762d13f7f91ad52ed37257a7c527873735fde"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_1/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_1/train_summary.json",
+    "sha256": "b9fbf828e52902c0aeee397f789f44f158ed1d27c024c50896332f97a6953ec8",
+    "packaged_sha256": "b9fbf828e52902c0aeee397f789f44f158ed1d27c024c50896332f97a6953ec8"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_2/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_2/predictions.parquet",
+    "sha256": "c6cb14d0512ba78e5683420a92fcaf141e0514d92a26f8acab46c0b2fd123f65",
+    "packaged_sha256": "c6cb14d0512ba78e5683420a92fcaf141e0514d92a26f8acab46c0b2fd123f65"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_2/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_2/train_log.csv",
+    "sha256": "b6290ee325efb912131d517c5696ab0281e0ca0339d86c08508c827d32a9060a",
+    "packaged_sha256": "b6290ee325efb912131d517c5696ab0281e0ca0339d86c08508c827d32a9060a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_2/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_2/train_summary.json",
+    "sha256": "080215d2ed4e7e78642b6f35969b3e997402e5a5ad4ace6c7a1501ddb02440f0",
+    "packaged_sha256": "080215d2ed4e7e78642b6f35969b3e997402e5a5ad4ace6c7a1501ddb02440f0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_3/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_3/predictions.parquet",
+    "sha256": "6008169efc227676c9336ade9a42401c66abe7837885c027db6980cc7e366a6a",
+    "packaged_sha256": "6008169efc227676c9336ade9a42401c66abe7837885c027db6980cc7e366a6a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_3/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_3/train_log.csv",
+    "sha256": "846d3bfc08fe765813a02f1bf4e9b1b02130e718f955be8dc77470f58e3676e2",
+    "packaged_sha256": "846d3bfc08fe765813a02f1bf4e9b1b02130e718f955be8dc77470f58e3676e2"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_3/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_3/train_summary.json",
+    "sha256": "710aac5959d493eac32316e5f5e5deec82d192047043c6a97d776f81550f1a6f",
+    "packaged_sha256": "710aac5959d493eac32316e5f5e5deec82d192047043c6a97d776f81550f1a6f"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_4/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_4/predictions.parquet",
+    "sha256": "d8b2d4447b53e849873e64967e9692b6f178d555ea0b3ef84f8f1c083c2c9381",
+    "packaged_sha256": "d8b2d4447b53e849873e64967e9692b6f178d555ea0b3ef84f8f1c083c2c9381"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_4/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_4/train_log.csv",
+    "sha256": "7a32e8fc63d119383baacead808076eca37d99b9088e0f6c076aef874076864e",
+    "packaged_sha256": "7a32e8fc63d119383baacead808076eca37d99b9088e0f6c076aef874076864e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_1/seed_4/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_1/seed_4/train_summary.json",
+    "sha256": "59b3fc768cd37d47c1fdb3f5f40c25f693dfbfcf442f497d84ff3854c86770b7",
+    "packaged_sha256": "59b3fc768cd37d47c1fdb3f5f40c25f693dfbfcf442f497d84ff3854c86770b7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_0/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_0/predictions.parquet",
+    "sha256": "79f19fb6bc3b5d0776dcd24ec63294f73dd230c5c07fc0b775dbc5aec1bc2125",
+    "packaged_sha256": "79f19fb6bc3b5d0776dcd24ec63294f73dd230c5c07fc0b775dbc5aec1bc2125"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_0/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_0/train_log.csv",
+    "sha256": "c0ffcad065453b1bbfba3301dd87c4fd1dd8e5251334efb991b60c69639e9b78",
+    "packaged_sha256": "c0ffcad065453b1bbfba3301dd87c4fd1dd8e5251334efb991b60c69639e9b78"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_0/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_0/train_summary.json",
+    "sha256": "1c5925d9e647e36e621f55edf91371e4f0da5413c888a90bcb912e64dabc104c",
+    "packaged_sha256": "1c5925d9e647e36e621f55edf91371e4f0da5413c888a90bcb912e64dabc104c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_1/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_1/predictions.parquet",
+    "sha256": "ceb7f544685bb6e7266584dfb9bb22a9e4c34ad8e65d83d059024fd052cfbc37",
+    "packaged_sha256": "ceb7f544685bb6e7266584dfb9bb22a9e4c34ad8e65d83d059024fd052cfbc37"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_1/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_1/train_log.csv",
+    "sha256": "f18dc811eb6b5764e2f8a31422cefd71fe4ac936740e9169e2c0c5cce583014c",
+    "packaged_sha256": "f18dc811eb6b5764e2f8a31422cefd71fe4ac936740e9169e2c0c5cce583014c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_1/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_1/train_summary.json",
+    "sha256": "0fe4a599b442ddf1e3b8b8a6751f0197ff733a9fefb6fa46c808255342c3cf77",
+    "packaged_sha256": "0fe4a599b442ddf1e3b8b8a6751f0197ff733a9fefb6fa46c808255342c3cf77"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_2/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_2/predictions.parquet",
+    "sha256": "251a3091db2fd2a6ad2413567266cc9835337b8deffdf33a76c75ca1342c1be9",
+    "packaged_sha256": "251a3091db2fd2a6ad2413567266cc9835337b8deffdf33a76c75ca1342c1be9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_2/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_2/train_log.csv",
+    "sha256": "74df158ce069cae8ae5d658828b539c5788f018b46495b9e86d7a01a33cc70d8",
+    "packaged_sha256": "74df158ce069cae8ae5d658828b539c5788f018b46495b9e86d7a01a33cc70d8"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_2/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_2/train_summary.json",
+    "sha256": "4eb3346e9b3c746b7a6fc201382a859404138b15388e52e672e55b612f95d010",
+    "packaged_sha256": "4eb3346e9b3c746b7a6fc201382a859404138b15388e52e672e55b612f95d010"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_3/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_3/predictions.parquet",
+    "sha256": "901e8eac28726788aa9962d2b1dc96341c442e51abf97a0598e76b1907409765",
+    "packaged_sha256": "901e8eac28726788aa9962d2b1dc96341c442e51abf97a0598e76b1907409765"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_3/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_3/train_log.csv",
+    "sha256": "5247c717bd7ac2c9bee12b04a6228625c5c368d87fe32be139212ea90f24ccba",
+    "packaged_sha256": "5247c717bd7ac2c9bee12b04a6228625c5c368d87fe32be139212ea90f24ccba"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_3/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_3/train_summary.json",
+    "sha256": "ae7bae798d54920ee600287b8c535be33b74e81d33f415ce1b36edde7f3c08de",
+    "packaged_sha256": "ae7bae798d54920ee600287b8c535be33b74e81d33f415ce1b36edde7f3c08de"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_4/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_4/predictions.parquet",
+    "sha256": "17a578259c773821b57790a541f09d9341978101c980b86eb1582da1f58cbe36",
+    "packaged_sha256": "17a578259c773821b57790a541f09d9341978101c980b86eb1582da1f58cbe36"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_4/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_4/train_log.csv",
+    "sha256": "ee79c58e280a9af2d1bba33ccc20e3eaacb599fa53a678980645a83ea69833a7",
+    "packaged_sha256": "ee79c58e280a9af2d1bba33ccc20e3eaacb599fa53a678980645a83ea69833a7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_2/seed_4/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_2/seed_4/train_summary.json",
+    "sha256": "1b6d41b0076ae7fcfbfd34976cfa550d41dbb2fe37b547561e7833fec8d27a7e",
+    "packaged_sha256": "1b6d41b0076ae7fcfbfd34976cfa550d41dbb2fe37b547561e7833fec8d27a7e"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_0/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_0/predictions.parquet",
+    "sha256": "8125412638e4583aadef0db3671cf515bfe9f315818a13d1c02c4d751c73711a",
+    "packaged_sha256": "8125412638e4583aadef0db3671cf515bfe9f315818a13d1c02c4d751c73711a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_0/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_0/train_log.csv",
+    "sha256": "cfba0d8e40f93e23283dbda1e4c81bac2dcdfeb3e9d1d0e78a43ca72af05812a",
+    "packaged_sha256": "cfba0d8e40f93e23283dbda1e4c81bac2dcdfeb3e9d1d0e78a43ca72af05812a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_0/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_0/train_summary.json",
+    "sha256": "34c89c2e07fe5dee4a54aad51f71b541cf76c1e23b48042668a18bfa9e9973c0",
+    "packaged_sha256": "34c89c2e07fe5dee4a54aad51f71b541cf76c1e23b48042668a18bfa9e9973c0"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_1/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_1/predictions.parquet",
+    "sha256": "4b9e639172bfb977bc56eb55a992eb03abaaa0146e0517bda6bb14051fbdc244",
+    "packaged_sha256": "4b9e639172bfb977bc56eb55a992eb03abaaa0146e0517bda6bb14051fbdc244"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_1/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_1/train_log.csv",
+    "sha256": "17da7c13544f6ce1f6803898e943c62cb4eef23d70d9cdfa3829a7798d91b116",
+    "packaged_sha256": "17da7c13544f6ce1f6803898e943c62cb4eef23d70d9cdfa3829a7798d91b116"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_1/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_1/train_summary.json",
+    "sha256": "ec67ca4512edfd3ad8fc904a49c7a2c2db64db13d6173e8ca68adcae3d9240a4",
+    "packaged_sha256": "ec67ca4512edfd3ad8fc904a49c7a2c2db64db13d6173e8ca68adcae3d9240a4"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_2/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_2/predictions.parquet",
+    "sha256": "e515977c057a1c60bd11b7987eacd38b125f68492a5e102c507954184f6d0d45",
+    "packaged_sha256": "e515977c057a1c60bd11b7987eacd38b125f68492a5e102c507954184f6d0d45"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_2/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_2/train_log.csv",
+    "sha256": "10e03314b08e108c0a52630168798e8f221fba74d4799de64f7d561ad0c88ed7",
+    "packaged_sha256": "10e03314b08e108c0a52630168798e8f221fba74d4799de64f7d561ad0c88ed7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_2/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_2/train_summary.json",
+    "sha256": "df47c3e5dd54464539b3ddc770dcdc8417d8cd37c0dc10bd08b1083dc5b26bf8",
+    "packaged_sha256": "df47c3e5dd54464539b3ddc770dcdc8417d8cd37c0dc10bd08b1083dc5b26bf8"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_3/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_3/predictions.parquet",
+    "sha256": "dcba5c5910cfc3778a39185cfb0fe005b309e55683cca5b76b1e2bf7e6a0923b",
+    "packaged_sha256": "dcba5c5910cfc3778a39185cfb0fe005b309e55683cca5b76b1e2bf7e6a0923b"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_3/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_3/train_log.csv",
+    "sha256": "7a49f157ec1d95b48a2bab664f8e5b21ea98bbe79305d4e5513bfb090578c072",
+    "packaged_sha256": "7a49f157ec1d95b48a2bab664f8e5b21ea98bbe79305d4e5513bfb090578c072"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_3/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_3/train_summary.json",
+    "sha256": "8dc95c40c84d03fd7713e9b40d23371416386954637bd6da848e4356c0032446",
+    "packaged_sha256": "8dc95c40c84d03fd7713e9b40d23371416386954637bd6da848e4356c0032446"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_4/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_4/predictions.parquet",
+    "sha256": "1dd6964af03662d337fc44e221558cbe1019aef1dab427af282e999e662bcd27",
+    "packaged_sha256": "1dd6964af03662d337fc44e221558cbe1019aef1dab427af282e999e662bcd27"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_4/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_4/train_log.csv",
+    "sha256": "47ae2a47971700e5c67562d25d08f628171ef2d241a8dbe9dbccd6fb3aa476bd",
+    "packaged_sha256": "47ae2a47971700e5c67562d25d08f628171ef2d241a8dbe9dbccd6fb3aa476bd"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_3/seed_4/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_3/seed_4/train_summary.json",
+    "sha256": "524e096cd63559c3e04b71e2a9b46486369ce9275e2ae3799b52b74a9b58b920",
+    "packaged_sha256": "524e096cd63559c3e04b71e2a9b46486369ce9275e2ae3799b52b74a9b58b920"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_0/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_0/predictions.parquet",
+    "sha256": "c440799b2b72307ead3b515910e8ed9e9a8d38e5745e2ef3c497a95c8b1cda9c",
+    "packaged_sha256": "c440799b2b72307ead3b515910e8ed9e9a8d38e5745e2ef3c497a95c8b1cda9c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_0/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_0/train_log.csv",
+    "sha256": "93fde83cdade2b01156a050870d33f09e6a81b76baff6b5d4bc6fcca482f26b7",
+    "packaged_sha256": "93fde83cdade2b01156a050870d33f09e6a81b76baff6b5d4bc6fcca482f26b7"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_0/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_0/train_summary.json",
+    "sha256": "c8f80aeb11e9a1f9e52008bb5dbac0baa702b07d6ace6c1b13b2522d8336649a",
+    "packaged_sha256": "c8f80aeb11e9a1f9e52008bb5dbac0baa702b07d6ace6c1b13b2522d8336649a"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_1/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_1/predictions.parquet",
+    "sha256": "6421b0c1d6faec137517de7896d5483ce07509869fef75ed9d6769f88708f77d",
+    "packaged_sha256": "6421b0c1d6faec137517de7896d5483ce07509869fef75ed9d6769f88708f77d"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_1/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_1/train_log.csv",
+    "sha256": "c5da5dfbe9cab9e22a71e9a2097f196985a1fa9d13e2f59b40f8d8a7ed5cdc79",
+    "packaged_sha256": "c5da5dfbe9cab9e22a71e9a2097f196985a1fa9d13e2f59b40f8d8a7ed5cdc79"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_1/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_1/train_summary.json",
+    "sha256": "b8318769068798939b6d81645ba0625d478a8acf887bd0d8a70629a14d90c453",
+    "packaged_sha256": "b8318769068798939b6d81645ba0625d478a8acf887bd0d8a70629a14d90c453"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_2/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_2/predictions.parquet",
+    "sha256": "23e66d9546137636ee165dd9076c4251547d67c27f5821b6acfb76648940d881",
+    "packaged_sha256": "23e66d9546137636ee165dd9076c4251547d67c27f5821b6acfb76648940d881"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_2/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_2/train_log.csv",
+    "sha256": "b137238a189c1aff6a75f4d271bc9213834d55f80c29b145ec671a26295c9e55",
+    "packaged_sha256": "b137238a189c1aff6a75f4d271bc9213834d55f80c29b145ec671a26295c9e55"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_2/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_2/train_summary.json",
+    "sha256": "1d0f7772d12fa0c9084cd763987e6328103630a4ea5c8222bff360f605499189",
+    "packaged_sha256": "1d0f7772d12fa0c9084cd763987e6328103630a4ea5c8222bff360f605499189"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_3/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_3/predictions.parquet",
+    "sha256": "cb29bcd316e7d1cd0e691863f79ce7b3fd1464df7a4579577fd58a3d415415bc",
+    "packaged_sha256": "cb29bcd316e7d1cd0e691863f79ce7b3fd1464df7a4579577fd58a3d415415bc"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_3/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_3/train_log.csv",
+    "sha256": "339d140008981df3f0710a7453d3e72e96d2fb8d89eb101f3afb6e069b0b2874",
+    "packaged_sha256": "339d140008981df3f0710a7453d3e72e96d2fb8d89eb101f3afb6e069b0b2874"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_3/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_3/train_summary.json",
+    "sha256": "83cc0f1ab05d61597ac0189e5ba10c0d0058a6243cc0a7c1207bd78557a72fa9",
+    "packaged_sha256": "83cc0f1ab05d61597ac0189e5ba10c0d0058a6243cc0a7c1207bd78557a72fa9"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_4/predictions.parquet",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_4/predictions.parquet",
+    "sha256": "642ebff63638727f6b1d1dda34da063283dabd3fa926a92d3d4f1956378e2879",
+    "packaged_sha256": "642ebff63638727f6b1d1dda34da063283dabd3fa926a92d3d4f1956378e2879"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_4/train_log.csv",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_4/train_log.csv",
+    "sha256": "2ef6acbb5b62fce7809393141825a8bb4e4ca2812a1fed1e766fcb7d0094c41c",
+    "packaged_sha256": "2ef6acbb5b62fce7809393141825a8bb4e4ca2812a1fed1e766fcb7d0094c41c"
+  },
+  {
+    "source": "gpt audit/gpu_training_review/regularized/outputs/v1_reg/unordered_k12/fold_4/seed_4/train_summary.json",
+    "destination": "results/regularized/unordered_k12/fold_4/seed_4/train_summary.json",
+    "sha256": "1a19969a908cfcdf97752cc673def3f45d7da6dbdc3e8fcbf967f5decf458aa3",
+    "packaged_sha256": "1a19969a908cfcdf97752cc673def3f45d7da6dbdc3e8fcbf967f5decf458aa3"
+  },
+  {
+    "source": "gpt audit/phase7_gpu_review_2026-10-13/data/processed/v1/features_provenance.json",
+    "destination": "evidence/phase7/features_provenance.json",
+    "sha256": "8863f6f8ac7cddd00736df6b000683d28f35a92294b98a9a49a1b698db168132",
+    "packaged_sha256": "8863f6f8ac7cddd00736df6b000683d28f35a92294b98a9a49a1b698db168132"
+  },
+  {
+    "source": "gpt audit/phase7_gpu_review_2026-10-13/data/processed/v1/label_feasibility_report.md",
+    "destination": "evidence/phase7/label_feasibility_report.md",
+    "sha256": "c3eaf55a4137d79fb9def4f2c15a6bc67a1a07c0ca30d43f351c345d25a69434",
+    "packaged_sha256": "c3eaf55a4137d79fb9def4f2c15a6bc67a1a07c0ca30d43f351c345d25a69434"
+  },
+  {
+    "source": "gpt audit/phase7_gpu_review_2026-10-13/data/processed/v1/provenance_feasibility.json",
+    "destination": "evidence/phase7/provenance_feasibility.json",
+    "sha256": "121e83e4de669433378f72d3ca0c2127368871414935bb8c5b028f94d84e378b",
+    "packaged_sha256": "121e83e4de669433378f72d3ca0c2127368871414935bb8c5b028f94d84e378b"
+  },
+  {
+    "source": "gpt audit/phase7_gpu_review_2026-10-13/data/processed/v1/splits/folds.json",
+    "destination": "evidence/phase7/splits/folds.json",
+    "sha256": "be5a2eeb9ab9f22b04ca4ec186b8bd12730d6db70efa0bfab6a0889fb7ee2367",
+    "packaged_sha256": "be5a2eeb9ab9f22b04ca4ec186b8bd12730d6db70efa0bfab6a0889fb7ee2367"
+  },
+  {
+    "source": "data/interim/qc/phase0_report.md",
+    "destination": "evidence/local_preprocessing/phase0_report.md",
+    "sha256": "f4c6fd5b635c70c669e3c80a6e51397ca70505032de97428f458846202d3d23a",
+    "packaged_sha256": "f4c6fd5b635c70c669e3c80a6e51397ca70505032de97428f458846202d3d23a"
+  },
+  {
+    "source": "data/interim/calibration.json",
+    "destination": "evidence/local_preprocessing/calibration.json",
+    "sha256": "1387d405dee1f282fa5898873d84dc7421b4adc6afcb4a0ea8c0ed7b33f45ada",
+    "packaged_sha256": "1387d405dee1f282fa5898873d84dc7421b4adc6afcb4a0ea8c0ed7b33f45ada"
+  },
+  {
+    "source": "data/interim/qc/align_summary.csv",
+    "destination": "evidence/local_preprocessing/align_summary.csv",
+    "sha256": "905ff12cffc0c0756e9b19bff44f03d9d223ada2df1a58af16dcc41ce6231633",
+    "packaged_sha256": "905ff12cffc0c0756e9b19bff44f03d9d223ada2df1a58af16dcc41ce6231633"
+  },
+  {
+    "source": "data/interim/qc/segment_summary.csv",
+    "destination": "evidence/local_preprocessing/segment_summary.csv",
+    "sha256": "904fbf435ea0329385be05912c389f77aeca8773014f3cd09629590f183acdd9",
+    "packaged_sha256": "904fbf435ea0329385be05912c389f77aeca8773014f3cd09629590f183acdd9"
+  },
+  {
+    "source": "d65_cmfs.py",
+    "destination": "d65_cmfs.py",
+    "sha256": "8adcfacdb77855f8252bbd7e291eb8bfc7bd81141822de117990947b1ebe7bee",
+    "packaged_sha256": "8adcfacdb77855f8252bbd7e291eb8bfc7bd81141822de117990947b1ebe7bee"
+  },
+  {
+    "source": "d65_cmfs.txt",
+    "destination": "d65_cmfs.txt",
+    "sha256": "bfa60ce0fdba3563053efce8b73bcebf8a0538e77b72fbcd069e3347698e272c",
+    "packaged_sha256": "bfa60ce0fdba3563053efce8b73bcebf8a0538e77b72fbcd069e3347698e272c"
+  },
+  {
+    "source": "data/raw/ukvm_dataset/specimens/granite/meta.json",
+    "destination": "evidence/granite_source_metadata.json",
+    "sha256": "ced0841ecea0966dd4695da2bd146724eff09d605d84a0ac4f8b441fd4062c2e",
+    "packaged_sha256": "ced0841ecea0966dd4695da2bd146724eff09d605d84a0ac4f8b441fd4062c2e"
+  }
+]

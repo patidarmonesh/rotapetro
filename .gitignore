@@ -1,0 +1,31 @@
+# Large / private inputs and generated training outputs
+/data/
+/outputs/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.env
+.env.*
+*.pt
+*.pth
+*.npy
+*.npz
+*.tar.gz
+*.zip
+# Build intermediates; keep the named final report PDF
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.synctex.gz
+report/*.xdv
+report/*.fls
+report/*.fdb_latexmk
+report/main.pdf
+report/rendered/
+build/
+.DS_Store
+Thumbs.db

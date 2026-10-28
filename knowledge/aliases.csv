@@ -1,0 +1,100 @@
+ou_name,canonical,level
+quartz,quartz,mineral
+plagioclase,plagioclase,mineral
+feldspar,feldspar,group
+alkali feldspar,k_feldspar,group
+k-feldspar,k_feldspar,group
+orthoclase,orthoclase,mineral
+microcline,microcline,mineral
+sanidine,sanidine,mineral
+mica,mica,group
+biotite,biotite,mineral
+muscovite,muscovite,mineral
+sericite,fine_aggregate,mineral
+pyroxene,pyroxene,group
+clinopyroxene,augite,mineral
+augite,augite,mineral
+orthopyroxene,orthopyroxene,mineral
+amphibole,amphibole,group
+hornblende,hornblende,mineral
+actinolite,actinolite,mineral
+tremolite,actinolite,mineral
+iron oxide,opaque,mineral
+magnetite,opaque,mineral
+ilmenite,opaque,mineral
+pyrite,opaque,mineral
+hematite,opaque,mineral
+carbonate,carbonate,group
+calcite,calcite,mineral
+dolomite,dolomite,mineral
+olivine,olivine,mineral
+garnet,garnet,mineral
+epidote,epidote,mineral
+zoisite,epidote,mineral
+tourmaline,tourmaline,mineral
+cordierite,cordierite,mineral
+staurolite,staurolite,mineral
+kyanite,kyanite,mineral
+sillimanite,sillimanite,mineral
+andalusite,andalusite,mineral
+titanite,titanite,mineral
+sphene,titanite,mineral
+zircon,zircon,mineral
+apatite,apatite,mineral
+cassiterite,cassiterite,mineral
+nepheline,nepheline,mineral
+glauconite,glauconite,mineral
+fluorite,fluorite,mineral
+glass,glass,mineral
+volcanic glass,glass,mineral
+opaque,opaque,mineral
+ore mineral,opaque,mineral
+fine aggregate,fine_aggregate,mineral
+groundmass,fine_aggregate,mineral
+clay,fine_aggregate,mineral
+chlorite,chlorite,mineral
+serpentine,serpentine,mineral
+serpentinite,serpentine,mineral
+clay mineral,fine_aggregate,mineral
+clay minerals,fine_aggregate,mineral
+devitrified glass,fine_aggregate,mineral
+k feldspar,k_feldspar,group
+potassium feldspar,k_feldspar,group
+potash feldspar,k_feldspar,group
+alkali-feldspar,k_feldspar,group
+k-spar,k_feldspar,group
+perthite,k_feldspar,group
+feldspars,feldspar,group
+plagioclase feldspar,plagioclase,mineral
+albite,plagioclase,mineral
+oligoclase,plagioclase,mineral
+andesine,plagioclase,mineral
+labradorite,plagioclase,mineral
+bytownite,plagioclase,mineral
+anorthite,plagioclase,mineral
+micas,mica,group
+white mica,muscovite,mineral
+phlogopite,biotite,mineral
+pyroxenes,pyroxene,group
+diopside,augite,mineral
+aegirine,augite,mineral
+aegirine-augite,augite,mineral
+pigeonite,augite,mineral
+enstatite,orthopyroxene,mineral
+hypersthene,orthopyroxene,mineral
+bronzite,orthopyroxene,mineral
+amphiboles,amphibole,group
+iron oxides,opaque,mineral
+oxides,opaque,mineral
+opaques,opaque,mineral
+opaque minerals,opaque,mineral
+ore,opaque,mineral
+ore minerals,opaque,mineral
+chromite,opaque,mineral
+chert,fine_aggregate,mineral
+chalcedony,fine_aggregate,mineral
+almandine,garnet,mineral
+pyrope,garnet,mineral
+grossular,garnet,mineral
+epidote group,epidote,mineral
+clinozoisite,epidote,mineral

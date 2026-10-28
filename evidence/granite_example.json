@@ -1,0 +1,219 @@
+{
+  "records": [
+    {
+      "region": "granite_r1_g001",
+      "run": "Initial",
+      "arm": "static_k1",
+      "state": "singleton",
+      "allowed": [
+        "mica"
+      ],
+      "pred": "mica",
+      "probabilities": [
+        0.000847377406898886,
+        0.017566533759236336,
+        0.9017555713653564,
+        0.046936873346567154,
+        0.032893627882003784
+      ]
+    },
+    {
+      "region": "granite_r1_g001",
+      "run": "Initial",
+      "arm": "unordered_k12",
+      "state": "singleton",
+      "allowed": [
+        "mica"
+      ],
+      "pred": "mica",
+      "probabilities": [
+        0.0015986699145287275,
+        0.03357161954045296,
+        0.8639399409294128,
+        0.053349439054727554,
+        0.047540392726659775
+      ]
+    },
+    {
+      "region": "granite_r1_g001",
+      "run": "Initial",
+      "arm": "angle_aware_k12",
+      "state": "singleton",
+      "allowed": [
+        "mica"
+      ],
+      "pred": "mica",
+      "probabilities": [
+        0.03028852678835392,
+        0.12761753797531128,
+        0.4992298483848572,
+        0.31940439343452454,
+        0.023459674790501595
+      ]
+    },
+    {
+      "region": "granite_r1_g001",
+      "run": "Regularised",
+      "arm": "static_k1",
+      "state": "singleton",
+      "allowed": [
+        "mica"
+      ],
+      "pred": "mica",
+      "probabilities": [
+        0.012513699010014534,
+        0.1870744526386261,
+        0.49351006746292114,
+        0.24136880040168762,
+        0.06553294509649277
+      ]
+    },
+    {
+      "region": "granite_r1_g001",
+      "run": "Regularised",
+      "arm": "unordered_k12",
+      "state": "singleton",
+      "allowed": [
+        "mica"
+      ],
+      "pred": "mica",
+      "probabilities": [
+        0.0029234327375888824,
+        0.05978390574455261,
+        0.868826150894165,
+        0.01526838168501854,
+        0.05319809913635254
+      ]
+    },
+    {
+      "region": "granite_r1_g001",
+      "run": "Regularised",
+      "arm": "angle_aware_k12",
+      "state": "singleton",
+      "allowed": [
+        "mica"
+      ],
+      "pred": "mica",
+      "probabilities": [
+        0.007080347742885351,
+        0.12865197658538818,
+        0.6456981301307678,
+        0.17704184353351593,
+        0.04152768477797508
+      ]
+    },
+    {
+      "region": "granite_r1_g002",
+      "run": "Initial",
+      "arm": "static_k1",
+      "state": "abstain",
+      "allowed": [],
+      "pred": "mica",
+      "probabilities": [
+        0.0013572851894423366,
+        0.12483783811330795,
+        0.8416383862495422,
+        0.011164420284330845,
+        0.02100205607712269
+      ]
+    },
+    {
+      "region": "granite_r1_g002",
+      "run": "Initial",
+      "arm": "unordered_k12",
+      "state": "abstain",
+      "allowed": [],
+      "pred": "mica",
+      "probabilities": [
+        0.002770904917269945,
+        0.40449175238609314,
+        0.5364950895309448,
+        0.022758398205041885,
+        0.03348385542631149
+      ]
+    },
+    {
+      "region": "granite_r1_g002",
+      "run": "Initial",
+      "arm": "angle_aware_k12",
+      "state": "abstain",
+      "allowed": [],
+      "pred": "mica",
+      "probabilities": [
+        0.064752496778965,
+        0.34335726499557495,
+        0.41284388303756714,
+        0.1376953274011612,
+        0.041351038962602615
+      ]
+    },
+    {
+      "region": "granite_r1_g002",
+      "run": "Regularised",
+      "arm": "static_k1",
+      "state": "abstain",
+      "allowed": [],
+      "pred": "mica",
+      "probabilities": [
+        0.010747571475803852,
+        0.30296793580055237,
+        0.6000579595565796,
+        0.02512231469154358,
+        0.061104223132133484
+      ]
+    },
+    {
+      "region": "granite_r1_g002",
+      "run": "Regularised",
+      "arm": "unordered_k12",
+      "state": "abstain",
+      "allowed": [],
+      "pred": "mica",
+      "probabilities": [
+        0.0029143928550183773,
+        0.45111504197120667,
+        0.4999504089355469,
+        0.006276706233620644,
+        0.039743371307849884
+      ]
+    },
+    {
+      "region": "granite_r1_g002",
+      "run": "Regularised",
+      "arm": "angle_aware_k12",
+      "state": "abstain",
+      "allowed": [],
+      "pred": "feldspar",
+      "probabilities": [
+        0.020102201029658318,
+        0.5940545201301575,
+        0.2878532111644745,
+        0.04385467991232872,
+        0.05413544923067093
+      ]
+    }
+  ],
+  "regions": {
+    "granite_r1_g001": {
+      "area_px": 6548,
+      "interior_px": 5516,
+      "ppl_colour": "brown",
+      "pleo_dE_med": 26.9,
+      "r2_4_med": 0.963,
+      "partial": true
+    },
+    "granite_r1_g002": {
+      "area_px": 5583,
+      "interior_px": 4691,
+      "ppl_colour": "colourless",
+      "pleo_dE_med": 2.9,
+      "r2_4_med": 0.955,
+      "partial": true
+    }
+  },
+  "n_predicted": 25,
+  "states": {
+    "abstain": 16,
+    "singleton": 9
+  }
+}

@@ -1,0 +1,91 @@
+\section{Research question and the meaning of the experiment}
+\subsection{The geological motivation}
+A thin section is a slice of rock made sufficiently thin for transmitted-light microscopy. A single section contains many mineral grains. Under plane-polarised light (PPL), useful observations include colour, absorption, texture and boundaries. Under cross-polarised light (XPL), brightness and interference colours can change as the stage rotates. Extinction is the dark orientation of an anisotropic grain between crossed polarisers. Pleochroism is a change in apparent colour or absorption with orientation in PPL.
+
+The motivation is therefore straightforward: a geologist uses changing appearances, so a model might benefit from them too. However, more photographs do not automatically provide more independent information. A model also needs reliable alignment, appropriate regions, useful features, enough independent specimens and trustworthy evaluation targets.
+
+\subsection{Questions tested}
+\begin{enumerate}
+\item \textbf{Primary:} under the same regions, descriptors, splits and target policy, does a 12-position angle-aware model outperform a single-position model?
+\item \textbf{Secondary:} does knowing the angles help compared with a model seeing the same 12 positions without angle information?
+\item \textbf{Diagnostic:} how much do target availability, class support, training instability and preprocessing restrict interpretation?
+\end{enumerate}
+The operational task is five-family classification. It is not full mineral-species identification, automatic discovery of every grain, or an independently validated replacement for a petrographer.
+
+\subsection{Three kinds of evidence}
+This report uses saved GPU predictions and evaluation files for quantitative outcomes; the current source snapshot for implementation explanations; and local images and masks for visual demonstrations. The historical GPU checkout and complete resolved regularised-run configuration were not archived together. Consequently, the current source is an explanatory snapshot, not a certified byte-for-byte copy of the historical training environment. Local regenerated label tables can differ from archived training evidence; historical counts below are taken from the run evidence.
+
+There is no fresh training in preparing this report. The 72-position, unaveraged experiment is a proposed improvement, not a completed experiment. This separation prevents an implementation idea from being presented as a result.
+
+\subsection{Vocabulary and units of independence}
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule Term & Meaning in this project\\\midrule
+Specimen & A rock sample identifier; the unit kept separate across train/test splits.\\
+Site & A particular field of view within a specimen, such as \code{granite_r1}.\\
+Stage position & One angle of microscope-stage rotation.\\
+Image & One mode, PPL or XPL, at one position. Two images form a pair.\\
+Region & A connected area proposed by segmentation; it need not equal one physical grain.\\
+Weak target & A provisional family or allowed family set inferred from rules and metadata.\\
+Embedding & A numerical image description produced by a frozen pretrained neural encoder.\\
+Fold / seed & A specimen split / an initialisation and sampling randomisation.\\\bottomrule
+\end{tabularx}
+\takeaway{Thousands of images of a few rocks do not equal thousands of independent rock samples. The held-out specimen, rather than the image or grain, is central to evaluation.}
+
+\section{Dataset provenance and organisation}
+\subsection{Collection from the public Virtual Microscope}
+The starting material comes from the public Virtual Microscope collection associated with The Open University \cite{ukvm}. It consists of existing microscope photographs and descriptive specimen metadata. The project did not capture these images with a local microscope.
+
+The retained collection files indicate an automated download workflow: discover specimen records, resolve their viewer resources, enumerate rotation sites and PPL/XPL frame URLs, save images in a consistent hierarchy, and record failures and metadata. Viewer resource information and specimen indexes support this reconstruction. The original downloader, referenced in older documentation as \code{tools/ukvm_download.py}, is absent from the reviewed source tree. Its exact retry, throttling and URL-parsing implementation therefore cannot be asserted from this snapshot. The saved files establish what was downloaded more strongly than they establish every detail of the scraping procedure.
+
+The relevant hierarchy is:
+\begin{quote}\small\ttfamily
+data/raw/ukvm\_dataset/\newline
+\hspace*{1em}specimens.csv; rotation\_fields.csv; failures.csv\newline
+\hspace*{1em}specimen\_index.json\newline
+\hspace*{1em}specimens/<specimen>/\newline
+\hspace*{2em}meta.json; viewer resources\newline
+\hspace*{2em}rot/<site>/ppl/000.jpg ... 071.jpg\newline
+\hspace*{2em}rot/<site>/xpl/000.jpg ... 071.jpg
+\end{quote}
+Original metadata and attribution must remain attached to redistributed material. Public access does not imply unrestricted reuse; collection-specific and third-party rights still apply. The companion repository excludes raw imagery and full data arrays. Figure provenance and image-rights notes are provided separately.
+
+\subsection{How many observations are available?}
+At a complete site the nominal raw angles are $0^\circ,5^\circ,\ldots,355^\circ$. Thus there are 72 positions and $72\times2=144$ photographs. Each image in this collection is approximately $490\times490$ pixels. PPL and XPL are different lighting observations, not duplicate copies.
+
+\begin{table}[htbp]\centering
+\caption{Data reduction and available supervision. Counts describe different units and should not be divided indiscriminately.}
+\begin{tabularx}{\linewidth}{@{}rX@{}}\toprule Count & Stage / interpretation\\\midrule
+115 & Specimens in the local Phase 0 inventory.\\
+490 & Raw rotation folders before duplicate removal.\\
+244 & Unique sites after removing 246 repeated folders.\\
+242 & Sites meeting basic completeness and image checks.\\
+233 & Sites passing alignment quality control.\\
+22,389 & Automatically proposed regions in the segmentation collection.\\
+5,065 & Regions represented in the archived full embedding run.\\
+4,956 & Regions with pooled out-of-fold predictions; 112 specimens.\\
+581 & Singleton-labelled test regions, from 77 specimens.\\
+323 & Partial-set test regions, from 29 specimens.\\
+4,052 & Predicted test regions whose teacher abstains.\\\bottomrule
+\end{tabularx}
+\end{table}
+The difference between 5,065 and 4,956 is 109 mixed/excluded regions (66 mixed and 43 excluded in the archived accounting). Of the 4,956 predicted regions, only 904 have singleton or partial-set supervision. A large prediction count therefore does not imply a large labelled benchmark.
+
+\subsection{Phase 0: clean the collection before measuring it}
+Phase 0 builds an explicit inventory. It checks required files, decodability, consistent dimensions and completeness. Duplicate-site detection uses selected reference files, including PPL frame 000, XPL frame 000 and PPL frame 037, within a specimen. This removes exact repeated sites without intentionally merging distinct specimens. A hash of representative frames is an engineering duplicate check, not proof that every near-duplicate has been found.
+
+The resulting \code{sites.csv} contains canonical site identifiers and usability information; \code{specimens_clean.csv} normalises specimen records. Missing image/whole-slide resources and incomplete sites are documented in the report. Two unusable sites in the inventory are \code{glahm134751_r2} and \code{lun35_r5}. An adjacent-frame PPL exposure-change check flags a relative jump above approximately 15\%; this is a warning rather than an automatic mineral classification. One site, \code{watson389_r2}, receives this flag.
+
+The metadata include rock type and reported constituent minerals. These describe a \emph{specimen}. They do not identify the mineral occupying an individual pixel or region. Monomineralic flags were retained for description, but the V1 policy does not use a rock title alone to assign every region that mineral.
+
+\subsection{Spatial calibration}
+Scale information was estimated from whole-slide scale metadata and the relationship between whole-slide and rotation views. In simplified form,
+\begin{equation}
+u_{\rm rot}=\frac{1000}{\text{whole-slide pixels per mm}}
+\times d_{\rm saved}\times s_{\rm rot\to WSI},
+\end{equation}
+where $u_{\rm rot}$ is micrometres per rotation-image pixel, $d_{\rm saved}$ accounts for saved-image downsampling, and $s_{\rm rot\to WSI}$ is the measured registration scale. Ten calibration specimens yielded a median near $4.181\,\mu$m/pixel and a coefficient of variation near 0.9\%. A 490-pixel image width is therefore about 2.05 mm under this approximation. The 464-pixel valid-circle diameter is about 1.94 mm.
+
+This approximate spatial scale helps interpret grain sizes. It does not calibrate brightness, exposure, thin-section thickness or birefringence. Those are separate measurements.
+
+\fig{raw.png}{1}{Running example: raw photographs from \code{granite_r1}. The spatial structures rotate while optical appearance also changes. The source photographs originate from the Virtual Microscope collection; this layout is a project illustration.}{fig:raw}
+\FloatBarrier

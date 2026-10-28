@@ -1,0 +1,69 @@
+# Rule engine likelihood settings (§12.2)
+# Used by RuleEngine.score_region() to compute P(observation | mineral)
+
+observation_weights:
+  optic_class: 2.0
+  birefringence: 1.5
+  pleochroism: 1.2
+  ppl_colour: 1.0
+  twinning: 1.2
+  extinction_type: 1.0      # only if aspect >= 1.5 or cleavage >= 1
+  undulose: 0.5
+  cleavage: 0.6
+  absorption_axis: 1.0      # only if pleo >= moderate and aspect >= 1.5
+  twinkling: 0.8
+  habit: 0.4
+  relief: 0.3
+  region_type: 2.0
+
+# P(obs | mineral) for each observation term.
+# "match"     = observation agrees with textbook
+# "partial"   = observation is compatible but not the best match
+# "mismatch"  = observation contradicts textbook
+p_obs_given_mineral:
+  optic_class:
+    match: 0.90
+    mismatch: 0.03
+  birefringence:
+    match: 0.70
+    adjacent: 0.20
+    mismatch: 0.03
+    colour_masks_yes: 0.3     # weight multiplier when colour_masks_biref = yes (§12.2)
+    colour_masks_partial: 0.6 # weight multiplier when colour_masks_biref = partial
+  pleochroism:
+    match: 0.75
+    partial: 0.20
+    mismatch: 0.05
+  ppl_colour:
+    match: 0.70
+    partial: 0.15
+    mismatch: 0.05
+  twinning:
+    match: 0.70
+    partial: 0.35
+    mismatch: 0.05
+  extinction_type:
+    match: 0.75
+    mismatch: 0.15
+  undulose:
+    quartz: 0.60
+    other: 0.15
+  cleavage:
+    match: 0.60
+    partial: 0.20     # +0.20 bonus for correct angle
+    mismatch: 0.20
+  absorption_axis:
+    match: 0.80
+    mismatch: 0.20
+  twinkling:
+    match: 0.80
+    mismatch: 0.20
+  habit:
+    match: 0.60
+    mismatch: 0.30
+  relief:
+    match: 0.50
+    mismatch: 0.30
+  region_type:
+    aggregate_match: 0.90
+    aggregate_mismatch: 0.05

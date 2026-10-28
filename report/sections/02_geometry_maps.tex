@@ -1,0 +1,128 @@
+\section{Phase 1: put the same region at the same pixels}
+\subsection{Why registration is necessary}
+Without registration, pixel $(x,y)$ at one angle can describe a different part of the rock at the next angle. A brightness curve would then mix motion with mineral optics. Phase 1 estimates a geometric transformation for every frame relative to frame 0. The transformation estimated from PPL is also applied to the corresponding XPL image. This assumes the PPL and XPL pair share acquisition geometry.
+
+\subsection{ORB: finding and describing repeatable landmarks}
+ORB stands for \emph{Oriented FAST and Rotated BRIEF} \cite{orb}. It is a feature detector and descriptor, not a mineral classifier. FAST identifies corner-like intensity patterns. Conceptually, a point is distinctive when a contiguous arc on a small surrounding circle is consistently brighter or darker than its centre by a threshold. Such local corners are often easier to match than smooth, uniform interiors.
+
+ORB estimates a local orientation using intensity moments. For coordinates relative to the patch centre,
+\begin{equation}
+m_{pq}=\sum_{x,y}x^p y^q I(x,y),\qquad
+\alpha=\operatorname{atan2}(m_{01},m_{10}).
+\end{equation}
+BRIEF then compares intensities at selected point pairs. Each comparison produces a bit,
+\begin{equation}
+b_j=\mathbf{1}\{I(\mathbf u_j)<I(\mathbf v_j)\}.
+\end{equation}
+Rotating the sampling pattern by $\alpha$ makes the descriptor less sensitive to image rotation. Two descriptors are compared using Hamming distance: the number of disagreeing bits, $d_H(b,b')=\sum_j\mathbf{1}\{b_j\ne b'_j\}$. The pipeline requests up to 3,000 ORB keypoints, uses cross-checked brute-force Hamming matches, retains at most 600 good matches and requires at least 10 correspondences for the registration attempt.
+
+This works when repeatable geometry remains visible. It becomes unreliable in feature-poor areas, at changing contrast, or when many apparently similar textures produce incorrect correspondences. A match is a proposal, not automatically a correct link.
+
+\subsection{RANSAC: reject geometrically inconsistent matches}
+The fitted transform is a 2-D similarity transform,
+\begin{equation}\label{eq:similarity}
+\begin{bmatrix}x'\\y'\end{bmatrix}
+=\begin{bmatrix}a&-b\\b&a\end{bmatrix}
+\begin{bmatrix}x\\y\end{bmatrix}
++\begin{bmatrix}t_x\\t_y\end{bmatrix},\qquad
+s=\sqrt{a^2+b^2},\quad\varphi=\operatorname{atan2}(b,a).
+\end{equation}
+It allows rotation, uniform scale and translation, rather than an unrestricted deformation of a grain. RANSAC (random sample consensus) repeatedly fits candidate transformations from small subsets of matches \cite{ransac}. For match $j$, the reprojection residual is
+\begin{equation}
+r_j=\|T\mathbf x_j-\mathbf x'_j\|_2.
+\end{equation}
+Matches with $r_j\leq2$ pixels count as inliers for the configured fit. The model supported by a consistent set is retained and refined. In ideal independent sampling, if $w$ is the inlier fraction and $m$ the minimal subset size, the number of draws needed for success probability $p$ satisfies
+\begin{equation}
+N\geq\frac{\log(1-p)}{\log(1-w^m)}.
+\end{equation}
+This explains why many bad matches make robust fitting harder. It is an explanation of RANSAC, not a claim that the project manually fixes $N$ using this formula.
+
+The estimated angle is checked against the nominal stage rotation: allowed error is about $1.5^\circ$ for a candidate transform, and scale must remain within about 1\% of unity. Rotation sign is inferred from early frames, with a default if no early estimate succeeds. Sign conventions depend on whether the transform maps the moving frame to the reference; physical stage rotation and image correction need not have the same sign.
+
+\subsection{Fallbacks, refinement and valid support}
+Registration first tries a direct reference match. If that fails, it can compose a match through a neighbouring frame. If this also fails, it uses nominal rotation around the image centre. The fallback provides a usable guess, but its presence must remain visible in quality control.
+
+An enhanced correlation coefficient (ECC) refinement follows the coarse alignment \cite{ecc}. Conceptually, it optimises normalised correlation between centred image signals,
+\begin{equation}
+\rho(\mathbf p)=\frac{\widetilde I_{\rm ref}^{\mathsf T}\widetilde I_{\rm mov}(W(\mathbf p))}
+{\|\widetilde I_{\rm ref}\|\,\|\widetilde I_{\rm mov}(W(\mathbf p))\|}.
+\end{equation}
+The implementation uses gradient images and an Euclidean residual warp. Gradients emphasise changes at structures rather than absolute brightness. The residual transform is composed with the coarse warp using the appropriate inverse-warp convention. This is an optimisation step, not an independent proof of correct registration.
+
+Interpolation samples a rotated image on the reference pixel grid. It can soften edges. A valid mask is obtained by warping support masks, intersecting support across frames and restricting it to the configured circle. Black corners after rotation are invalid support, not opaque minerals.
+
+\subsection{Opposite-angle averaging: what was actually done}
+For each illumination mode separately, the aligned stack is folded:
+\begin{equation}\label{eq:fold}
+\bar I_k=\operatorname{round}\left[\frac{I^{\rm aligned}_k+I^{\rm aligned}_{k+36}}2\right],
+\quad k=0,\ldots,35.
+\end{equation}
+The calculation is performed in floating point before conversion to the saved image type. PPL is averaged with PPL; XPL with XPL. It does \emph{not} average PPL and XPL together. The resulting 36 retained positions each have two pictures: 36 PPL images and 36 XPL images, hence 72 images total.
+
+Ideal orientation-dependent optical responses can repeat after a half-turn. For example, a simple crossed-polariser intensity law has a $\sin^2(2\theta)$ factor, and absorption terms can have a $\cos(2\theta)$ dependence. These motivate testing half-turn folding. They do not establish that acquired image pairs are identical: drift, JPEG compression, illumination changes, deformation and residual misalignment can violate the assumption. Averaging can reduce independent noise, but can also blur structure or erase useful acquisition differences. A no-averaging ablation is required to determine its effect here; it has not been completed.
+
+Frame 0 has a special interpolation history: its folded image averages the original reference with a resampled opposite frame, whereas most other retained positions combine two resampled frames. The main static test uses $5^\circ$ to avoid this particular reference-frame advantage. It does not remove every possible preprocessing asymmetry.
+
+\subsection{Alignment quality control and the edge image}
+The current code's site-level pass condition is stricter than its individual-transform acceptance check:
+\begin{align}
+\operatorname{median}(|\text{angle error}|)&<0.5^\circ, & n_{\rm fallback}&<3,\\
+\text{residual shift}&<0.3\text{ pixels}, & \text{opposite-frame difference}&<10.
+\end{align}
+The difference is the mean absolute grayscale difference between aligned $0^\circ$ and $180^\circ$ PPL frames after a light Gaussian blur, within valid support. Residual translation uses gradient phase correlation. These checks are proxies: they do not validate every point in every frame. In the saved collection, 233 of 242 usable sites pass.
+
+\fig{align.png}{1}{Phase 1 QC for \code{granite_r1}. The first panels show registered PPL observations. In the edge overlay, red represents edges at $0^\circ$ and green those at $90^\circ$. Coincident red and green appear yellow. Separated double edges suggest residual mismatch; a changed optical contrast can also make an edge appear in only one colour.}{fig:align}
+The overlay is useful because the eye readily notices doubled contours. It is not an error map with a calibrated pixel value, and red does not mean a particular mineral. Boundary disagreement should be checked against the images and numerical residuals together.
+\FloatBarrier
+
+\section{Phase 2: convert angle-dependent appearance into maps}
+\subsection{Optical motivation versus measured image values}
+For an ideal transparent anisotropic section between crossed polarisers, a simplified monochromatic relation is
+\begin{equation}\label{eq:optics}
+I(\theta,\lambda)\propto I_0(\lambda)\sin^2[2(\theta-\theta_e)]
+\sin^2\left(\frac{\pi\Delta n\,t}{\lambda}\right),
+\end{equation}
+where $\Delta n$ is effective birefringence, $t$ thickness, $\lambda$ wavelength and $\theta_e$ an extinction orientation. This ideal relation motivates the fourth angular harmonic, because $\sin^2(2\theta)=(1-\cos4\theta)/2$. Real RGB photographs integrate wavelengths and include camera response, exposure and compression.
+
+The implemented luminance proxy is $Y=0.299R+0.587G+0.114B$ on encoded RGB values. It is not calibrated linear radiance. A white reference $W$ is estimated from the bright PPL distribution; bright neutral pixels support channel balancing. These full-sequence quantities are used in optical maps and region proposals. They must not be described as calibrated mineral constants, nor as the fixed normalisation applied to the neural crops.
+
+\subsection{XPL extinction position, anisotropy and fit quality}
+At a valid pixel, let $Y_k$ be XPL luminance at retained angle $\theta_k$, in radians. For $N=36$ evenly spaced samples,
+\begin{align}
+\mu &= N^{-1}\sum_kY_k,\\
+c_4 &= \frac{2}{N}\sum_kY_k\cos(4\theta_k), &
+s_4 &= \frac{2}{N}\sum_kY_k\sin(4\theta_k),\\
+\widehat Y(\theta)&=\mu+c_4\cos4\theta+s_4\sin4\theta.
+\end{align}
+Write $A_4=\sqrt{c_4^2+s_4^2}$ and $\phi=\operatorname{atan2}(s_4,c_4)$. The fitted dark position is
+\begin{equation}
+\theta_e=\frac{\phi+\pi}{4}\pmod{\pi/2}.
+\end{equation}
+Extinction is represented modulo $90^\circ$, because this model repeats every quarter-turn. The normalised modulation and fit score are
+\begin{equation}
+a=\operatorname{clip}\left(\frac{A_4}{\mu+1},0,1\right),\qquad
+R_4^2=\operatorname{clip}\left(\frac{A_4^2/2}{\operatorname{Var}(Y)},0,1\right).
+\end{equation}
+The variance denominator uses the same equally sampled observations; constant curves receive a zero score rather than division by zero. This expression corresponds to the variance explained by the harmonic on that grid. The additive 1 stabilises dark pixels and is an image-unit choice.
+
+Large $a$ means strong relative oscillation. Large $R_4^2$ means the fourth harmonic explains much of the observed variation. Neither by itself identifies a mineral. The anisotropic-pixel mask requires approximately $a\geq0.15$, sufficient XPL brightness ($\max Y\geq0.08W$), and valid support. Low brightness can make an angle estimate unstable even if a ratio appears large.
+
+Two different bright-XPL representations are retained. A maximum projection takes per-channel maxima across angles and may combine colours that never coexisted in one photograph. A fitted bright-position representation samples near $\theta_e+45^\circ$ and $\theta_e+135^\circ$. The names should not be interchanged.
+
+\subsection{PPL colour change and other descriptors}
+PPL luminance is fitted with the second harmonic,
+\begin{equation}
+\widehat Y_{\rm PPL}(\theta)=\mu+c_2\cos2\theta+s_2\sin2\theta.
+\end{equation}
+The dark absorption direction is $(\operatorname{atan2}(s_2,c_2)+\pi)/2$ modulo $\pi$. Channel-wise fits estimate colours at opposite absorption states separated by $90^\circ$. Their CIELAB distance is
+\begin{equation}
+\Delta E_{76}=\sqrt{(L_1^*-L_2^*)^2+(a_1^*-a_2^*)^2+(b_1^*-b_2^*)^2}.
+\end{equation}
+This is a repeatable colour-change descriptor, not a spectroscopic measurement. Lighting and registration can contribute to it. Other maps include a dark-PPL opaque candidate mask ($\max Y_{\rm PPL}<0.15W$), local texture and a modulation of gradient magnitude sometimes described as relief or twinkling. The latter can respond to several causes and is not a specific carbonate test.
+
+The code also contains a Michel--L\'evy-inspired colour-to-retardation approximation using $\Gamma=\Delta n\,t$. With unknown relative PPL/XPL exposure, section thickness and colour response, such a lookup is not a reliable measurement of $\Delta n$. Birefringence is disabled as a deciding term in V1 labelling. Its presence in a saved table does not imply it was trusted as a V1 target criterion.
+
+\fig{maps.png}{1}{Phase 2 maps for \code{granite_r1}. Top: reference PPL, reference XPL and an XPL maximum projection. Bottom: fitted extinction position (cyclic colour), relative XPL modulation, and PPL colour change. These original QC panels lack numerical colour bars; read them qualitatively, not as calibrated scales. A coloured boundary may indicate a changed optical response, not necessarily a separate grain or a different mineral.}{fig:maps}
+\fig{optical_curves.png}{0.94}{Reconstructed region-mean curves for two example masks. Dots/solid lines are mean luminance from the local folded stack; dashed lines fit the corresponding second or fourth harmonic. These averages illustrate angular behaviour. They are not the per-pixel map fits, not historical neural inputs exported from the GPU cache, and not new ground-truth measurements.}{fig:curves}
+\takeaway{Phase 2 asks ``how does this location change?'' It provides measurable descriptors for later steps, not a coloured mineral-identification image.}
+\FloatBarrier

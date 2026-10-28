@@ -1,0 +1,6 @@
+variant: M2
+use_physics_features: true
+physics_dim: 128
+epochs: 100
+learning_rate: 0.001
+batch_size: 32
